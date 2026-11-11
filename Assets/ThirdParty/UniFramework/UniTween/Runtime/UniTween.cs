@@ -181,11 +181,11 @@ namespace UniFramework.Tween
         {
             DebugCheckInitialize();
 
-            int instanceID = unityObject.GetInstanceID();
+            EntityId instanceID = unityObject.GetEntityId();
             for (int i = 0; i < _tweens.Count; i++)
             {
                 var handle = _tweens[i];
-                if (handle.InstanceID == instanceID)
+                if (handle.InstanceID.Equals(instanceID))
                 {
                     handle.Abort();
                 }
@@ -193,7 +193,7 @@ namespace UniFramework.Tween
             for (int i = 0; i < _newer.Count; i++)
             {
                 var handle = _newer[i];
-                if (handle.InstanceID == instanceID)
+                if (handle.InstanceID.Equals(instanceID))
                 {
                     handle.Abort();
                 }

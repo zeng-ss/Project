@@ -5,11 +5,9 @@
 //------------------------------------------------------------
 
 using DG.Tweening;
-using PuzzleTrack;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System;
 namespace CasualGame.CoffeeAway
 {
     public class ContinueUIForm : ScaleDialog
@@ -37,7 +35,6 @@ namespace CasualGame.CoffeeAway
             m_LookAdBtn.onClick.RemoveAllListeners();
             m_UseCoinBtn.onClick.RemoveAllListeners();
             m_CloseBtn.onClick.RemoveAllListeners();
-            m_LookAdBtn.onClick.AddListener(OnClick_LookAd);
             m_UseCoinBtn.onClick.AddListener(OnClick_UseCoin);
             m_CloseBtn.onClick.AddListener(OnClick_Close);
             coinCount = GameEntry.Config.GetInt(Constant.Config.ContinueCost, 400);
@@ -58,8 +55,6 @@ namespace CasualGame.CoffeeAway
             {
                 ProxyManager.UserProxy.CostItem((int)ItemType.Coin, coinCount);
                 ProxyManager.UserProxy.NotifyCurrency((int)ItemType.Coin);
-                PuzzleTracking.Level.UseHelper("show_extra_holder_continue", "coin");
-                PuzzleTracking.Currency.SoftCurrencyChange(-coinCount, "coin", "continue_extra_holder");
                 isBuySuccess = true;
                 Close();
             }
@@ -69,18 +64,6 @@ namespace CasualGame.CoffeeAway
                 GameEntry.UI.OpenUIForm(UIFormType.GlobalToast,
                     UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("58")));
             }
-        }
-
-        private void OnClick_LookAd()
-        {
-            PuzzleTracking.Level.UseHelper("show_extra_holder_continue", "ad");
-            PuzzleTracking.Level.MarkAds();
-            HorstRillSdk.Ads.showRewardedAD($"{Constant.Ad.tt_rv_add_booster}_extra", null, null, null,
-                (unitId, reward, adInfo) =>
-                {
-                    isBuySuccess = true;
-                    Close();
-                }, null);
         }
 
         protected override void OnClose(bool isShutdown, object userData)

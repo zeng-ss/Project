@@ -7,7 +7,6 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedureSplash : ProcedureBase
     {
         protected override void OnEnter(ProcedureOwner procedureOwner)

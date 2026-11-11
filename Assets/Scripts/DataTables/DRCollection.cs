@@ -20,7 +20,6 @@ namespace CasualGame
     /// <summary>
     /// Id。
     /// </summary>
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class DRCollection : DataRowBase
     {
         private int m_Id = 0;

@@ -6,9 +6,9 @@ using CasualGame;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YooAsset;
+using SceneHandle = YooAsset.SceneHandle;
 using Cysharp.Threading.Tasks;
 using System.IO;
-using HorstRill;
 
 public partial class YooAssetManager
 {
@@ -99,7 +99,8 @@ public partial class YooAssetManager
             }
             case EPlayMode.HostPlayMode:
             {
-                string defaultHostServer = $"{BaseURL.URL}/{PACKAGE_VERSION}";
+                //string defaultHostServer = $"{BaseURL.URL}/{PACKAGE_VERSION}";
+                string defaultHostServer = $"{PACKAGE_VERSION}";
                 string fallbackHostServer = defaultHostServer;
                 _currentRemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
                 var cacheFileSystemParams = FileSystemParameters.CreateDefaultCacheFileSystemParameters(_currentRemoteServices);

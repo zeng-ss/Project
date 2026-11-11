@@ -79,7 +79,6 @@ namespace CasualGame.CoffeeAway
                 Animator.Play("PackingTape_Close");
                 completeCheck.gameObject.SetActive(true);
                 PlaySoundManager.Instance.PlaySound(Constant.Audio.CompleteHolder);
-                VibrateManager.Instance.PlayOnce();
             }
         }
     }

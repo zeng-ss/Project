@@ -26,7 +26,6 @@ namespace CasualGame
             m_ADBtn.onClick.RemoveAllListeners();
             m_CloseBtn.onClick.AddListener(Close);
             m_CoinBtn.onClick.AddListener(OnClickCoinBtn);
-            m_ADBtn.onClick.AddListener(OnClickADBtn);
             m_Price = GameEntry.Config.GetInt("OneHeartCost", 80);
             m_PriceText.text = m_Price.ToString();
         }
@@ -57,23 +56,6 @@ namespace CasualGame
             {
                 GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("58")));
             }
-        }
-
-        private void OnClickADBtn()
-        {
-            PlaySoundManager.Instance.PlaySound(Constant.Audio.ClickButton);
-            if (reward) return;
-            HorstRillSdk.Ads.showRewardedAD(Constant.Ad.tt_energy_rv, null, null,
-                (unitId, adInfo) => { },
-                (unitId, reward, adInfo) =>
-                {
-                    this.reward = true;
-                    Close();
-                },
-                (unitId, error, adInfo) =>
-                {
-                    Debug.LogError("广告失败回调 " + error);
-                });
         }
 
         protected override void OnClose(bool isShutdown, object userData)

@@ -193,7 +193,7 @@ namespace Cinemachine
                 DestroyCanvas();
         }
 
-        string CanvasName => "_CM_canvas" + gameObject.GetInstanceID();
+        string CanvasName => "_CM_canvas" + gameObject.GetEntityId();
 
         void CameraUpdatedCallback(CinemachineBrain brain)
         {

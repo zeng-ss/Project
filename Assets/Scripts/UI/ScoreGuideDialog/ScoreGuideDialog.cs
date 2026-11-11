@@ -64,7 +64,6 @@ namespace CasualGame
 
             if (index > 2)
             {
-                HorstRillSdk.Rate.Show();
                 LogHandler.Info("==> [Rate]：进入评分界面");
                 HasScore = true;
             }

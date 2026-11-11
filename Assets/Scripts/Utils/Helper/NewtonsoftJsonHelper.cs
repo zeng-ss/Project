@@ -12,7 +12,6 @@ using Newtonsoft.Json;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class NewtonsoftJsonHelper : Utility.Json.IJsonHelper
     {
         public string ToJson(object obj)

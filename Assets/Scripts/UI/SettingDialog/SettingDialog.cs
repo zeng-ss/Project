@@ -5,7 +5,6 @@
 //------------------------------------------------------------
 
 using System.Collections.Generic;
-using PuzzleTrack;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -95,7 +94,6 @@ namespace CasualGame.CoffeeAway
 
         private void OnClick_DebugBtn() => DebugHandler.TriggerDebugger();
 
-        private void OnClick_RestoreBtn() => IAPManager.Instance.RestorePurchases();
 
         private void OnClick_HomeBtn()
         {

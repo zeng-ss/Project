@@ -220,7 +220,7 @@ namespace Coffee.UIExtensions
 				return;
 			}
 
-			ulong hash = (m_TransitionTexture ? (uint)m_TransitionTexture.GetInstanceID() : 0) + ((ulong)2 << 32) + ((ulong)m_EffectMode << 36);
+			ulong hash = (m_TransitionTexture ? (uint)EntityId.ToULong(m_TransitionTexture.GetEntityId()) : 0) + ((ulong)2 << 32) + ((ulong)m_EffectMode << 36);
 			if (_materialCache != null && (_materialCache.hash != hash || !isActiveAndEnabled || !m_EffectMaterial))
 			{
 				MaterialCache.Unregister(_materialCache);

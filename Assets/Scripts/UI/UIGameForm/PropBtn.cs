@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using CasualGame.CoffeeAway;
-using PuzzleTrack;
 
 [RequireComponent(typeof(Button))]
 public class PropBtn : AttachPoolPrefabBase
@@ -91,7 +90,6 @@ public class PropBtn : AttachPoolPrefabBase
             {
                 CoffeeAwayGame.Instance.ShouldBackReduceEnergy();
                 ProxyManager.UserProxy.CostItem(itemData.id, 1);
-                PuzzleTracking.Booster.UseBooster(((ItemType)itemData.id).ToString(), "ingame");
                 RefreshUI();
             }
         }

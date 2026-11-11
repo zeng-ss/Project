@@ -7,10 +7,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Coffee.UIExtensions;
-using PuzzleTrack;
 using DG.Tweening;
-using Cysharp.Threading.Tasks;
 
 namespace CasualGame.CoffeeAway
 {
@@ -63,7 +60,6 @@ namespace CasualGame.CoffeeAway
             _adBtn.onClick.RemoveAllListeners();
             _closeBtn.onClick.AddListener(Close);
             _buyBtn.onClick.AddListener(OnBuyBtnClick);
-            _adBtn.onClick.AddListener(OnAdBtnClick);
 
             isBuySuccess = false;
 
@@ -138,23 +134,6 @@ namespace CasualGame.CoffeeAway
 
                 ProxyManager.UserProxy.CostItem((int)ItemType.Coin, itemCount);
                 ProxyManager.UserProxy.NotifyCurrency((int)ItemType.Coin);
-
-                PuzzleTracking.Level.UseHelper(curItemType.ToString(), "coin");
-                PuzzleTracking.Currency.SoftCurrencyChange(-itemCount, "coin", "buy_prop");
-                // if (ShipJamGame.Instance.IsDeadlockFailed)
-                // {
-                //     PuzzleTracking.Level.Revive("fail_continue", "coin");
-                // }
-
-                /*var target = m_Params.GetAnyParams<Vector3>("Target");
-                var icon = m_Params.GetAnyParams<Transform>("Icon");
-                EffectManager.PlayFlyEffectToTarget(new ItemData((int)curItemType, 1), _icon.transform.position, target,
-                    () =>
-                    {
-                        ProxyManager.UserProxy.AddItem((int)curItemType, 1);
-                        Mutils.Animation.FlyScale(icon);
-                        ProxyManager.UserProxy.NotifyCurrency((int)curItemType);
-                    }, size: 140f);*/
                 Close();
             }
             else
@@ -163,22 +142,6 @@ namespace CasualGame.CoffeeAway
                 GameEntry.UI.OpenUIForm(UIFormType.GlobalToast,
                     UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("58")));
             }
-        }
-
-        private void OnAdBtnClick()
-        {
-            // if (ShipJamGame.Instance.IsDeadlockFailed)
-            // {
-            //     PuzzleTracking.Level.Revive("fail_continue", "ad");
-            // }
-            PuzzleTracking.Level.UseHelper(curItemType.ToString(), "ad");
-            PuzzleTracking.Level.MarkAds();
-            HorstRillSdk.Ads.showRewardedAD($"{Constant.Ad.tt_rv_add_booster}_{(int)curItemType}", null, null, null,
-                (unitId, reward, adInfo) =>
-                {
-                    isBuySuccess = true;
-                    Close();
-                }, null);
         }
 
         protected override void OnClose(bool isShutdown, object userData)

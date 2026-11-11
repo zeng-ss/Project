@@ -12,7 +12,6 @@ using System.Collections.Generic;
 using DG.Tweening;
 using Cysharp.Threading.Tasks;
 using Spine.Unity;
-using PuzzleTrack;
 
 namespace CasualGame.CoffeeAway
 {
@@ -54,8 +53,8 @@ namespace CasualGame.CoffeeAway
 
             claimBtn.onClick.RemoveAllListeners();
             lookAdBtn.onClick.RemoveAllListeners();
-            claimBtn.onClick.AddListener(() => GetReward(m_RewardCount, false));
-            lookAdBtn.onClick.AddListener(() => GetReward(m_RewardCount * 3, true));
+            claimBtn.onClick.AddListener(() => GetReward(m_RewardCount));
+            lookAdBtn.onClick.AddListener(() => GetReward(m_RewardCount * 3));
             List<ItemData> rewards = m_Params.GetAnyParams<List<ItemData>>("rewards");
             m_Level = ProxyManager.UserProxy.GameLevel;
             for (int i = 0; i < rewards.Count; i++)
@@ -185,30 +184,12 @@ namespace CasualGame.CoffeeAway
         }
 
 
-        private void GetReward(int rewardCount, bool isFromAd)
-        {
-            PlaySoundManager.Instance.PlaySound(Constant.Audio.ClickButton);
-
-            if (isFromAd)
-            {
-                PuzzleTracking.Level.UseHelper("win_multiple_reward", "ad");
-                PuzzleTracking.Level.MarkAds();
-                HorstRillSdk.Ads.showRewardedAD(Constant.Ad.tt_rv_multiple_reward, null, null, null,
-                    (unitId, reward, adInfo) => { GetReward(rewardCount); }, null);
-            }
-            else
-            {
-                GetReward(rewardCount);
-            }
-        }
-
         private void GetReward(int rewardCount)
         {
             if (m_IsRewarding) return;
             m_IsRewarding = true;
 
             ProxyManager.UserProxy.AddItem((int)ItemType.Coin, rewardCount);
-            PuzzleTracking.Currency.SoftCurrencyChange(rewardCount, "coin", "win_reward");
             EffectManager.PlayFlyEffectToTarget(
                 new ItemData((int)ItemType.Coin, rewardCount),
                 rewardCells[0].transform.position,
@@ -220,23 +201,7 @@ namespace CasualGame.CoffeeAway
 
                     Close();
                     CoffeeAwayGame.Instance.Restart();
-                    // ScoreGuideDialog.Show(m_Level, () =>
-                    // {
-                    //     CarSortGame.Instance.Restart();
-                    //     // TransitionForm.Open(m_Level, () =>
-                    //     // {
-                    //     //     //await ShipJamGame.Instance.RestartAndClean();
-                    //     // }, () =>
-                    //     // {
-                    //     //     return true;
-                    //     // });
-                    // });
                 });
-        }
-
-        protected override void OnClose(bool isShutdown, object userData)
-        {
-            base.OnClose(isShutdown, userData);
         }
     }
 }

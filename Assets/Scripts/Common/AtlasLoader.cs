@@ -71,7 +71,7 @@ namespace CasualGame
         /// <returns>加载的精灵，失败返回null</returns>
         public async void LoadSprite(UnityEngine.UI.Image image, string assetPath, Action onComplete = null)
         {
-            int instanceId = image.GetInstanceID();
+            int instanceId = (int)EntityId.ToULong(image.GetEntityId());
             _instanceSpritePaths[instanceId] = assetPath;
             image.enabled = false;
             Sprite sprite = await LoadSprite(assetPath);
@@ -91,7 +91,7 @@ namespace CasualGame
         /// <returns>加载的精灵，失败返回null</returns>
         public async void LoadSprite(SpriteRenderer renderer, string assetPath, Action onComplete = null)
         {
-            int instanceId = renderer.GetInstanceID();
+            int instanceId = (int)EntityId.ToULong(renderer.GetEntityId());
             _instanceSpritePaths[instanceId] = assetPath;
             renderer.enabled = false;
             Sprite sprite = await LoadSprite(assetPath);

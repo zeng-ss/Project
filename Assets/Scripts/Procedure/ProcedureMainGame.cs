@@ -4,7 +4,6 @@ using GameFramework.Event;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedureMainGame : ProcedureColdBoot<UIMainForm>
     {
         protected override UIFormType FormType => UIFormType.UIMainForm;
@@ -27,7 +26,7 @@ namespace CasualGame
         protected override bool OnCustomLoad()
         {
             UIMainForm mainForm = GameEntry.UI.GetUIForm<UIMainForm>(UIFormType.UIMainForm);
-            if (mainForm == null || !IAPManager.Instance.IsIAPInitialized)
+            if (mainForm == null)
             {
                 return false;
             }

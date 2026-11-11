@@ -11,15 +11,15 @@ namespace NodeCanvas.Editor
     static class HierarchyIcons
     {
         static HierarchyIcons() {
-            EditorApplication.hierarchyWindowItemOnGUI -= ShowIcon;
-            EditorApplication.hierarchyWindowItemOnGUI += ShowIcon;
+            EditorApplication.hierarchyWindowItemByEntityIdOnGUI -= ShowIcon;
+            EditorApplication.hierarchyWindowItemByEntityIdOnGUI += ShowIcon;
         }
 
-        static void ShowIcon(int ID, Rect r) {
+        static void ShowIcon(EntityId ID, Rect r) {
             if ( !Prefs.showHierarchyIcons ) {
                 return;
             }
-            var go = EditorUtility.InstanceIDToObject(ID) as GameObject;
+            var go = EditorUtility.EntityIdToObject(ID) as GameObject;
             if ( go == null ) return;
             var owner = go.GetComponent<GraphOwner>();
             if ( owner == null ) return;

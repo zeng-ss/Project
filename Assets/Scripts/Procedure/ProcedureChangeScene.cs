@@ -9,7 +9,6 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedureChangeScene : ProcedureBase
     {
         private string[] _loadedSceneAssetNames;

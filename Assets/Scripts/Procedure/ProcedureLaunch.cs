@@ -6,7 +6,6 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedureLaunch : ProcedureBase
     {
         private bool _initResourcesSuccess = false;

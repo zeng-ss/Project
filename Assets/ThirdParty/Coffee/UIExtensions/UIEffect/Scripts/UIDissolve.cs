@@ -255,7 +255,7 @@ namespace Coffee.UIExtensions
 				return;
 			}
 
-			ulong hash = (m_NoiseTexture ? (uint)m_NoiseTexture.GetInstanceID() : 0) + ((ulong)1 << 32) + ((ulong)m_ColorMode << 36);
+			ulong hash = (m_NoiseTexture ? (uint)EntityId.ToULong(m_NoiseTexture.GetEntityId()) : 0) + ((ulong)1 << 32) + ((ulong)m_ColorMode << 36);
 			if (_materialCache != null && (_materialCache.hash != hash || !isActiveAndEnabled || !m_EffectMaterial))
 			{
 				MaterialCache.Unregister(_materialCache);

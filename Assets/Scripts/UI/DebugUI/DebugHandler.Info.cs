@@ -41,12 +41,6 @@ namespace CasualGame
                 Info = () =>
                     $"PackageName:{Application.identifier},\nAppVersion:{Application.version},\nProductName:{Application.productName},\nCompanyName:{Application.companyName}",
             },
-            new InfoData()
-            {
-                Name = "AdInfo",
-                Info = () =>
-                    $"AdCount:{KBbase.Utility.GetTotalAdCount()}, \nIntersAdCount:{KBbase.Utility.GetIntersAdCount()}, \nRewardAdCount:{KBbase.Utility.GetRewardAdCount()}",
-            },
         };
     }
 }

@@ -10,7 +10,7 @@ namespace UniFramework.Tween
         private readonly UnityEngine.Object _unityObject;
         private readonly bool _safeMode;
         private bool _isAbort = false;
-        internal int InstanceID { private set; get; }
+        internal UnityEngine.EntityId InstanceID { private set; get; }
 
         /// <summary>
         /// 句柄释放时的回调方法
@@ -27,12 +27,12 @@ namespace UniFramework.Tween
 
             if (unityObject == null)
             {
-                InstanceID = 0;
+                InstanceID = UnityEngine.EntityId.None;
                 _safeMode = false;
             }
             else
             {
-                InstanceID = unityObject.GetInstanceID();
+                InstanceID = unityObject.GetEntityId();
                 _safeMode = true;
             }
         }

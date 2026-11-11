@@ -40,7 +40,6 @@ namespace CasualGame.CoffeeAway
             _occupyDistance = null;
             ChangeState(VehicleState.Exiting);
             PlaySoundManager.Instance.PlaySound(Constant.Audio.CoffeeGoOut);
-            VibrateManager.Instance.PlayOnceOnly();
 
             m_Seq?.Kill(true);
             m_Seq = DOTween.Sequence();
@@ -59,7 +58,6 @@ namespace CasualGame.CoffeeAway
         public void EnterHolder(Vector3 targetPos, Quaternion targetRot)
         {
             if (!IsState(VehicleState.OnRoad)) return;
-            VibrateManager.Instance.PlayOnceOnly();
             ChangeState(VehicleState.Entering);
             PlaySoundManager.Instance.PlaySound(Constant.Audio.CoffeeGoIn);
             m_Seq?.Kill(true);

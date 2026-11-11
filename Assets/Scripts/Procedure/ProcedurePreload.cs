@@ -1,25 +1,20 @@
 using System;
-using System.Threading;
 using Custom.Activity;
-using Cysharp.Threading.Tasks;
 using GameFramework.Event;
 using GameFramework.Resource;
 using Tutorial;
 using UnityEngine;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
-using PuzzleTrack;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedurePreload : ProcedureBase
     {
         private int _totalResourceCount;
         private int _currentResourceCount;
         private bool isInitializedTA = false;
         private bool isReadyPreload = false;
-        private bool IsFirebaseFetchCompleted => RemoteConfigManager.Instance.IsFirebaseFetchCompleted;
 
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
@@ -34,8 +29,6 @@ namespace CasualGame
 
             _totalResourceCount = 0;
             _currentResourceCount = 0;
-
-            InitializeTA();
 
             LoadServerTime();
 
@@ -63,22 +56,12 @@ namespace CasualGame
             GameEntry.Event.Unsubscribe(LoadDictionarySuccessEventArgs.EventId, OnLoadDictionarySuccess);
             GameEntry.Event.Unsubscribe(LoadDictionaryFailureEventArgs.EventId, OnLoadDictionaryFailure);
 
-            // 初始化
-            HorstRillSdk.InitSDK();
-            // 开启全局广告加载优化
-            var failToast = LocalizationUtils.GetString(
-                276, "Video is currently unavailable. Please try again later.");
-            HorstRillSdk.Ads.EnableWaitForRetry(true, 8f,
-                showLoading: () => UIManager.ShowLoading(),
-                closeLoading: () => UIManager.CloseLoading(),
-                showFailToast: () => UIManager.Toast(failToast));
 #if ENABLE_SDK
             string countryCode = McSdk.GetSdkConfiguration().CountryCode;
             if (!string.IsNullOrEmpty(countryCode))
                 ProxyManager.UserProxy.SetCountryCode(countryCode);
 #endif
 
-            IAPManager.Instance.Initilize();
             PlaySoundManager.Instance.Init();
             DateTimeHelper.Login();
             TutorialManager.Instance.InitTutorial();
@@ -100,7 +83,7 @@ namespace CasualGame
                 isReadyPreload = true;
             }
 
-            if (isReadyPreload && (IsFirebaseFetchCompleted || LaunchPage.IsLaunchTimedOut()))
+            if (isReadyPreload && (LaunchPage.IsLaunchTimedOut()))
             {
                 isReadyPreload = false;
                 LaunchPage.SetLaunchFullProcess();
@@ -289,17 +272,6 @@ namespace CasualGame
             ProxyManager.Instance.InitProxy(() =>
             {
                 _totalResourceCount--;
-                // WebManager.Instance.Activate();
-            });
-        }
-
-        private void InitializeTA()
-        {
-            if (isInitializedTA) return;
-            isInitializedTA = true;
-
-            HorstRillSdk.InitAnalytics((props) =>
-            {
             });
         }
     }

@@ -133,14 +133,6 @@ namespace CasualGame
             },
             new CommandData()
             {
-                Name = "ShowBanner",
-                Action = (param) =>
-                {
-                    HorstRillSdk.Ads.showBannerAD(Constant.Ad.tt_banner);
-                }
-            },
-            new CommandData()
-            {
                 Name = "JumpLevel",
                 Action = (param) =>
                 {
@@ -165,53 +157,10 @@ namespace CasualGame
             },
             new CommandData()
             {
-                Name = "OpenBannerTest",
-                Action = (param) =>
-                {
-                    AdaptiveBannerUtility.CreateBanner(GameEntry.UI.MainCanvas);
-                }
-            },
-            new CommandData()
-            {
-                Name = "SkipPurchase",
-                Action = (param) =>
-                {
-                    HorstRillSdk.Iap.SkipPurchase = true;
-                }
-            },
-            new CommandData()
-            {
-                Name = "RecordAll",
-                Action = (param) =>
-                {
-                    GLog.record_all();
-                }
-            },
-            new CommandData()
-            {
-                Name = "Vibrate",
-                Action = (param) =>
-                {
-                    if (!int.TryParse(param, out int result)) return;
-
-                    VibrateManager.Instance.PlayOnceWithStrength(result);
-                }
-            },
-            new CommandData()
-            {
                 Name = "GreenScreen",
                 Action = (param) =>
                 {
                     EventManager.NotifyEvent(Constant.Event.OnGreenScreen);
-                }
-            },
-            new CommandData()
-            {
-                Name = "AddInterstitial",
-                Action = (param) =>
-                {
-                    if (!int.TryParse(param, out int result)) return;
-                    KBbase.Utility.SetInterCountDebug(result);
                 }
             },
             new CommandData()
@@ -230,22 +179,6 @@ namespace CasualGame
                     PlaySoundManager.Instance.StopAudio();
                 }
             },
-            new CommandData()
-            {
-                Name = "SkipAd",
-                Action = (param) =>
-                {
-                    bool on = !AdManager.Instance.SkipAd;
-                    AdManager.Instance.SkipAd = on;
-                    AdManager.Instance.SkipInterstitial = on;
-                    UIManager.Toast(on ? "SkipAd On" : "SkipAd Off");
-                    CloseDebuggerUI();
-                },
-                Info = () =>
-                {
-                    return AdManager.Instance.SkipAd ? "On" : "Off";
-                },
-            }
         };
     }
 }

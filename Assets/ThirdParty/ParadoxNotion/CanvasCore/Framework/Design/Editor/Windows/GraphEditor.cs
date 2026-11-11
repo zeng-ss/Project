@@ -19,12 +19,12 @@ namespace NodeCanvas.Editor
         //the root graph that was first opened in the editor
         [System.NonSerialized]
         private Graph _rootGraph;
-        private int _rootGraphID;
+        private EntityId _rootGraphID;
 
         //the GrapOwner if any, that was used to open the editor and from which to read the rootGraph
         [System.NonSerialized]
         private GraphOwner _targetOwner;
-        private int _targetOwnerID;
+        private EntityId _targetOwnerID;
 
         ///----------------------------------------------------------------------------------------------
 
@@ -83,14 +83,14 @@ namespace NodeCanvas.Editor
             get
             {
                 if ( current._rootGraph == null ) {
-                    current._rootGraph = EditorUtility.InstanceIDToObject(current._rootGraphID) as Graph;
+                    current._rootGraph = EditorUtility.EntityIdToObject(current._rootGraphID) as Graph;
                 }
                 return current._rootGraph;
             }
             private set
             {
                 current._rootGraph = value;
-                current._rootGraphID = value != null ? value.GetInstanceID() : 0;
+                current._rootGraphID = value != null ? value.GetEntityId() : EntityId.None;
             }
         }
 
@@ -103,14 +103,14 @@ namespace NodeCanvas.Editor
                 }
 
                 if ( current._targetOwner == null ) {
-                    current._targetOwner = EditorUtility.InstanceIDToObject(current._targetOwnerID) as GraphOwner;
+                    current._targetOwner = EditorUtility.EntityIdToObject(current._targetOwnerID) as GraphOwner;
                 }
                 return current._targetOwner;
             }
             private set
             {
                 current._targetOwner = value;
-                current._targetOwnerID = value != null ? value.GetInstanceID() : 0;
+                current._targetOwnerID = value != null ? value.GetEntityId() : EntityId.None;
             }
         }
 
@@ -298,8 +298,8 @@ namespace NodeCanvas.Editor
         }
 
         [UnityEditor.Callbacks.OnOpenAsset(1)]
-        public static bool OpenAsset(int instanceID, int line) {
-            var target = EditorUtility.InstanceIDToObject(instanceID) as Graph;
+        public static bool OpenAsset(EntityId entityId, int line) {
+            var target = EditorUtility.EntityIdToObject(entityId) as Graph;
             if ( target != null ) {
                 GraphEditor.OpenWindow(target);
                 return true;

@@ -7,7 +7,6 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using DG.Tweening;
-using PuzzleTrack;
 
 namespace CasualGame
 {
@@ -55,7 +54,6 @@ namespace CasualGame
             {
                 Close();
 
-                PuzzleTracking.SystemEvents.UnityException("TransitionForm Open Error", "the OnOpenAction is null");
                 Debug.LogError("TransitionForm Open Error");
                 return;
             }
@@ -87,7 +85,6 @@ namespace CasualGame
             catch (Exception e)
             {
                 Debug.LogError($"TransitionForm OnOpenAction failed: {e}");
-                PuzzleTracking.SystemEvents.UnityException("TransitionForm OnOpenAction Error", e.Message);
             }
             finally
             {

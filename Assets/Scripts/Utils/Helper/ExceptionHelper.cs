@@ -15,14 +15,6 @@ public class ExceptionHelper : MonoBehaviour
 
     private void OnLog(string condition, string stackTrace, LogType type)
     {
-        if (type == LogType.Exception)
-        {
-            GLog.unity_exception(condition, stackTrace);
-        }
-        else if (type == LogType.Error)
-        {
-            GLog.unity_error(condition, stackTrace);
-        }
     }
 
     private void OnDestroy()

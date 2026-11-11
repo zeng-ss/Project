@@ -20,7 +20,6 @@ namespace CasualGame
     /// <summary>
     /// Id。
     /// </summary>
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class DRPetInfo : DataRowBase
     {
         private int m_Id = 0;

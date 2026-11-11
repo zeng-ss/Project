@@ -100,7 +100,6 @@ namespace CasualGame
 
         public async void CheckAutoPopup(BackHomeType backHome)
         {
-            await UniTask.WaitUntil(() => IAPManager.Instance.IsIAPInitialized);
             ActivityManager.Instance.CheckAutoPopup(backHome);
         }
 

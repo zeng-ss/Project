@@ -14,6 +14,14 @@ using Tutorial;
 using UnityEngine;
 using Custom.Activity;
 
+public enum VipType
+{
+    None,
+    Week,
+    Month,
+    Year
+}
+
 
 namespace CasualGame
 {
@@ -59,19 +67,6 @@ namespace CasualGame
                 ProxyManager.UserProxy.userModel.userName = value;
                 ProxyManager.UserProxy.Save();
             }
-        }
-
-        public static string GetDeviceId()
-        {
-#if UNITY_EDITOR
-            return SystemInfo.deviceUniqueIdentifier;
-#endif
-            return HorstRillSdk.GetDeviceId();
-        }
-
-        public static string GetDistinctId()
-        {
-            return HorstRillSdk.GetDistinctId();
         }
 
         public static string GetChannel()

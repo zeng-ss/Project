@@ -9,7 +9,7 @@ namespace Coffee.UIParticleInternal
     internal class ObjectRepository<T> where T : Object
     {
         private readonly Dictionary<Hash128, Entry> _cache = new Dictionary<Hash128, Entry>(8);
-        private readonly Dictionary<int, Hash128> _objectKey = new Dictionary<int, Hash128>(8);
+        private readonly Dictionary<EntityId, Hash128> _objectKey = new Dictionary<EntityId, Hash128>(8);
         private readonly string _name;
         private readonly Action<T> _onRelease;
         private readonly Stack<Entry> _pool = new Stack<Entry>(8);
@@ -130,7 +130,7 @@ namespace Coffee.UIParticleInternal
             newEntry.hash = hash;
             newEntry.reference = 1;
             _cache[hash] = newEntry;
-            _objectKey[newObject.GetInstanceID()] = hash;
+            _objectKey[newObject.GetEntityId()] = hash;
             Logging.Log(_name, $"<color=#03c700>Add</color>(total#{count}): {newEntry}");
             Release(ref obj);
             obj = newObject;
@@ -146,7 +146,7 @@ namespace Coffee.UIParticleInternal
 
             // Find and release the entry.
             Profiler.BeginSample("(COF)[ObjectRepository] Release");
-            var id = obj.GetInstanceID();
+            var id = obj.GetEntityId();
             if (_objectKey.TryGetValue(id, out var hash)
                 && _cache.TryGetValue(hash, out var entry))
             {
@@ -175,7 +175,7 @@ namespace Coffee.UIParticleInternal
 
             Profiler.BeginSample("(COF)[ObjectRepository] Remove");
             _cache.Remove(entry.hash);
-            _objectKey.Remove(entry.storedObject.GetInstanceID());
+            _objectKey.Remove(entry.storedObject.GetEntityId());
             _pool.Push(entry);
             entry.reference = 0;
             Logging.Log(_name, $"<color=#f29e03>Remove</color>(total#{_cache.Count}): {entry}");

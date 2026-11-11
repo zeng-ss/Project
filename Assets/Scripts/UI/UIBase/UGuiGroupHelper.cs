@@ -7,7 +7,6 @@ namespace CasualGame
     /// <summary>
     /// uGUI 界面组辅助器。
     /// </summary>
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class UGuiGroupHelper : UIGroupHelperBase
     {
         public const int DepthFactor = 10000;

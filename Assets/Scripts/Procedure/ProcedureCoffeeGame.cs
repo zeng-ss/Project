@@ -5,7 +5,6 @@ using GameFramework.Event;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedureCoffeeGame : ProcedureColdBoot<UIGameForm>
     {
         protected override UIFormType FormType => UIFormType.UIGameForm;

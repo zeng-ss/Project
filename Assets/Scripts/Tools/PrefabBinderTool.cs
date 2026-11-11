@@ -394,7 +394,7 @@ public static class PrefabBinderTool_Static
     [UnityEditor.InitializeOnLoadMethod]
     private static void Load()
     {
-        UnityEditor.EditorApplication.hierarchyWindowItemOnGUI += OnHierarchyWindowItemOnGUI;
+        UnityEditor.EditorApplication.hierarchyWindowItemByEntityIdOnGUI += OnHierarchyWindowItemOnGUI;
 
         UnityEditor.SceneManagement.PrefabStage.prefabSaved += OnPrefabSaved;
     }
@@ -675,9 +675,9 @@ public static class PrefabBinderTool_Static
     {
     }
 
-    private static void OnHierarchyWindowItemOnGUI(int instanceID, Rect selectionRect)
+    private static void OnHierarchyWindowItemOnGUI(EntityId entityId, Rect selectionRect)
     {
-        GameObject gameObject = UnityEditor.EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+        GameObject gameObject = UnityEditor.EditorUtility.EntityIdToObject(entityId) as GameObject;
 
         if (gameObject == null)
         {

@@ -5,7 +5,6 @@
 //------------------------------------------------------------
 
 using CasualGame.CoffeeAway;
-using PuzzleTrack;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,7 +62,6 @@ namespace CasualGame
         private void OnClick_ConfirmBtn()
         {
             PlaySoundManager.Instance.PlaySound(Constant.Audio.ClickButton);
-            PuzzleTracking.Level.LoseLevel();
             if (_isBackHome)
             {
                 SceneHelper.LoadHomeScene(0);

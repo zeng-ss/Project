@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : CsvLocalizationHelper.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : Csv 格式的本地化辅助器。
 //------------------------------------------------------------
 
@@ -12,7 +11,6 @@ using GameFramework.Localization;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class CsvLocalizationHelper : DefaultLocalizationHelper
     {
         public override bool ParseData(ILocalizationManager localizationManager, string dictionaryString,

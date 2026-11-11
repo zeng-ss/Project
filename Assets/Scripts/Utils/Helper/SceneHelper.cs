@@ -8,8 +8,8 @@ using System;
 using Cysharp.Threading.Tasks;
 using UnityGameFramework.Runtime;
 using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
-using PuzzleTrack;
 using CasualGame.CoffeeAway;
+using UnityEngine;
 
 namespace CasualGame
 {
@@ -25,10 +25,6 @@ namespace CasualGame
                     return;
                 }
 
-                HorstRillSdk.Ads.showInterstitialAD(Constant.Ad.tt_home_success_int, closeCallBack: (unitId, isClose) =>
-                {
-                });
-
                 var state = GameEntry.Procedure.CurrentProcedure as ProcedureBase;
                 TransitionForm.Open(0, async () =>
                 {
@@ -43,7 +39,7 @@ namespace CasualGame
             }
             catch (Exception e)
             {
-                PuzzleTracking.SystemEvents.UnityTryCache(e.Message, e.StackTrace);
+                Debug.LogError(e);
             }
         }
 

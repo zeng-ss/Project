@@ -5,7 +5,6 @@
 //------------------------------------------------------------
 
 using DG.Tweening;
-using PuzzleTrack;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -95,7 +94,6 @@ namespace CasualGame.CoffeeAway
         private void RestartGame()
         {
             //这才是真正的输掉比赛
-            PuzzleTracking.Level.LoseLevel();
             if (EnergyManager.CanUseEnergy(1))
             {
                 CoffeeAwayGame.Instance.Restart();

@@ -15,45 +15,7 @@ namespace Dreamteck.Splines.Editor
 
         static PluginInfo()
         {
-            if (open) return;
-            bool showInfo = EditorPrefs.GetString("Dreamteck.Splines.Info.version", "") != version;
-
-            if (!showInfo)
-            {
-                var url = "https://dreamteck.io/plugins/splines/welcome.json";
-                var prefKey = "Dreamteck.Splines.welcomeScreenVersion";
-                var welcomeScreenVersion = EditorPrefs.GetInt(prefKey, -1);
-
-                using (var mainDataReq = UnityWebRequest.Get(url))
-                {
-                    mainDataReq.SendWebRequest();
-
-                    while (!mainDataReq.isDone || mainDataReq.result == UnityWebRequest.Result.InProgress)
-                    {
-
-                    }
-
-                    if (mainDataReq.result == UnityWebRequest.Result.ProtocolError ||
-                        mainDataReq.result == UnityWebRequest.Result.DataProcessingError ||
-                        mainDataReq.result == UnityWebRequest.Result.ConnectionError)
-                    {
-                        Debug.LogError("An error occured while fetching the banners data.");
-                    }
-                    else if(!showInfo)
-                    {
-                        var jObj = JsonUtility.FromJson<WelcomeWindow.Data>(mainDataReq.downloadHandler.text);
-                        welcomeScreenVersion = jObj.version;
-
-                        var currentVersion = EditorPrefs.GetInt(prefKey, -1);
-
-                        showInfo = currentVersion < welcomeScreenVersion;
-                    }
-                }
-            }
-
-            if (!showInfo) return;
-            EditorPrefs.SetString("Dreamteck.Splines.Info.version", version);
-            EditorApplication.update += OpenWindowOnUpdate;
+            // 个人项目：已禁用 Dreamteck 欢迎页的远程请求（避免无网络环境下的报错与启动卡顿）
         }
 
         private static void OpenWindowOnUpdate()

@@ -1421,7 +1421,7 @@ namespace UnityGameFramework.Editor.ResourceTools
 
         private BuildAssetBundleOptions GetBuildAssetBundleOptions()
         {
-            BuildAssetBundleOptions buildOptions = BuildAssetBundleOptions.DeterministicAssetBundle;
+            BuildAssetBundleOptions buildOptions = BuildAssetBundleOptions.None;
 
             if (ForceRebuildAssetBundleSelected)
             {

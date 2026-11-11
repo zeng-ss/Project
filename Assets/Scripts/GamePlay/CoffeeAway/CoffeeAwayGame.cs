@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityGameFramework.Runtime;
 using System.Collections.Generic;
-using PuzzleTrack;
 
 namespace CasualGame.CoffeeAway
 {
@@ -74,6 +73,7 @@ namespace CasualGame.CoffeeAway
 
         private void Win()
         {
+            GameEntry.UI.OpenUIForm(UIFormType.WinUIForm);
             if (ProxyManager.UserProxy.GameLevel >= 89) // 循环
             {
                 int level = Random.Range(10, 91);
@@ -85,16 +85,6 @@ namespace CasualGame.CoffeeAway
                 ProxyManager.UserProxy.SetGameLevel(level);
             }
             else ProxyManager.UserProxy.AddGameLevel();
-
-            PuzzleTracking.Level.WinLevel();
-            HorstRillSdk.Ads.showInterstitialAD(Constant.Ad.tt_home_success_int, closeCallBack: (unitId, isClose) =>
-            {
-                int rewardCount = GameEntry.Config.GetInt(Constant.Config.CoinPerLevel, 40);
-                List<ItemData> rewards = new List<ItemData> { new((int)ItemType.Coin, rewardCount) };
-                UGUIParams uiParams = UGUIParams.Create();
-                uiParams.AddValue("rewards", rewards);
-                GameEntry.UI.OpenUIForm(UIFormType.WinUIForm, uiParams);
-            });
         }
 
         // 输入处理
@@ -112,7 +102,6 @@ namespace CasualGame.CoffeeAway
                     if (holder is null) return;
                     // 首关指引期间只有高亮的目标容器可点击，其它容器一律忽略
                     if (ProxyManager.UserProxy.GameLevel == 0 && _guideTarget != holder) return;
-                    VibrateManager.Instance.PlayOnce();
                     TryCompleteFirstLevelGuide(holder);
                     if (_propMgr.TrySelectHolder(holder)) return;
 
@@ -142,8 +131,6 @@ namespace CasualGame.CoffeeAway
                 _isLoading = false;
                 return;
             }
-
-            PuzzleTracking.Level.StartLevel(level);
 
             _pathInfo = LevelBuilder.BuildPathInfo(_levelData);
             var holderInfos = LevelBuilder.Build(_levelData);

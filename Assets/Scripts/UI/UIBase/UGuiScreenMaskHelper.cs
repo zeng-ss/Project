@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class UGuiScreenMaskHelper : MonoBehaviour
     {
         private static UGuiScreenMaskHelper _instance;

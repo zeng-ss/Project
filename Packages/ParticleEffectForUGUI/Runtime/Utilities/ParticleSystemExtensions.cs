@@ -96,7 +96,7 @@ namespace Coffee.UIParticleInternal
 
                 if (sortByMaterial)
                 {
-                    return aMat.GetInstanceID() - bMat.GetInstanceID();
+                    return EntityId.ToULong(aMat.GetEntityId()).CompareTo(EntityId.ToULong(bMat.GetEntityId()));
                 }
 
                 if (aMat.renderQueue != bMat.renderQueue)
@@ -135,7 +135,7 @@ namespace Coffee.UIParticleInternal
         {
             for (var i = 0; i < list.Count; i++)
             {
-                if (list[i].GetInstanceID() == ps.GetInstanceID())
+                if (list[i].GetEntityId().Equals(ps.GetEntityId()))
                 {
                     return i;
                 }

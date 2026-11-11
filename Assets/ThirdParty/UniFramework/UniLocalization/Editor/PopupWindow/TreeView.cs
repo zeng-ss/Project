@@ -4,6 +4,9 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
+using TreeView = UnityEditor.IMGUI.Controls.TreeView<int>;
+using TreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+using TreeViewState = UnityEditor.IMGUI.Controls.TreeViewState<int>;
 using UnityEngine;
 
 namespace UniFramework.Localization.Editor

@@ -14,7 +14,6 @@ using UnityGameFramework.Runtime;
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class CsvConfigHelper : ConfigHelperBase
     {
         private static readonly string[] RowSplitSeparator = new string[] { "\r\n", "\r", "\n" };

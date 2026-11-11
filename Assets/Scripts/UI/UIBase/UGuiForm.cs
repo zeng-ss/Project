@@ -130,13 +130,6 @@ namespace CasualGame
                 iChild.OnInit();
             }
 
-            if (panel == null)
-            {
-                AspectSafeAreaHelper aspectSafeAreaHelper = transform.GetComponentInChildren<AspectSafeAreaHelper>();
-                if (aspectSafeAreaHelper)
-                    panel = aspectSafeAreaHelper.transform;
-            }
-
             if (panel != null)
                 m_CanvasGroup = panel.gameObject.GetOrAddComponent<CanvasGroup>();
         }
@@ -168,12 +161,6 @@ namespace CasualGame
             foreach (var iChild in _uguiChildren)
             {
                 iChild.OnOpen();
-            }
-
-            AspectSafeAreaHelper[] aspectSafeAreaHelper = transform.GetComponentsInChildren<AspectSafeAreaHelper>();
-            foreach (var item in aspectSafeAreaHelper)
-            {
-                item.Refresh();
             }
         }
 

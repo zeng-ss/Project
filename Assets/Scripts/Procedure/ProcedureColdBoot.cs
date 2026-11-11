@@ -10,7 +10,6 @@ using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedure
 
 namespace CasualGame
 {
-    [OPS.Obfuscator.Attribute.DoNotObfuscateClass]
     public class ProcedureColdBoot<T> : ProcedureBase where T : UGuiForm
     {
         protected bool needCloseLaunch = false;

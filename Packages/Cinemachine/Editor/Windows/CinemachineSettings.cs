@@ -22,7 +22,7 @@ namespace Cinemachine.Editor
         {
             if (didDomainReload)
             {
-                EditorApplication.hierarchyWindowItemOnGUI += OnHierarchyGUI;
+                EditorApplication.hierarchyWindowItemByEntityIdOnGUI += OnHierarchyGUI;
             }
         }
 #endif
@@ -292,7 +292,7 @@ namespace Cinemachine.Editor
             else
             {
                 EditorApplication.update -= OnPackageLoadedInEditor;
-                EditorApplication.hierarchyWindowItemOnGUI += OnHierarchyGUI; // Update hierarchy with CM Brain logo
+                EditorApplication.hierarchyWindowItemByEntityIdOnGUI += OnHierarchyGUI; // Update hierarchy with CM Brain logo
             }
         }
 
@@ -300,7 +300,7 @@ namespace Cinemachine.Editor
         {
             if (CinemachineLogoTexture != null)
             {
-                EditorApplication.hierarchyWindowItemOnGUI += OnHierarchyGUI;
+                EditorApplication.hierarchyWindowItemByEntityIdOnGUI += OnHierarchyGUI;
             }
         }
 #endif
@@ -511,9 +511,9 @@ namespace Cinemachine.Editor
             GUILayout.EndScrollView();
         }
 
-        private static void OnHierarchyGUI(int instanceID, Rect selectionRect)
+        private static void OnHierarchyGUI(EntityId entityId, Rect selectionRect)
         {
-            GameObject instance = EditorUtility.InstanceIDToObject(instanceID) as GameObject;
+            GameObject instance = EditorUtility.EntityIdToObject(entityId) as GameObject;
             if (instance == null)
             {
                 // Object in process of being deleted?
