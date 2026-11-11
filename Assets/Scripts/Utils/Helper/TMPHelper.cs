@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : TMPHelper.cs
-// Email: mailto:yang.li@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
@@ -17,7 +16,7 @@ namespace CasualGame
 {
     public class TMPHelper
     {
-        private const string TmpSettingsResourcesPath = "TMP/TMP Settings";
+        private const string TmpSettingsResourcesPath = "TMP Settings";
 
         private const string TMPSettingAssetPath = "Assets/Game/Fonts/TMP Settings.asset";
 
@@ -26,7 +25,7 @@ namespace CasualGame
             TMP_Settings settings = Resources.Load<TMP_Settings>(TmpSettingsResourcesPath);
             if (settings == null)
             {
-                Debug.LogError($"[TMPHelper] Missing TMP_Settings. Place asset at Resources/{TmpSettingsResourcesPath} (file: TMP/TMP Settings.asset).");
+                Debug.LogError($"[TMPHelper] 找不到 TMP Settings，请确认 Resources/{TmpSettingsResourcesPath}.asset 存在（TMP 只认 Resources 根目录下的这个名字）。");
                 return;
             }
 
@@ -35,7 +34,7 @@ namespace CasualGame
 
         public static async UniTaskVoid LoadSetting(Action onCompleteAction = null)
         {
-            TMP_Settings resource = await GameEntry.Resource.LoadAsset<TMP_Settings>(TMPSettingAssetPath, default);
+            TMP_Settings resource = await Framework.GameRoot.Res.LoadAsset<TMP_Settings>(TMPSettingAssetPath, default);
             ApplyTmpSettingsInstance(resource);
 
             onCompleteAction?.Invoke();

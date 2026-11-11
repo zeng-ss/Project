@@ -7,7 +7,7 @@ public class LocalizationUtils
 {
     public static string GetString(int key, string defaultStr = "")
     {
-        var ret = GameEntry.Localization.GetString(key.ToString());
+        var ret = LocalizationMgr.Instance.GetString(key.ToString());
 
         if (string.IsNullOrEmpty(ret) || ret.Contains("<NoKey>"))
             return defaultStr;
@@ -17,7 +17,7 @@ public class LocalizationUtils
 
     public static string GetString(string key, string defaultStr = "")
     {
-        var ret = GameEntry.Localization.GetString(key);
+        var ret = LocalizationMgr.Instance.GetString(key);
 
         if (string.IsNullOrEmpty(ret) || ret.Contains("<NoKey>"))
             return defaultStr;

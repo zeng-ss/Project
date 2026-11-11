@@ -23,7 +23,7 @@ public abstract class BaseDialog : UGuiForm
         base.OnInit(userData);
 
         graphicRaycaster = GetComponent<GraphicRaycaster>();
-        originalPosition = panel.transform.localPosition;
+        originalPosition = Panel.transform.localPosition;
 
         var imgMask = gameObject.transform.Find("Mask");
         if (imgMask != null && imgMask.GetComponent<Image>() != null)
@@ -43,18 +43,18 @@ public abstract class BaseDialog : UGuiForm
         base.OnOpen(userData);
         UIAnimationFinish = false;
 
-        if (panel && m_CanvasGroup)
+        if (Panel && MCanvasGroup)
         {
             if (sequence != null && sequence.IsActive()) sequence.Kill();
             sequence = DOTween.Sequence();
-            m_CanvasGroup.alpha = 0.6f;
+            MCanvasGroup.alpha = 0.6f;
 
             RectTransform parentRect = transform as RectTransform;
             float parentHeight = parentRect.rect.height;
             float topY = parentHeight;
-            panel.transform.localPosition = new Vector3(originalPosition.x, topY, originalPosition.z);
-            sequence.Append(panel.transform.DOLocalMove(originalPosition, duration).SetEase(Ease.OutBack))
-                .Join(m_CanvasGroup.DOFade(1f, duration).OnComplete(OnCompleteScale));
+            Panel.transform.localPosition = new Vector3(originalPosition.x, topY, originalPosition.z);
+            sequence.Append(Panel.transform.DOLocalMove(originalPosition, duration).SetEase(Ease.OutBack))
+                .Join(MCanvasGroup.DOFade(1f, duration).OnComplete(OnCompleteScale));
         }
         else
         {
@@ -76,7 +76,7 @@ public abstract class BaseDialog : UGuiForm
         hasClickedClose = true;
         graphicRaycaster.enabled = false;
 
-        if (panel && m_CanvasGroup)
+        if (Panel && MCanvasGroup)
         {
             if (sequence != null && sequence.IsActive()) sequence.Kill();
             sequence = DOTween.Sequence();
@@ -84,8 +84,8 @@ public abstract class BaseDialog : UGuiForm
             RectTransform parentRect = transform as RectTransform;
             float parentHeight = parentRect.rect.height;
             float bottomY = -parentHeight;
-            sequence.Append(panel.transform.DOLocalMove(new Vector3(originalPosition.x, bottomY, originalPosition.z), duration).SetEase(Ease.InBack))
-                .Join(m_CanvasGroup.DOFade(0f, duration).SetEase(Ease.Linear)).OnComplete(base.Close);
+            sequence.Append(Panel.transform.DOLocalMove(new Vector3(originalPosition.x, bottomY, originalPosition.z), duration).SetEase(Ease.InBack))
+                .Join(MCanvasGroup.DOFade(0f, duration).SetEase(Ease.Linear)).OnComplete(base.Close);
         }
         else
         {
@@ -98,7 +98,7 @@ public abstract class BaseDialog : UGuiForm
     protected virtual void OnCompleteScale()
     {
         UIAnimationFinish = true;
-        if (m_Params != null) m_Params.OnOpenCallback?.Invoke(this);
+        if (MParams != null) MParams.OnOpenCallback?.Invoke(this);
     }
 
     // protected override void OnInit(object userData)

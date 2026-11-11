@@ -21,7 +21,7 @@ namespace Tutorial.Condition
         }
         protected override bool OnCheck()
         {
-            var uiForm = GameEntry.UI.GetUIForm<UGuiForm>(formType.value);
+            var uiForm = Framework.UIMgr.Instance.GetUIForm<UGuiForm>(formType.value);
             if (MustVisible.value)
             {
                 return (uiForm != null) && uiForm.Visible;

@@ -24,7 +24,7 @@ namespace CasualGame
             if (m_casualCurrencyGroup == null)
             {
                 m_casualCurrencyGroup = await PrefabPool.Instance.Spawn<CasualCurrencyGroup>(CasualAssetId, new CancellationTokenSource().Token);
-                m_casualCurrencyGroup?.InitialCurrency(GameEntry.UI.MainCanvas.transform, new List<ItemType> { ItemType.Energy, ItemType.Coin });
+                m_casualCurrencyGroup?.InitialCurrency(Framework.UIMgr.Instance.MainCanvas.transform, new List<ItemType> { ItemType.Energy, ItemType.Coin });
             }
             if (!showMaskInterface.ShowCurrency)
                 return;

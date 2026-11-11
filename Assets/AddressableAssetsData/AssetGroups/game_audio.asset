@@ -1,0 +1,238 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: game_audio
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: game_audio
+  m_GUID: 89b05453c8bb4184b86b2c861d49b0bc
+  m_SerializeEntries:
+  - m_GUID: 06d67250ad1994ea0953f16c4aa2620f
+    m_Address: curtain#2510
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0bc2ca1be92524e1581893e6adb2a7c4
+    m_Address: ScrewClickedSuccess#50004
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1846c918403bf4576afa983373fc0ef1
+    m_Address: sfx_game_booster_drill#51006
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 186fcf9fa182b4ea1a507008fca16628
+    m_Address: complete_holder#2539
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1a0deff955af04be7b78bdee3850c79b
+    m_Address: MagicWard#2511
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d360c7224ad7489985d521ea5e7ef5d
+    m_Address: GeneralReward#2500
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 347f0c89d8f26485a9171c519410a63d
+    m_Address: LevelUp#2515
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a6abf8238aa3431aa4d9036069493d2
+    m_Address: bgm_game#1001
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a98ccfa2281643b28afe66fce010597
+    m_Address: cube-place#2505
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4210ca62aaa3d4b27870dd84a1e4f248
+    m_Address: wrong#60075
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4605b76989a6e12408da73dff0870a22
+    m_Address: sfx_game_booster_magnet#51005
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b432fa7a18964dca83e27558febeb9b
+    m_Address: cubes-take#2508
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 514d171d68f7c4de3afdb1f49cf913aa
+    m_Address: completed#2506
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51d8b19af69fe421e8b49e7925529606
+    m_Address: Meow#60074
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53ae6f198f07d480e98073ee71364720
+    m_Address: ice4fx2#2516
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54fe3ae0df35b48178a9a95d24bb3a06
+    m_Address: bgm_home#1002
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 57765e5d4d1184a0bb875fd4123baa06
+    m_Address: LoadingComplete#2503
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 601e1028547ba4c67bae6353244c3e4f
+    m_Address: hidden_disappear#2541
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60af197ceea4244b1ae04e3a3931553f
+    m_Address: LuckyWheel#2517
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6335bfaea598d4c9886bcbcab88b7906
+    m_Address: go_out#2537
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a974c45b1f464a04a9b33899fc4bf7c
+    m_Address: clay_break_v2#2524
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 750e832e8add34d44a5717762d6700ea
+    m_Address: Land#2540
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 76455e04a01d94e80832c92a432dbd19
+    m_Address: PlaceItem#2522
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98365e41c464d1a41970603f5adb131f
+    m_Address: sfx_game_booster_broom#51007
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d13cdfc8492d4f4c8a262cf78fca4d0
+    m_Address: cardmove#60017
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0bb51750df6445a5b21e59f374912b9
+    m_Address: SE_coin#51016
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aab07ebf0478640c7919209093feddd5
+    m_Address: sfx_CarpetRoll#2519
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adb7325cd43854114b868e4514123548
+    m_Address: sfx_BoxBreak#2518
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afbcad9cba4834e1d876fafe5474f1a0
+    m_Address: Loading#2502
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b87a82842b2c648d1ab64d912a3bc33a
+    m_Address: RecivedGold#2504
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b90a4ef73f030475c904bc854ae86912
+    m_Address: flight#2523
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bce57289fb09a497ab7730bc1788f9de
+    m_Address: screw_in_box##51002
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be6f6f55cef27477d90e1a3db18f2540
+    m_Address: sfx_generator#2521
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2801d22f6862424bb85500f33908f6e
+    m_Address: finish_box#51003
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cc60f8d7598214237854f0c7abfa120a
+    m_Address: screw_pick#51001
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d34a57defe3f4d646af5b80c12754ce2
+    m_Address: sfx_game_booster_hammer#51008
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d847c2c5cabda224fb26d59ee2b6e1f4
+    m_Address: woosh#51004
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da9114736dce9433d88f9c25efb1a9a0
+    m_Address: ClickButton#2501
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de3365ca97ce547a0a93123092d40f92
+    m_Address: UseBoost#2513
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ec1d58b1f53be463f98e80e307a2ee49
+    m_Address: Settlement#2013
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f5eb353d360eb470f882713140684ef5
+    m_Address: Puntuation Sound#51010
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa3121ea1610a4e4483073e302ca2f3f
+    m_Address: sfx_EpSwitch#2520
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff08287374b3745738e7711fc6ec6775
+    m_Address: goIn#2538
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0101c30a5f96c9a43a6b86caa98762b5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: f72c6b2e777343443bb9d2ea57bd6e57, type: 2}
+    - {fileID: 11400000, guid: b8a5d13bbf84c9a40b03960231b4a279, type: 2}

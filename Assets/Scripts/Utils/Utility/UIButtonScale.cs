@@ -6,8 +6,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityGameFramework.Runtime;
-using GameFramework;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 using UnityEngine.UI;

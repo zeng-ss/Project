@@ -2,7 +2,6 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 using CasualGame;
-using GameFramework;
 using System.Collections.Generic;
 using Custom.Activity;
 using Cysharp.Threading.Tasks;
@@ -97,11 +96,11 @@ public static class EffectManager
 
     private static Vector2 WorldToUIPosition(Vector3 worldPos, RectTransform uiParent)
     {
-        Vector2 screenPos = RectTransformUtility.WorldToScreenPoint(GameEntry.UI.UICamera, worldPos);
+        Vector2 screenPos = RectTransformUtility.WorldToScreenPoint(Framework.UIMgr.Instance.UICamera, worldPos);
 
         Vector2 localPos;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            uiParent, screenPos, GameEntry.UI.UICamera, out localPos);
+            uiParent, screenPos, Framework.UIMgr.Instance.UICamera, out localPos);
 
         return localPos;
     }
@@ -109,9 +108,9 @@ public static class EffectManager
 
     public static Vector2 UIWorldPosToUiLocalPos(Vector3 worldPos)
     {
-        Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(GameEntry.UI.MainCanvas.worldCamera, worldPos);
-        var floatForm = GameEntry.UI.GetUIForm<TopcoverForm>(UIFormType.TopcoverForm);
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(floatForm.Rect, screenPoint, GameEntry.UI.MainCanvas.worldCamera, out Vector2 localPos);
+        Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(Framework.UIMgr.Instance.MainCanvas.worldCamera, worldPos);
+        var floatForm = Framework.UIMgr.Instance.GetUIForm<TopcoverForm>(UIFormType.TopcoverForm);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(floatForm.Rect, screenPoint, Framework.UIMgr.Instance.MainCanvas.worldCamera, out Vector2 localPos);
         return localPos;
     }
 
@@ -309,7 +308,7 @@ public static class EffectManager
         }
         else
         {
-            UIMainForm uIMainForm = GameEntry.UI.GetUIForm<UIMainForm>(UIFormType.UIMainForm);
+            UIMainForm uIMainForm = Framework.UIMgr.Instance.GetUIForm<UIMainForm>(UIFormType.UIMainForm);
             if (uIMainForm != null)
             {
 

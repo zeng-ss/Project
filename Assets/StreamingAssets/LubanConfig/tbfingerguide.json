@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "sceneName": "BusJamScene",
+    "rootName": "GameManager",
+    "higtLightTargetPath": "Content/GamePlayCore/Logic/Objec List Manager/RootCar/Car_5",
+    "buttonPath": "-1.0",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "id": 2,
+    "sceneName": "BusJamScene",
+    "rootName": "GameManager",
+    "higtLightTargetPath": "Content/GamePlayCore/Logic/Objec List Manager/RootCar/Car_2",
+    "buttonPath": "-1.0",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "id": 3,
+    "sceneName": "BusJamScene",
+    "rootName": "GameManager",
+    "higtLightTargetPath": "Content/GamePlayCore/Logic/Objec List Manager/RootCar/Car_4",
+    "buttonPath": "-1.0",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "id": 4,
+    "sceneName": "BusJamScene",
+    "rootName": "GameManager",
+    "higtLightTargetPath": "Content/GamePlayCore/Logic/Objec List Manager/RootCar/Car_1",
+    "buttonPath": "-1.0",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "id": 5,
+    "sceneName": "BusJamScene",
+    "rootName": "GameManager",
+    "higtLightTargetPath": "Content/GamePlayCore/Logic/Objec List Manager/RootCar/Car_0",
+    "buttonPath": "-1.0",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  }
+]

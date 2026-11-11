@@ -1,11 +1,11 @@
-//------------------------------------------------------------
+﻿//------------------------------------------------------------
 // File : ScoreGuideDialog.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace CasualGame
 {
@@ -34,7 +34,7 @@ namespace CasualGame
             for (int i = 0; i < _starCount; i++)
             {
                 ScoreStarCell starCell = m_Pool.Spawn<ScoreStarCell>(0, m_StarParent);
-                starCell.Init(i, OnStarClick, _atlasLoader);
+                starCell.Init(i, OnStarClick, AtlasLoader);
                 _starCells.Add(starCell);
             }
             _starCells.Horizontal(TextAnchor.MiddleCenter, 8f);
@@ -84,7 +84,7 @@ namespace CasualGame
             }
         }
 
-        public static void Show(int level, GameFramework.GameFrameworkAction onClose)
+        public static void Show(int level, Action onClose)
         {
             if (HasScore)
             {
@@ -95,8 +95,8 @@ namespace CasualGame
             int unlockLevel = 5;
             if (level >= unlockLevel && (level - unlockLevel) % 5 == 0)
             {
-                UGUIParams uGUIParams = UGUIParams.Create(onClose);
-                GameEntry.UI.OpenUIForm(UIFormType.ScoreGuideDialog, uGUIParams);
+                UGUIParams uGUIParams = UGUIParams.Create(() => onClose?.Invoke());
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.ScoreGuideDialog, uGUIParams);
             }
             else
             {

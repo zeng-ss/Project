@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : ListPool.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using System.Collections.Generic;

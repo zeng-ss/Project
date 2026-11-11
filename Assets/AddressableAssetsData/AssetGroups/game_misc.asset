@@ -1,0 +1,2108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: game_misc
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: game_misc
+  m_GUID: f38f58a3f0de363409bb43006892ce54
+  m_SerializeEntries:
+  - m_GUID: 001fe82eb94b5134587276ff67b781df
+    m_Address: MeshOutline
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 012c2418b3849ed4f9db3f47cf09bc11
+    m_Address: DrinkCover_00
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0289355e027894cb4b384fd44dd2f169
+    m_Address: BalooPaaji2-ExtraBold SDF=113-35-1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 02b67c84cd6a986469c1b04407762508
+    m_Address: Road_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 04fdb56d39e9942eaa5b7631be010594
+    m_Address: BalooPaaji2-ExtraBold SDF-25-65-0-hard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05449b16dead64a46b2aba95e0febe6a
+    m_Address: glow2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 058bfdadc1ce20544af678ba96eb041e
+    m_Address: FakeShadow_Circular
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05c914d6442384fc38e58e70f25a9a2e
+    m_Address: DOTweenSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05dd6b8d5ff1f41c4bca1e923760d908
+    m_Address: Finger_Controller
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 06255c4809aa91b45881e27547a4f784
+    m_Address: Cup_Heart_SkyBlue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 076c06af6391037438ad4fff8fe3cf16
+    m_Address: Cup_Heart_Red_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0946aac770ff69840be70dd94e0ab1bf
+    m_Address: Cup_Smile_Purple_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09696a7e5efad412d8798548ad1a1715
+    m_Address: BalooPaaji2-ExtraBold SDF-113-35-1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 096d9f18422621b44b2f2a032452cf2d
+    m_Address: Tray_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09e9a05546cf449ca954aa856948e5d1
+    m_Address: CoffeeMechanismUnlockConfig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a1a9e13342b5214f8bd8e4503308db2
+    m_Address: ReceiptPrinter_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0a6112a2662f748ac9cb4e5f95a3a5fc
+    m_Address: MaskAdditive
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0acfe751332791c4b9308362a861830a
+    m_Address: icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b01932bbdb4dc342949c31567854846
+    m_Address: MK_Toon_URP_Standard_Simple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0b439e4f8030da64797e217b045bb150
+    m_Address: FBX_Holder_Gate_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0bafb4ea25afda2419babd62bb0a7cd1
+    m_Address: StylizedGlass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0bdb66ecaec57fe46a630c10e63a3666
+    m_Address: Tray_02_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0c74d932b1911624088c517540c22873
+    m_Address: ru
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0cc8a74d752389b499913edd018c6cfe
+    m_Address: NoseGlow_Particle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d12f13f7d6770a4f8dc3c4aa92a5910
+    m_Address: Fakeshadow_Tunnel_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0d176722a91d8584487a69c2cfe99ec7
+    m_Address: glow1_AB
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e1103a3d97ab4c389e308391aa8a091
+    m_Address: BalooPaaji2-ExtraBold SDF-48-48-48
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e2c16a8f5bccb147ba1f213db3d4db8
+    m_Address: Holder_Cover_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f1a5c6f3195e49a897c84ee75f39774
+    m_Address: zh-hk
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0fbe8eb1861f44636b3d8b1f7b36e041
+    m_Address: CoffeeAway_Fail_Material
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11c190136ca3a4746898d8d1158ee2c2
+    m_Address: NotoSansJP-Bold SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11dc156a839de35499efec3df129a1a1
+    m_Address: MAT_Holder_2_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 11ec1aa4b3bba4d3493d2aac758cf7ec
+    m_Address: BalooPaaji2-ExtraBold SDF=40-5-70
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 122e96b2e261d473c90bb4ee15742683
+    m_Address: Launch-ExtraBold SDF-28-28-28
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1297f6a03926f4b34b67a12a98a84969
+    m_Address: CoffeeAway_Fail.skel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1391d149232da1e418bc9efe7453f899
+    m_Address: Fakeshadow_Car
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 158c500bbcafd364fb5807e41827fba0
+    m_Address: ExpandableHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 171d9dd82fe11834eb629efe4f028ba5
+    m_Address: MAT_Feature_Vault_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 174a1c01d6af4492fa7219252c034ce8
+    m_Address: BalooPaaji2-ExtraBold SDF-44-50-57
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 176b61f13a84b88419524e09656e8fa3
+    m_Address: Tray_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1792d45e07aa94bd4aa742c0cc12d33e
+    m_Address: BalooPaaji2-ExtraBold SDF-56-1-113
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17d5043654ed8456a9d83907d896ba07
+    m_Address: BalooPaaji2-ExtraBold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 17f8c893cd0406a41a2c27a0249caa58
+    m_Address: FBX_Feature_Tunnel_Gate_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1896c1cb962f1b84d975f501913d50c3
+    m_Address: TableCloth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 19af22d771765fc42816686037783f80
+    m_Address: Vault_Idle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ab2d56eec07a8f4d839f25b82a02bff
+    m_Address: Cup_Heart_Magenta
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ad5fa20a747fcf469a8a2ee89237436
+    m_Address: Effect_UI_Cat_Settlement_Glow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1b1daf0f521f77c40967d4663e0e64bf
+    m_Address: FBX_Holder_Gate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ca77ecd062684ceb97ceeb7f00aaf16
+    m_Address: BalooPaaji2-ExtraBold SDF=51-44-130
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1dbfb52fa45f0ad43b2514a964f4aff5
+    m_Address: DrinkCover
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1df6ce43f1dc0aa429eb8d3e8b9d0846
+    m_Address: glow2_ADD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ee2cd0014fb6524a8961053494093af
+    m_Address: DrinkCover_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 20139b22c7a1e45428f00cfd9ac66695
+    m_Address: BalooPaaji2-ExtraBold SDF-106-49-49-thick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2030c9a34b273be4285657708c1450a7
+    m_Address: Temporary_Tray_Middle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 204365a62af5af847aae22a5eeac3f78
+    m_Address: MAT_Conveyor_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2063ef585bb894ea8aea7dfd00fdc74d
+    m_Address: Title-0-yellow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21aa8dd74b6f9ab4e9ece71a4bef2387
+    m_Address: InsulatedBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 21d64f9aaea4536429531a57bb3464a0
+    m_Address: Temporary_Tray_Start
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 22419db5faba54a048d1cb0a7f558e20
+    m_Address: ko_manu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2485daec194bd46d8a16a4f5aa91e5f9
+    m_Address: BalooPaaji2-ExtraBold SDF-6-128-5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 24d8aa8e2e8a1b743b103833e0939320
+    m_Address: sparkle2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25b67807c0d4e6046b42c68a9e658f39
+    m_Address: LilitaOne-Regular SDF Material_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 264734f5dc2b2db448aedd78a9ea1c73
+    m_Address: ReceiptPrinter_icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 288afc20cc2b1a24f96e38b2eed5c3fe
+    m_Address: Road_00_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28d8d68cd2cc94a6ea30add8a5f7b406
+    m_Address: BalooPaaji2-ExtraBold SDF-144-85-68
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 29976f84756664b5eb75e85627eebf12
+    m_Address: BalooPaaji2-ExtraBold SDF-123-154-22
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a100c58105e09d49bdd72452ebf6785
+    m_Address: Tray_Temporary
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a4364167b3c75044bec6157b5d9bb53
+    m_Address: PF_LockedHolderState
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a4495c53bdda49d5b9d264c640ac8e5
+    m_Address: progress
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2a68c039dfdb64e44980e8fabf0e0fff
+    m_Address: Tray_03_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b2cc11deada3734987405910f3467ca
+    m_Address: FakeShadow_Circular
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2b9555f7390e9254bb91ff997a5bce0c
+    m_Address: MAT_Holder_1_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c006aedc72f5814aaeeab513993f330
+    m_Address: FakeShadow_Lego
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c20f905642a149459632c0a31ed94c7
+    m_Address: Cup_Leaf_Green_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2c759eb467ea24aa081d9110b33ff91a
+    m_Address: BalooPaaji2-ExtraBold SDF-7-89-152
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2d3ca409196198f4c8965eec5ef94979
+    m_Address: Cup_Leaf_OrangeBrown
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2daa6428fcbf33c48978f21f290c7231
+    m_Address: Road_All
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ea71b771c1abf548a5d96a5d8fcff8c
+    m_Address: normal_wood
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2f4af95cc4ebb4a7799e123a05dae948
+    m_Address: RectGuide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31031558694d4634a8c6cea59fbf3d1b
+    m_Address: FakeShadow_Lego
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31cce7d8f02905b429fea1f7e260aff7
+    m_Address: Fakeshadow_Tunnel_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 31d8568376b8543248c3925e27da1d35
+    m_Address: BalooPaaji2-ExtraBold SDF=98-50-21
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 323f7d22d97f3034bad6faef9079b2c2
+    m_Address: MAT_Car_Yellow_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 323fb38565279484bba9da4c4418e9ad
+    m_Address: CFX3_IceSmoke ADD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33c20cac972f343998064afefaeee6db
+    m_Address: UI_CircleGuide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 33c68f122cfa54aed91282a308832e71
+    m_Address: BalooPaaji2-ExtraBold SDF-200-74-17-Title
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 341db5f11e371bd4389a46ba658a5fc8
+    m_Address: Holder_Cover_Idle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 34fae70d0906481449e2d64810e0c9d4
+    m_Address: Cup_Flower_Lilac_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 356a2bc5b273a41f490015f57bf9caac
+    m_Address: CoffeeAway_Fail.atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 361171d951b1d6d488d98f96f0332993
+    m_Address: LilitaOne_BlackOutlineUnderlay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 366efb5a25a4e404694d164a9678045c
+    m_Address: zh
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 37a0ac6c9edd69f4e936762129571fe4
+    m_Address: InsulatedBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 383798bb719e438468954dd3737534c6
+    m_Address: ar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a60c8ae4718e604386b093e96a7a375
+    m_Address: ko
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3a75d00d9e6dc5b41ae448cae7f59625
+    m_Address: Tray_03
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3b658d261d23a408d94508c6c06be2d8
+    m_Address: CurrencyCell
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c63ee59fc6f3384d943e4f01906826d
+    m_Address: Cup_Leaf_Prink
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cf6c483745e28f47a9e99a3420d8012
+    m_Address: MAT_Road_Black
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3d5afe8439715c640ad6e02be2eb6010
+    m_Address: MAT_Holder_4_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dba0e8bfd91abb42817be104c28342b
+    m_Address: MilkFoam_Flower
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3df28969c3bf246a193fd3b82c5ae663
+    m_Address: BalooPaaji2-ExtraBold SDF-166-69-0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e1d361671781744cbb211bbf670d2bb
+    m_Address: Cup_Leaf_DarkBlue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e63bcf3d2d16974eaaf3ff646cebe45
+    m_Address: CFX3_T_IceSmoke
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e95616ea567649eab1c5e955ce2c13b
+    m_Address: Entrance
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f4e38375cedf42459cae26c23b91065
+    m_Address: CoffeeAway_LevelResult.skel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f9ed15126abba649a862e52e91d31aa
+    m_Address: F_Effect_T
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4014425424c52a94f952613acf146973
+    m_Address: Coffee
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4070373bf4d15424288ea5ae1bdec145
+    m_Address: FBX_Holder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40f6bda54d5a96247bc9f4f284e4b14b
+    m_Address: Holder_Gate_Check
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 441076513fd933f4ba3c8b4b20730af5
+    m_Address: Cup_White
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 44179f67800f8804da232f0cea623463
+    m_Address: InsulatedBox_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 447e0a4ae84ba4bd49370871ead082c1
+    m_Address: progressBg
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 448ef59b6e328f747aafd924d4e49798
+    m_Address: FBX_Holder_Middle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4573886d451ff034b82c3d17c1a24f1e
+    m_Address: FBX_Feature_Tunnel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4603ec4811ac55a45ae7053d06773382
+    m_Address: NumberMesh_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 46122c9c5822d0742b1706d0b0c0ef56
+    m_Address: FBX_Conveyor_Straight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 47317962f0227db49b43ce09c2c24abc
+    m_Address: de
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 489d297cbbc6641718172a800a51f42c
+    m_Address: BalooPaaji2-ExtraBold SDF-25-65-116
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4912a52aa4166f6428b564f29bb416ed
+    m_Address: FBX_Feature_Vault
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a51f74aeac79c04b89d50892e624b09
+    m_Address: Cup_Smile_Blue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b4589e5399a54c978899b4cd9aec091
+    m_Address: BalooPaaji2-ExtraBold SDF-51-49-106
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4b71a06d31f31ce44beab85b7a19490f
+    m_Address: NumberMesh_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d10299f801a6a14d95432de2ba52444
+    m_Address: Tunnel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d298221caed44b17b176e7b327f68cb
+    m_Address: BalooPaaji2-ExtraBold SDF-155-0-169
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d2a5cb3e8a4ddc47b63b0c7a245002a
+    m_Address: MAT_CAR_LP
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d6b3da98b5d1f04a8110bfe5f879a04
+    m_Address: Road
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4e6f42e3fad18da47b0dfca12e268537
+    m_Address: PackingTape
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f7924e820047db40b837b1a66168cfc
+    m_Address: ClothSmoothFade
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f84e450c211ec946aaf9bd1e33b20a0
+    m_Address: Toony Colors Pro 2_Hybrid Shader 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 504d7067539be427fb0afd9c1f9f7c5f
+    m_Address: icon_Loading
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50682bd39290dc344aae5f5ff8c7976a
+    m_Address: T_Gradient_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5069afb2f8949e449bc596832608f0f5
+    m_Address: PackingTape
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50f3d0caa67a86147b31cace0a0b8d76
+    m_Address: sparkle2_Add
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5324cbe944f2f4e0495fbdd8bd21921e
+    m_Address: currency
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 537a6210017705b45a59e824bd776c26
+    m_Address: Cup_Smile_Purple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53bc03ebd8593024db0f7ea051be6798
+    m_Address: MilkFoam_Heart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53da7ac32a21c4809bab895f35c7af93
+    m_Address: BalooPaaji2-ExtraBold SDF-1-6-113
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 53e6e2a8b75fb490494e260a0fff83ac
+    m_Address: CoffeeAway_LevelResult
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 544176ba9767e40679324413dacfd039
+    m_Address: BalooPaaji2-ExtraBold SDF=94-30-30
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 55ebaedb26fc04f9fb1bffff118765fd
+    m_Address: CircleGuide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5674576a36dfb1946b76796ac479fdbf
+    m_Address: Entrances
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 573385d6b1bb04f02827b6089f119f87
+    m_Address: BalooPaaji2-ExtraBold SDF-114-10-10
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 573e909154455134caff085f4e3c062f
+    m_Address: FBX_Holder_Feature_Cover_Gate_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5812b915757b2134e80f33d47cdc79ac
+    m_Address: MAT_Holder_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5888116dfc2d646d498b72eaeac40f31
+    m_Address: BalooPaaji2-ExtraBold SDF-47-94-27
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5b36ed4d0ae7e374baab11396eaa0f8b
+    m_Address: F_Effect_T_A
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5be3a5b8c455a874bb6cc56bf0bd3720
+    m_Address: Road_03_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5c85c40bb3bff45b4a4cb7dac20bcad6
+    m_Address: BalooPaaji2-ExtraBold SDF-41-30-137
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ce6975c48df9c6459bc08bffa3c01a1
+    m_Address: Cup_Smile_Brown_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5d3de48970d404a4287df90d6a15816b
+    m_Address: Vault Glass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e09f29525b0cd9458ac9be510bc8560
+    m_Address: Cup_Leaf_Prink_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e6258cd85354bb4abd8f2114f553c5c
+    m_Address: StandardHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e91df375219a1942b7a340c895810d1
+    m_Address: Cup_Color
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f166c5a37858c84393a864115e2271d
+    m_Address: TunnelHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5f6a84eb9f0f3b848973abebf79675f4
+    m_Address: ReceiptPrinter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fb1160344eac7c47a1a01f5d289df7f
+    m_Address: Cup_Smile_DarkGreen_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5fec48e2bd0ec40aaa37364841c3c9a6
+    m_Address: NotoSansKR-Bold SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 60ea2249b6e8c184c913665cf0c07ac4
+    m_Address: MAT_Feature_Vault_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 612eb1c4f6efec1469151ab4d23f4048
+    m_Address: big holder Substance.003
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 62b1c05ae5d158641b7cda989c50d55a
+    m_Address: FBX_Holder_Gate_Check
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 636ed930daa0147339ca742be7264b06
+    m_Address: BalooPaaji2-ExtraBold SDF-43-114-40-greenbtn
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64e92940afc19b747a5f0d00733ebcf2
+    m_Address: es
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6615c3cd52adb9e46b37bc0ead963b64
+    m_Address: Fireworks - Default - Additive
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66502374e602a44589fbf1f91f4dab7f
+    m_Address: BalooPaaji2-ExtraBold SDF-104-36-137
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66f3c6320befd514daba2657a71076b7
+    m_Address: confetti_new
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 67290def0700248a1b7583dbb68d318e
+    m_Address: ja_manu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 673f05ddf76364bdb8c398a1e773066d
+    m_Address: CODE2000
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 677d0baa8d9514881a7936f1af69932c
+    m_Address: BalooPaaji2-ExtraBold SDF-43-114-40-bluebtn
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6789a59892c5493499b7f5e24b3dcd4b
+    m_Address: MilkFoam_Flower
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 678affe05123d4778ba82e71f511fc83
+    m_Address: BalooPaaji2-ExtraBold SDF-116-18-18-thick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68a3547324b6f45c0925100f3f8865a7
+    m_Address: BalooPaaji2-ExtraBold SDF=99-99-99-outer
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a4f93ba50fab4c06a010378e67a8668
+    m_Address: ReceiptPrinter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6a6371d879b304bd2b5502a831735897
+    m_Address: Roboto-Bold-Ru
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6c6d25e4c32820c44b8a5935d02c12c5
+    m_Address: Cup_Smile_Blue_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6caad9317677545ffae047a0ae9c9286
+    m_Address: BalooPaaji2-ExtraBold SDF-62-62-62
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6da834e3ebd474905b3e1f1b46486ad0
+    m_Address: BalooPaaji2-ExtraBold SDF-169-15-0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6eea88f942affdf4b8a704ffdf9a98f1
+    m_Address: Cup_Heart_Red
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6efde00703300e045af8a8492372c72b
+    m_Address: ReceiptPrinter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6f33c8c9bad2847a48d2f4ec9f9fb5ba
+    m_Address: BalooPaaji2-ExtraBold SDF-90-34-27
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6ffb0454bd85c40fb9d4621c4e852cdc
+    m_Address: BalooPaaji2-ExtraBold SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 700537ea5fdf8458186b20b9128cf2f7
+    m_Address: CoffeeAway_LevelResult_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 701b0ad0e82c44f44bed8204da59fdf5
+    m_Address: MilkFoam_Leaf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7054600ad2528bc4e8ed5ddd3b4ae15f
+    m_Address: DrinkCover
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 70920169b54d83c4fa9e9ba63a4ed31a
+    m_Address: Road
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7205e805c2a644e1bbb4984fc2fbdd79
+    m_Address: CoffeeAway_Fail_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7212142c64df6fe4b982cc7bc10e7ccd
+    m_Address: FBX_Holder_Feature_Cover_Gate_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72604525f4c87b842b1215a075d105b6
+    m_Address: FBX_Holder_Gate_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72981bad286f44c939702d8de5980f79
+    m_Address: BalooPaaji2-ExtraBold SDF-99-99-99
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 729eefe7c5ab9dc4f86598eb7a250639
+    m_Address: Cup_Leaf_Green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72e0538295cf2194d99b0ed76a42c8e9
+    m_Address: MAT_MilkFoam_Heart
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 73840fb9cd92ae741bedeeeead37afb8
+    m_Address: MAT_Feature_Vault_2 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7491647a2fc96443aa782600b82491fa
+    m_Address: BalooPaaji2-ExtraBold SDF-51-121-8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75a6d71baffdd644c9f231a5c8c70567
+    m_Address: FBX_Car_Low_Poly_1688.017
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75cd12dd0182b42dc8ab11434c9ed7d2
+    m_Address: BalooPaaji2-ExtraBold SDF-106-49-49
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 779bc71652e2b2d498b4ebb5f1ae2c0a
+    m_Address: Effect_UI_SettlementFirework
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78432aeea857cf04ab6a459c187d17dc
+    m_Address: GD_006_ADD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 79e41b44f106f0b46905d5d5e52da46f
+    m_Address: T_Gradient_Radial
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b61b3f9ab46d544e8bc648f26434cd6
+    m_Address: MAT_Holder_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7b87054e6d0a748379ad5628a828f08a
+    m_Address: NotoSans-Regular
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7be779ae05bf941e593449f4eca0c94e
+    m_Address: BalooPaaji2-ExtraBold SDF-10-78-7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7be7f6d2e7bf443d6828f930ab714cb5
+    m_Address: BalooPaaji2-ExtraBold SDF-51-51-51
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c290746964e04fbc80554d7fa96b195
+    m_Address: BalooPaaji2-ExtraBold SDF-58-112-43
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cccdb5c498438643b5219684039c224
+    m_Address: Cup_Smile_DarkGreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7cf65425e466240d29422bf41d0d72fa
+    m_Address: BalooPaaji2-ExtraBold SDF-0-0-0-under
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7e6ef5a01a7cc0244b8d3ff8d7bab816
+    m_Address: Road
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7f05024b7976a4b1290d477b509bc6a2
+    m_Address: BalooPaaji2-ExtraBold SDF-71-5-134
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81477eed8b14aa043a6e749167fc70da
+    m_Address: New Car Low Poly1_DefaultMaterial_BaseMap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 81b48c08ddfa19240973e9a010cf891b
+    m_Address: MatCap_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 82ade3811f5cba2478c8655948a13da6
+    m_Address: Cup_Flower_Orange
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 834deda74d6b71a4e9901b60ede00445
+    m_Address: MAT_Holder_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85415042088ef254a89f3077a74b7e7e
+    m_Address: Entrances
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8579877c291e327449c5ad9b82ceb37a
+    m_Address: LilitaOne-Regular SDF Atlas_7
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 85f6853236a014749bc12b27d1a78700
+    m_Address: star
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 860c8de9c1e684ff0a84152ced4cdc59
+    m_Address: DefaultGray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86238677b52ac47efabb85773994360b
+    m_Address: BalooPaaji2-ExtraBold SDF=70-5-5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 876b0ede768ae5843a31c268b4dfd55b
+    m_Address: Vault_Turn Knob
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88e888b6439b90844a7fe4735e930228
+    m_Address: StylizedSolidColor
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 899c5084631ddca49a9e5f3265ecd551
+    m_Address: Cup_Leaf_OrangeBrown_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 89e9636d360154a77977f38dfaa2eb9a
+    m_Address: BalooPaaji2-ExtraBold SDF-255-255-255
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a0b52c686311724a8f12bfb478db741
+    m_Address: MAT_Holder_3_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a9643b5faa5f0941b8dbddf38ce0063
+    m_Address: Cup_Heart_Yellow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8a9dec20d91ad41a08038be5944ad3fe
+    m_Address: KBScene
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8cdbcdb63cf834eec81ff6885eeffa30
+    m_Address: UIGradient
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d0a44624b43a422bbe9c0ea62b1b836
+    m_Address: BalooPaaji2-ExtraBold SDF-7-89-152-thick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d1a0a4f1927f4f1da77e8f7c6630432
+    m_Address: CoffeeAway_LevelResult_Atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d67973291c739b408175fc1c0afbccf
+    m_Address: PackingTape_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f1effebcc9f471478d5ecfd8641534b
+    m_Address: Cup_Color_Black
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8f8172d876b8ac046b616ee48f615ff6
+    m_Address: OpenTunel_Bone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8fca7f23e4e19234d8d376d2c0732bb1
+    m_Address: FBX_Holder_Feature_Cover
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 906cc65adbdd8944cbb58c16698231e9
+    m_Address: TableCloth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90954827f1a5296438a55c6cf24b62c4
+    m_Address: TableCloth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 90f556f3a3e18d74ba6955ede74ab3a3
+    m_Address: InsulatedBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 91e28cff87aed8244937b39795246d90
+    m_Address: Cup_Heart_Magenta_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 932eb97176306b34bb6939f4e66cc2fb
+    m_Address: fr
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93493a8cbf9034739b7dd4c9779899dd
+    m_Address: NotoSansKR-Bold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 93df7fbeb022a8c44906a6ee043cab37
+    m_Address: MAT_Conveyor_2_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94a9641c62556ec47be01a662409c642
+    m_Address: MAT_Holder_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94f66ecd9cd9d8642a17f3f975dce18f
+    m_Address: FBX_Feature_Tunnel_Gate_3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9577d8fa97c3fab428e33ed49d9fdfc3
+    m_Address: Holder_Gate_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95f6ca0ba6721284e9739ea4a987c60f
+    m_Address: icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96443e5f1b2bd3b45ad2e1a7e257c522
+    m_Address: FBX_Conveyor_Detail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96653eb4f5c323843b3cdb40171469be
+    m_Address: Tunnel2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 969d3f0cc0da240cf9af755cd3a00a1d
+    m_Address: bg_loading
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 97eeb43bc9ebb5841a518693b933d831
+    m_Address: MAT_Holder_3_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98293d1795db9444798d12630e279833
+    m_Address: MyShaderVariants
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 98fb6332517d64f58a935d7f6980f3d0
+    m_Address: BillingMode
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9903ffa130f7b43509cca443659df8da
+    m_Address: BalooPaaji2-ExtraBold SDF-39-15-143
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9960d88f6539c334aaa52c877d9f83f1
+    m_Address: Open_Tunel_Bone_DefaultMaterial_BaseMap_Yellow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99bade52f5299ef4faa1abb27f0f044f
+    m_Address: Cup_Heart_SkyBlue_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99c979fc68b614d179e70b83146219c0
+    m_Address: TMP Settings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99ea9a441ef91b34e93b5b2a9774b24f
+    m_Address: ExtraHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ac42ba9294c34a6b879c60a194c5900
+    m_Address: BalooPaaji2-ExtraBold SDF-43-83-3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9b194904cf8a84dbe8b524d84de3d17b
+    m_Address: BalooPaaji2-ExtraBold SDF-63-151-4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9bf8efef1434b419194972290cd92b2f
+    m_Address: BalooPaaji2-ExtraBold SDF-71-50-50
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9c316840f3fd49240859816a184a506c
+    m_Address: ReceiptPrinter
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9dd0cc9fcbb5f6d4397e9409de1fe5e9
+    m_Address: TableCloth
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9dd407fdc9ba34bdeb8e1d58db9beffe
+    m_Address: BalooPaaji2-ExtraBold SDF=71-5-134
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9e8523b5989ff4849b255fad769ecc7a
+    m_Address: NotoSansJP-Bold
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9ee35ce924c945e43b0db935c5301eb5
+    m_Address: GD_006
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f04996dcd8880b4fb9426f88279152b
+    m_Address: sparkle_ADD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9f3df1438866dbe45a8197a4658eb72f
+    m_Address: Cup_Flower_Cherry_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a02e1f941601a4e9580784f887f8b5f8
+    m_Address: BalooPaaji2-ExtraBold SDF-28-28-28
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a032042074158b545bbde6f3700c2208
+    m_Address: Glass02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0832b5447ee4ae459eb0afb0c0a7caf
+    m_Address: Confetti_new
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a0fef7d1269284ec185829cdc828c906
+    m_Address: hindi
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a109c2c8eb4fd83448b351ccadd6bb16
+    m_Address: Cup_Flower_Cyan_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a23028536600cce4dbf7a2abda788ea9
+    m_Address: Point5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a290a1712441f4e29b1d77c4683454ad
+    m_Address: DynamicCutout
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a2acdca7f1f6217489d53d185b184a9e
+    m_Address: FBX_Holder_Gate
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a39659f446d70114f81aa6e29826cb71
+    m_Address: FakeShadow_Holder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a3dca940157f54ebfbbd747a5b61fa33
+    m_Address: BalooPaaji2-ExtraBold SDF-45-76-136
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a44f897089b657e47b20d311d11bb29e
+    m_Address: icon_coffee
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a46d06d9204427f4aac7af3d1ee56495
+    m_Address: Cup_White02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a48bde6353db78c4bbe1acad1418af33
+    m_Address: FBX_Holder_Gate_Check
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6465a691c1cf44cda5b0fa4ab75c631
+    m_Address: BalooPaaji2-ExtraBold SDF-0-87-15
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6ae00e7976ce8742b6237fe5c4f9b08
+    m_Address: Big Holder Feature
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a6ce0a36e3bdfaf43aaa06cd795691b1
+    m_Address: MAT_Holder_1_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a75122b1ae997934bb44a1de9b3f2209
+    m_Address: MAT_Holder_4_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a75e4a5391431f646abb370b62969bf5
+    m_Address: FBX_Holder_Feature_Cover
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7901a196fec6374da561f917feeb66e
+    m_Address: Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a90fa76feb9bc784eabffe97746bff5d
+    m_Address: MAT_Holder_2_0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a970a6615eab124459f721893b967da9
+    m_Address: Tray_04_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9b5d8ee30881674f8fb63178dd5d1d3
+    m_Address: Road_02_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aa544c35b315b9744b42f79b51aaf025
+    m_Address: Plane.043
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aca9b24c787674c419f8c11db86f9ed5
+    m_Address: BalooPaaji2-ExtraBold SDF-139-8-150-Title
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ad1f2dc3da1216c4c924462c2007af8b
+    m_Address: Tray_00_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b013ccc33e0cf4c4d8d87e359cd2de98
+    m_Address: Finger.atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b04ce80ccfd3041f0bcc8e010c644a02
+    m_Address: Custom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0830d8aa5e11ef4d8f78d34590c2e9f
+    m_Address: Sprite_Batch_Mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b20151448e91e694b99c0dff3484ac42
+    m_Address: Triplanar
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b22b5ec949015456e9b222226cb8cdc7
+    m_Address: BalooPaaji2-ExtraBold SDF-43-79-130
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b358aa42d054149d6a759edfc8605699
+    m_Address: Finger_Atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3b0dbe8c6415df4298473fb22bb555b
+    m_Address: Effect_CheckExoplsion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5263e9d11b263747ba720306699f29b
+    m_Address: T_Gradient
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b540502004394415c80a23f9e2a327bf
+    m_Address: BalooPaaji2-ExtraBold SDF-126-51-2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b583cab702a9c45209d95f6ca8243f06
+    m_Address: BalooPaaji2-ExtraBold SDF-24-78-167
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5c516c233c9344c6b704d78296ead71
+    m_Address: BalooPaaji2-ExtraBold SDF-159-110-78
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b5d74d3ebb59f4d08a5393000bfe8f06
+    m_Address: Finger.skel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b69bba6fc3930c840b4cb468efe2ecb0
+    m_Address: Cup_Flower_Cherry
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6bbd674054a2304bb3778625a9ba439
+    m_Address: CoffeeCup_A
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b6c39638536844b498d3cc0b1323945a
+    m_Address: BalooPaaji2-ExtraBold SDF-171-98-0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b70ebbd4940451f4daffcbddbff452e2
+    m_Address: InsulatedBox_Idle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b786d73064b21f540b36bbbdd34332eb
+    m_Address: Temporary_Tray_End
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b7d10c8fe988f1849b73431c49c6b843
+    m_Address: MAT_Holder_6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b84f652de5ba2aa4ba64a7af6cd9c1c0
+    m_Address: Cup_Flower_Orange_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b862ab933f6f4ca46aee77e86b48333b
+    m_Address: Big HolderTexture
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba37ec48e4399d3418d33de86169cead
+    m_Address: MAT_Holder_3_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ba8773671a3ac0e478be775b03e1bd68
+    m_Address: Tray_01
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bac287e522f7c44a5b9f0badbf6dcfdc
+    m_Address: ja
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bb7d694880b834b6db084884043dff03
+    m_Address: icon
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bc88e3dba88ab489f87b45b0b163173c
+    m_Address: BalooPaaji2-ExtraBold SDF-2-0-49
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: bd29e7f59aa2b439ea8ce93c634630eb
+    m_Address: BalooPaaji2-ExtraBold SDF-73-30-1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: be8872364fd464581877826cd9691748
+    m_Address: thai
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0222f939f82ffd4796465211fcd1a16
+    m_Address: Vault_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c0abae91e51d63a4fa20ebba546d35f0
+    m_Address: Cup_Leaf_DarkBlue_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c12ed0e73a54f8a41b197478e18538d3
+    m_Address: CupGate_Color_Black
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c13ab71781b3a7b4fad3c24537005fb5
+    m_Address: NumberMesh_00
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c1ede3986761a4ea3b373fab6bc84616
+    m_Address: CoffeeAway_Fail
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c21d13daf1c1e432ba6986f04f6ef784
+    m_Address: Finger
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c234b510c74ee2a4ba3f9da51da08c8f
+    m_Address: MAT_Holder_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c36e403c1617080448e14d6bac1afe9f
+    m_Address: glow6
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4abfadaf1925c541b83c387e10bb56c
+    m_Address: Cup_Flower_Cyan
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c4f5865507e211b45bfcdb40028e37dd
+    m_Address: TableCloth_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c506f8a66e1061248b1ae85d3761b681
+    m_Address: Effect_QuestionMarkExplosion
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5fb7e8bf231ca84194859aa2146a0ca
+    m_Address: NoiseSimple
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c626933ff5e738f48ac8c6d908e58488
+    m_Address: Cup_Color02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6437b5eb893d084eaf6f18cd85228ab
+    m_Address: PF_ColorLockedHolderState
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6af2a2753d0f9a46baf763e4156410e
+    m_Address: Cup_Heart_Yellow_Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c6d81893707f14135aed681729116834
+    m_Address: vi
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7b37d7600f3e4a3bb67073a54c1a748
+    m_Address: BalooPaaji2-ExtraBold SDF-167-59-24
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7b506e54577148a09320c5ecacdc565
+    m_Address: en
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8511516f4587465891082682804832a
+    m_Address: Finger_Material
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c8bb69f782bf85048b5ecb69e039e1e1
+    m_Address: Plane.047
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c90a0460d632e4420a279cb478275b3f
+    m_Address: XboxCloudSettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c93139d0a6b86064cbeaf7a681908d41
+    m_Address: Plane.045
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca7cb932c61a9451a82120163ca838fe
+    m_Address: Launch-ExtraBold SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ca9c7ffa801a22b42ab9985ef29f58c9
+    m_Address: PackingTape
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: caa897187fdac48e3a00a6f033f5397e
+    m_Address: BalooPaaji2-ExtraBold SDF-16-55-106
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cae18647ef9304b4d81ee219f4d7df92
+    m_Address: MAT_Holder_1_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ccac4b886f30aee4c90ba050960693a2
+    m_Address: FakeShadow_Holder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cd87aeb5be90a444ea74e05b0a7b4ec3
+    m_Address: NoseGlow_Particle_Mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cdf5952867707406e88c4d3d7c3cb3ad
+    m_Address: UI_RectGuide
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce22770ed7f04724282c2718e7104622
+    m_Address: FBX_Feature_Tunnel_DefaultMaterial_BaseMap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf5b995f24f21b848972dc21b815e829
+    m_Address: Tunnel_Close
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cf73beca1b3b71c4496d659a1b68bbeb
+    m_Address: OpenTunnelHolder
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cfbef802153ed6a48a240873b456e2fe
+    m_Address: Cup_Smile_Brown
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d12c0340aecd1234f9080e0a0ba3aa2c
+    m_Address: Fakeshadow_Tunnel_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d2999feadb03ef84f95beb220b13b308
+    m_Address: star_ADD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d323e92ff8656e74da5c29e1eca5ba58
+    m_Address: glow6_ADD
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3ce5313ff37a4c74b64c781942d8928
+    m_Address: BalooPaaji2-ExtraBold SDF-47-94-27-thick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3f97fd8361b345c6a846ab8eeec06ac
+    m_Address: BalooPaaji2-ExtraBold SDF-116-18-18-superhard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d3fe2b672ffda4a1abd7812f5b134f77
+    m_Address: BalooPaaji2-ExtraBold SDF-149-77-24
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d47d3350f185bac468e5b2224a0ba119
+    m_Address: FBX_Feature_Tunnel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d57cb7f7af884b94a99145f2c6e1de14
+    m_Address: Glass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d62bd3c2ac49c5b429c7fa1f7c2cfcb4
+    m_Address: MAT_Holder_4_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d64af002db88dfc43bdbdfca41a615b0
+    m_Address: MilkFoam_Smile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d66c1414583fc4645ac4e5fd68d47fff
+    m_Address: Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6b35cc7aea9c4b4dbbeb2df193d7185
+    m_Address: InsulatedBox
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d713dfd7c43929a438e5ef1da93660ad
+    m_Address: MilkFoam_Leaf
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7c20ee42e460c2488baa2184b4e984c
+    m_Address: Effect_UI_Settlement_Glow
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7f55d01ca551464aac709d0af64bf97
+    m_Address: Tray_00
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8f383bc088bfad42a26aa25d2c9a35b
+    m_Address: Cup_Flower_Lilac
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da4f07597a63a4b60bbe54a60240bf08
+    m_Address: hindi_manu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da93378cf6d6d451caf7c3abfd14cb21
+    m_Address: BalooPaaji2-ExtraBold SDF-21-86-172
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db53ad2c0c3ad4b429b13d8cd8d2fbaa
+    m_Address: Fakeshadow_Tunnel_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: db678e3211abd452bb8dd46c4078007f
+    m_Address: BalooPaaji2-ExtraBold SDF-0-0-0
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dcbd711c4b59727439ca22090f2af101
+    m_Address: Ef_trail_f_028
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dcc3aaaaedde12146ae20a4b95941b2c
+    m_Address: MAT_Holder_2_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd0648aa4c172466bbb9793a15d943b9
+    m_Address: Finger_SkeletonData
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd5dd6e30fa9e104dbce111a8b6f51f6
+    m_Address: Tray_01_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: decf6a11639c0884584175060808a5cb
+    m_Address: FBX_Feature_Tunnel_Gate_4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dee21920452633847a625bfb1d51531c
+    m_Address: PackingTape
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: df9f4c91a661de343a58be7072b61c01
+    m_Address: Entrances
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e010e3467c3e8476080a01144363feba
+    m_Address: CoffeeAway_LevelResult.atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0a57147c576e19438e2f5aaad6b8893
+    m_Address: CoffeeCup
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e0b73dfcd11bd7e49864f3ab705dab9b
+    m_Address: FBX_Feature_Tunnel_Gate_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e2e9f7eed22a7c14498714370d849e63
+    m_Address: Tray
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e307273f088384ad2ad301000bc218f8
+    m_Address: BalooPaaji2-ExtraBold SDF-103-96-142
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e351de0d542ffed438ea807ca74710e7
+    m_Address: FBX_Holder_End
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3a32e244b30c8a4d9c4defd06d1e3e4
+    m_Address: Plane.048
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e3b6528a1e9d9af41bec169c7596920d
+    m_Address: MilkFoam_Smile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e40f3bdecb0274da683453337203e6b4
+    m_Address: BalooPaaji2-ExtraBold SDF-134-63-13
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e563aead80c3b44e0b3ab26c7d0f02ed
+    m_Address: Roboto-Bold-Ru SDF
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7d04f1eaecfc82408e2d510a75dde24
+    m_Address: Fakeshadow_Car
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e899fb36694bea443b689243889d8d26
+    m_Address: Entrances_Dark
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e9d0d9e8fe95af44595b383351481297
+    m_Address: MAT_Holder_8
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb0bd657998e34d20aa1fc85142d004e
+    m_Address: CoffeeAway_LevelResult_Material
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: eb3bceb738cf4fb4fb35f154aa1e185d
+    m_Address: Cube.181
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ed72afc84f631e547a1e9cbc24b8e3e3
+    m_Address: MAT_Feature_Cover
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: edd9c0990c113c744929172500a42782
+    m_Address: FBX_Holder_Start
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee096c429fae24e98b702b08f110778f
+    m_Address: LaunchPage
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ee37c4c622ffde84e9a1c1336bb1ef0b
+    m_Address: T_Holder_Feature_Cover
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef0d235394c6b6144bf5ec3524156baa
+    m_Address: TableCloth_Idle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef635fa879326469492dbb5e8d7f3ac7
+    m_Address: img_logo
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: efc0b77a2c9191043b6af72d42a33069
+    m_Address: sparkle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f10d25641a86a384cbe4eb3a7b01f1e4
+    m_Address: Road_00
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f1fde9530328cc546970368371ddb1b3
+    m_Address: MAT_Conveyor_1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f248c53cad72da24b9bef60c7de6281f
+    m_Address: Tray_04
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f357434e1d9714b3c874f5f716cfef7b
+    m_Address: BalooPaaji2-ExtraBold SDF-186-75-9
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f368f31bf2b553c49860bb99789701b4
+    m_Address: Ef_trail_f_028
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f51923896ef1b1b40b0963345141f027
+    m_Address: icon_coffee
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f57303c145d39a141bd4c6fd1a576557
+    m_Address: DrinkCover_Idle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f62f18cf5067c9e4eab0affdfe71db82
+    m_Address: glow1 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f7148991da6e4490c9bdb23be8b3f5bb
+    m_Address: MyShaderVariants
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f8c67e7ac56ff42c7857145de597eec9
+    m_Address: Road
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f952c082cb03451daed3ee968ac6c63e
+    m_Address: Default Style Sheet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f9593e2bd5126994e8bb82d505c29e8c
+    m_Address: Spine_Skeleton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa1221f1251cf1b45b6465e6193c6006
+    m_Address: Road_02
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa1254ec11a6647a8bd8ecada8db645a
+    m_Address: BalooPaaji2-ExtraBold SDF=74-51_51
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fa261ad4812ed964696660a57c808422
+    m_Address: MAT_Feature_Tunnel_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fac3a1b3edc7354468ae14cf68bbbe03
+    m_Address: Metal
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: faff448630ba962479e8d16b49635a42
+    m_Address: MAT_Holder_2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fb92881c2677949d5b8d19ed872c7866
+    m_Address: BalooPaaji2-ExtraBold SDF-41-72-21
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fc04b5a92efd14c19ad6be1ac2f38539
+    m_Address: CoffeeAway_Fail_Atlas
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fda17cb8c198a5a4cba09b48b2a05dd5
+    m_Address: Road_01_B
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe0cd1106f71e6841b4f1b90edf89147
+    m_Address: Cup_Outline
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff3e4449f12032d41838c251175e2712
+    m_Address: Glow_5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0101c30a5f96c9a43a6b86caa98762b5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: bafbdfe8361df004fbc1f527cd701bc6, type: 2}
+    - {fileID: 11400000, guid: ce1e2bc6466ec5549bc77fcac457d5b7, type: 2}

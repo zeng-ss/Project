@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : TransitionForm.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using System;
@@ -37,7 +36,7 @@ namespace CasualGame
             UGUIParams param = UGUIParams.Create();
             param.AddValue("Hard", hard);
             param.AddValue("OnOpenAction", onOpenAction);
-            GameEntry.UI.OpenUIForm(UIFormType.TransitionForm, param);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.TransitionForm, param);
         }
 
         protected override void OnOpen(object userData)
@@ -45,7 +44,7 @@ namespace CasualGame
             base.OnOpen(userData);
 
             // PlaySoundManager.Instance.PlaySound(Constant.Audio.Loading);
-            m_OnOpenAction = m_Params.GetAnyParams<Func<UniTask>>("OnOpenAction");
+            m_OnOpenAction = MParams.GetAnyParams<Func<UniTask>>("OnOpenAction");
             m_IsOpen = false;
             m_LoadComplete = false;
             IsOpening = true;
@@ -125,7 +124,7 @@ namespace CasualGame
         //     }
 
         //     ProxyManager.UserProxy.LastPlayDescKey = currentKey;
-        //     m_des.text = GameEntry.Localization.GetString(currentKey.ToString());
+        //     m_des.text = LocalizationMgr.Instance.GetString(currentKey.ToString());
         // }
 
         private void CloseTransition()

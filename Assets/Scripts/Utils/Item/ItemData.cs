@@ -34,7 +34,7 @@ namespace CasualGame
 
             if (_drItem == null)
             {
-                UnityGameFramework.Runtime.Log.Error(" cant find dr item id={0}", id);
+                Log.Error(" cant find dr item id={0}", id);
                 id = 1;
                 _drItem = ProxyManager.UserProxy.ItemTables.GetDataRow(id);
             }

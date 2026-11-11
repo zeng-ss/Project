@@ -1,23 +1,17 @@
 using System.Collections.Generic;
+using Framework;
 using UnityEngine;
-using CasualGame;
 
 namespace CasualGame
 {
     /// <summary>
-    /// 音频播放管理器
-    /// 功能：同个soundId，0.1s内只能同时播放一个
+    /// 音频播放管理器：按 soundId 查配置表，走 ResMgr 加载音频，交给 SoundManager 播放。
+    /// 同个 soundId 在 0.1s 内只播放一次。
     /// </summary>
     public class PlaySoundManager : Singleton<PlaySoundManager>
     {
-        /// <summary>
-        /// 防重复播放的时间间隔（秒）
-        /// </summary>
         private const float DUPLICATE_PLAY_INTERVAL = 0.1f;
 
-        /// <summary>
-        /// 记录每个soundId的最后播放时间
-        /// </summary>
         private readonly Dictionary<int, float> _lastPlayTimeDict = new Dictionary<int, float>();
 
         public void Init()
@@ -25,10 +19,7 @@ namespace CasualGame
             AudioSettings.OnAudioConfigurationChanged += OnAudioConfigurationChanged;
         }
 
-        /// <summary>
-        /// 切换设备（蓝牙）后重新播放背景音乐
-        /// </summary>
-        /// <param name="deviceWasChanged"></param>
+        /// <summary>切换设备（蓝牙）后重新播放背景音乐。</summary>
         public void OnAudioConfigurationChanged(bool deviceWasChanged)
         {
             if (deviceWasChanged)
@@ -41,40 +32,26 @@ namespace CasualGame
             PlayBgm();
         }
 
-        /// <summary>
-        /// 播放音效
-        /// </summary>
-        /// <param name="soundId">音效ID</param>
-        /// <returns>播放成功返回音效序列号，失败返回null</returns>
+        /// <summary>播放音效。</summary>
         public int? PlaySound(int soundId)
         {
-            // 检查是否在防重复播放时间间隔内
-            if (IsInDuplicateInterval(soundId))
-            {
-                return null;
-            }
+            if (IsInDuplicateInterval(soundId)) return null;
 
-            // 记录当前播放时间
             _lastPlayTimeDict[soundId] = Time.realtimeSinceStartup;
-
-            // 调用音频扩展方法播放音效
-            return GameEntry.Sound.PlaySound(soundId);
+            Play(soundId, false);
+            return soundId;
         }
 
+        /// <summary>播放背景音乐。</summary>
         public void PlayBgm()
         {
-            int soundId = Constant.Audio.bgm_home;
-            if (SceneHelper.IsGamePlayScene())
-            {
-                soundId = Constant.Audio.bgm_game;
-            }
-            GameEntry.Sound.PlayMusic(soundId);
+            Play(SceneHelper.IsGamePlayScene() ? Constant.Audio.bgm_game : Constant.Audio.bgm_home, true);
         }
 
         public void ResumeAudio()
         {
             AudioListener.pause = false;
-            PlaySoundManager.Instance.PlayBgm();
+            PlayBgm();
         }
 
         public void StopAudio()
@@ -82,24 +59,32 @@ namespace CasualGame
             AudioListener.pause = true;
         }
 
-        /// <summary>
-        /// 检查指定soundId是否在防重复播放时间间隔内
-        /// </summary>
-        /// <param name="soundId">音效ID</param>
-        /// <returns>true表示在间隔内，不应播放；false表示可以播放</returns>
-        private bool IsInDuplicateInterval(int soundId)
+        private static void Play(int soundId, bool isBgm)
         {
-            if (!_lastPlayTimeDict.TryGetValue(soundId, out float lastPlayTime))
+            DRSound drSound = GameRoot.Config?.GetTable<DRSound>()?.GetDataRow(soundId);
+            if (drSound == null)
             {
-                // 没有播放记录，可以播放
-                return false;
+                Debug.LogWarning($"[PlaySoundManager] 找不到音效配置: {soundId}");
+                return;
             }
 
-            float currentTime = Time.realtimeSinceStartup;
-            float timeDifference = currentTime - lastPlayTime;
+            string path = ResourceIdentificationTool.Instance.GetAssetPathById(drSound.AssetId);
+            if (string.IsNullOrEmpty(path)) return;
 
-            return timeDifference < DUPLICATE_PLAY_INTERVAL;
+            GameRoot.Res.LoadAssetAsync<AudioClip>(path, clip =>
+            {
+                if (clip == null) return;
+
+                if (isBgm) GameRoot.Sound.PlayBgm(clip, drSound.Loop, drSound.Volume);
+                else GameRoot.Sound.PlaySfx(clip, drSound.Volume);
+            });
         }
 
+        private bool IsInDuplicateInterval(int soundId)
+        {
+            if (!_lastPlayTimeDict.TryGetValue(soundId, out float lastPlayTime)) return false;
+
+            return Time.realtimeSinceStartup - lastPlayTime < DUPLICATE_PLAY_INTERVAL;
+        }
     }
 }

@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : ExitConfirmDialog.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
@@ -31,15 +30,15 @@ namespace CasualGame
         protected override void OnOpen(object userData)
         {
             base.OnOpen(userData);
-            _isBackHome = m_Params.GetBoolParams("is_back_home");
+            _isBackHome = MParams.GetBoolParams("is_back_home");
             if (_isBackHome)
             {
-                m_BtnTxt.text = GameEntry.Localization.GetString("101");
+                m_BtnTxt.text = LocalizationMgr.Instance.GetString("101");
                 _shouldOpenSettingDialog = true;
             }
             else
             {
-                m_BtnTxt.text = GameEntry.Localization.GetString("102");
+                m_BtnTxt.text = LocalizationMgr.Instance.GetString("102");
                 _shouldOpenSettingDialog = false;
             }
             m_ConfirmBtn.onClick.RemoveAllListeners();
@@ -56,7 +55,7 @@ namespace CasualGame
         private void RefreshUI()
         {
             //_atlasLoader.LoadSprite(m_Icon, );
-            //m_DesTxt.text = GameEntry.Localization.GetString("");
+            //m_DesTxt.text = LocalizationMgr.Instance.GetString("");
         }
 
         private void OnClick_ConfirmBtn()
@@ -78,7 +77,7 @@ namespace CasualGame
                 }
                 //体力不足
                 UGUIParams @params = UGUIParams.Create().AddValue("fromHome", false);
-                GameEntry.UI.OpenUIForm(UIFormType.GetLifeDialog, @params);
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.GetLifeDialog, @params);
             }
             Close();
         }
@@ -89,7 +88,7 @@ namespace CasualGame
             if (_shouldOpenSettingDialog)
             {
                 UGUIParams @params = UGUIParams.Create().AddValue("FromHome", false);
-                GameEntry.UI.OpenUIForm(UIFormType.SettingDialog, @params);
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.SettingDialog, @params);
             }
         }
 
@@ -106,12 +105,12 @@ namespace CasualGame
 
             m_IsPeeking = true;
 
-            if (m_CanvasGroup != null)
+            if (MCanvasGroup != null)
             {
-                m_CanvasGroup.DOKill();
-                m_CanvasGroup.interactable = false;
-                m_CanvasGroup.blocksRaycasts = false;
-                m_CanvasGroup.DOFade(0f, PeekFadeDuration);
+                MCanvasGroup.DOKill();
+                MCanvasGroup.interactable = false;
+                MCanvasGroup.blocksRaycasts = false;
+                MCanvasGroup.DOFade(0f, PeekFadeDuration);
             }
 
             UGuiScreenMaskHelper.SetPeekSuppressed(true);
@@ -125,12 +124,12 @@ namespace CasualGame
             m_IsPeeking = false;
             UGuiScreenMaskHelper.SetPeekSuppressed(false);
 
-            if (m_CanvasGroup != null)
+            if (MCanvasGroup != null)
             {
-                m_CanvasGroup.DOKill();
-                m_CanvasGroup.interactable = true;
-                m_CanvasGroup.blocksRaycasts = true;
-                m_CanvasGroup.DOFade(1f, PeekFadeDuration);
+                MCanvasGroup.DOKill();
+                MCanvasGroup.interactable = true;
+                MCanvasGroup.blocksRaycasts = true;
+                MCanvasGroup.DOFade(1f, PeekFadeDuration);
             }
         }
     }

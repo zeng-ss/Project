@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "productId": "to_noads_pack_4.99",
+    "productType": 0,
+    "platform": 0,
+    "prizeValue": 4.99,
+    "tikTokBeans": 499,
+    "revType": 1,
+    "baseProductId": "swo_base_sale_4.99",
+    "originalPrize": 5.99,
+    "eventName": "gs_remove_ads_purchase"
+  }
+]

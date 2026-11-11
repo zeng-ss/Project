@@ -2,7 +2,6 @@
 using UnityEngine;
 using CasualGame;
 using DG.Tweening;
-using GameFramework;
 
 namespace CasualGame
 {
@@ -20,17 +19,17 @@ namespace CasualGame
             m_Loading.rotation = Quaternion.identity;
             m_Loading.DORotate(new Vector3(0, 0, -360), 5f, RotateMode.WorldAxisAdd).SetLoops(-1).SetEase(Ease.Linear);
 
-            if (m_Params.GetBoolParams("isPurchase"))
+            if (MParams.GetBoolParams("isPurchase"))
             {
-                m_Text.text = GameEntry.Localization.GetString("43");
+                m_Text.text = LocalizationMgr.Instance.GetString("43");
             }
             else
             {
-                m_Text.text = GameEntry.Localization.GetString("44");
+                m_Text.text = LocalizationMgr.Instance.GetString("44");
             }
 
             passTime = 0f;
-            duration = m_Params.GetFloatParams("Duration");
+            duration = MParams.GetFloatParams("Duration");
         }
 
         protected override void OnUpdate(float elapseSeconds, float realElapseSeconds)

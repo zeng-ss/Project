@@ -1,31 +1,28 @@
 //------------------------------------------------------------
 // File : UGUIParams.cs
-// Email: mailto:zhiqiang.yang
-// Desc : UGUIForm参数类，用于界面交互参数传递
+// Desc : UGUIForm 参数类，用于界面间传参与回调
 //------------------------------------------------------------
 
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
-using GameFramework;
-using UnityGameFramework.Runtime;
 
 namespace CasualGame
 {
     public delegate void UGUIParamsDelegate(params object[] args);
 
-    public class UGUIParams : IReference
+    public class UGUIParams
     {
-        private Dictionary<string, object> ParamMaps = new Dictionary<string, object>();
-        private Dictionary<string, UGUIParamsDelegate> ActionMaps = new Dictionary<string, UGUIParamsDelegate>();
+        private readonly Dictionary<string, object> ParamMaps = new Dictionary<string, object>();
+        private readonly Dictionary<string, UGUIParamsDelegate> ActionMaps = new Dictionary<string, UGUIParamsDelegate>();
 
-        public GameFrameworkAction<UGuiForm> OnOpenCallback;
-        public GameFrameworkAction OnCloseCallback;
+        public Action<UGuiForm> OnOpenCallback;
+        public Action OnCloseCallback;
 
-        //界面Button点击事件 （string 拿个按钮被点击）
-        public GameFrameworkAction<string> OnClickCallback;
+        /// <summary>界面按钮点击事件（参数是被点击按钮的 key）。</summary>
+        public Action<string> OnClickCallback;
 
-        public virtual void Clear()
+        public void Clear()
         {
             OnCloseCallback = null;
             OnClickCallback = null;
@@ -34,97 +31,45 @@ namespace CasualGame
             ActionMaps.Clear();
         }
 
-        public bool HasKey(string key)
-        {
-            return ParamMaps.ContainsKey(key) || ActionMaps.ContainsKey(key);
-        }
+        public bool HasKey(string key) => ParamMaps.ContainsKey(key) || ActionMaps.ContainsKey(key);
 
-        public T GetEnumParams<T>(string key)
-        {
-            if (ParamMaps.ContainsKey(key))
-            {
-                return (T)ParamMaps[key];
-            }
+        public T GetEnumParams<T>(string key) => GetAnyParams<T>(key);
 
-            Log.Error("the key [{0}] not exists", key);
-            return default(T);
-        }
+        public int GetIntParams(string key) => GetAnyParams<int>(key);
 
-        public int GetIntParams(string key)
-        {
-            if (ParamMaps.ContainsKey(key)) // && ParamMaps[key] is int
-            {
-                return (int)ParamMaps[key];
-            }
+        public float GetFloatParams(string key) => GetAnyParams<float>(key);
 
-            Log.Error("the key [{0}] not exists", key);
-            return 0;
-        }
+        public string GetStringParams(string key) => GetAnyParams<string>(key) ?? string.Empty;
 
-
-        public float GetFloatParams(string key)
-        {
-            if (ParamMaps.ContainsKey(key) && ParamMaps[key] is float)
-            {
-                return (float)ParamMaps[key];
-            }
-
-            Log.Error("the key [{0}] not exists", key);
-            return 0;
-        }
-
-        public string GetStringParams(string key)
-        {
-            if (ParamMaps.ContainsKey(key) && ParamMaps[key] is string)
-            {
-                return (string)ParamMaps[key];
-            }
-
-            Log.Error("the key [{0}] not exists", key);
-            return string.Empty;
-        }
-
-        public bool GetBoolParams(string key)
-        {
-            if (ParamMaps.ContainsKey(key) && ParamMaps[key] is bool)
-            {
-                return (bool)ParamMaps[key];
-            }
-
-            Log.Error("the key [{0}] not exists", key);
-            return false;
-        }
+        public bool GetBoolParams(string key) => GetAnyParams<bool>(key);
 
         public object GetObjectParams(string key)
         {
-            if (ParamMaps.ContainsKey(key))
-            {
-                return ParamMaps[key];
-            }
+            if (ParamMaps.TryGetValue(key, out object value)) return value;
 
-            Log.Error("the key [{0}] not exists", key);
+            Debug.LogError($"[UGUIParams] 参数不存在: {key}");
             return null;
         }
 
         public T GetAnyParams<T>(string key)
         {
-            if (ParamMaps.ContainsKey(key))
+            if (ParamMaps.TryGetValue(key, out object value))
             {
-                return (T)ParamMaps[key];
+                if (value is T typed) return typed;
+
+                Debug.LogError($"[UGUIParams] 参数 {key} 类型不匹配，期望 {typeof(T).Name}");
+                return default;
             }
 
-            Log.Error("the key [{0}] not exists", key);
-            return default(T);
+            Debug.LogError($"[UGUIParams] 参数不存在: {key}");
+            return default;
         }
 
         public UGUIParamsDelegate GetDelegage(string key)
         {
-            if (ActionMaps.ContainsKey(key))
-            {
-                return ActionMaps[key];
-            }
+            if (ActionMaps.TryGetValue(key, out UGUIParamsDelegate action)) return action;
 
-            Log.Error("the key [{0}] not exists", key);
+            Debug.LogError($"[UGUIParams] 回调不存在: {key}");
             return null;
         }
 
@@ -132,7 +77,7 @@ namespace CasualGame
         {
             if (ParamMaps.ContainsKey(key))
             {
-                Log.Error("the key [{0}] already exists", key);
+                Debug.LogError($"[UGUIParams] 参数已存在: {key}");
                 return this;
             }
 
@@ -144,7 +89,7 @@ namespace CasualGame
         {
             if (ActionMaps.ContainsKey(key))
             {
-                Log.Error("the key [{0}] already exists", key);
+                Debug.LogError($"[UGUIParams] 回调已存在: {key}");
                 return this;
             }
 
@@ -152,43 +97,32 @@ namespace CasualGame
             return this;
         }
 
-        public static UGUIParams Create()
+        public static UGUIParams Create() => new UGUIParams();
+
+        public static UGUIParams Create(Action closeCallback)
         {
-            var _params = ReferencePool.Acquire<UGUIParams>();
-            return _params;
+            return new UGUIParams { OnCloseCallback = closeCallback };
         }
 
-        public static UGUIParams Create(GameFrameworkAction closeCB)
+        public static UGUIParams Create(Action closeCallback, Action<string> clickCallback)
         {
-            var _params = ReferencePool.Acquire<UGUIParams>();
-            _params.OnCloseCallback = closeCB;
-            return _params;
+            return new UGUIParams { OnCloseCallback = closeCallback, OnClickCallback = clickCallback };
         }
 
-        public static UGUIParams Create(GameFrameworkAction closeCB, GameFrameworkAction<string> onclickCB)
+        public static UGUIParams Create(Action closeCallback, Action<UGuiForm> openCallback)
         {
-            var _params = ReferencePool.Acquire<UGUIParams>();
-            _params.OnClickCallback = onclickCB;
-            _params.OnCloseCallback = closeCB;
-            return _params;
+            return new UGUIParams { OnCloseCallback = closeCallback, OnOpenCallback = openCallback };
         }
 
-        public static UGUIParams Create(GameFrameworkAction closeCB, GameFrameworkAction<UGuiForm> openCallback)
+        public static UGUIParams Create(Action closeCallback, Action<UGuiForm> openCallback,
+            Action<string> clickCallback)
         {
-            var _params = ReferencePool.Acquire<UGUIParams>();
-            _params.OnCloseCallback = closeCB;
-            _params.OnOpenCallback = openCallback;
-            return _params;
-        }
-
-        public static UGUIParams Create(GameFrameworkAction closeCB, GameFrameworkAction<UGuiForm> openCallback,
-            GameFrameworkAction<string> onclickCB)
-        {
-            var _params = ReferencePool.Acquire<UGUIParams>();
-            _params.OnCloseCallback = closeCB;
-            _params.OnOpenCallback = openCallback;
-            _params.OnClickCallback = onclickCB;
-            return _params;
+            return new UGUIParams
+            {
+                OnCloseCallback = closeCallback,
+                OnOpenCallback = openCallback,
+                OnClickCallback = clickCallback
+            };
         }
     }
 }

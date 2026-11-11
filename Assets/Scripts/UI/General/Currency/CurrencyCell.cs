@@ -71,7 +71,7 @@ namespace CasualGame
 
         private void OnClickAddBtn()
         {
-            GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("57")));
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", LocalizationMgr.Instance.GetString("57")));
         }
 
         private void RefreshAddBtn()

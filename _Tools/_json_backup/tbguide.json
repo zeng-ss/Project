@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "waitUIOpenType": -1,
+    "guideType": 1,
+    "nextId": -1
+  },
+  {
+    "id": 2,
+    "waitUIOpenType": -1,
+    "guideType": 1,
+    "nextId": -1
+  },
+  {
+    "id": 3,
+    "waitUIOpenType": -1,
+    "guideType": 1,
+    "nextId": -1
+  },
+  {
+    "id": 4,
+    "waitUIOpenType": -1,
+    "guideType": 1,
+    "nextId": -1
+  },
+  {
+    "id": 5,
+    "waitUIOpenType": -1,
+    "guideType": 1,
+    "nextId": -1
+  }
+]

@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : GameManager.cs
-// Email: yang.li@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
@@ -39,8 +38,8 @@ namespace CasualGame
 
         private void InitSoundSettings()
         {
-            GameEntry.Sound.Mute("Music", ProxyManager.UserProxy.IsMediaMuted((int)Media.music));
-            GameEntry.Sound.Mute("Sound", ProxyManager.UserProxy.IsMediaMuted((int)Media.voice));
+            Framework.GameRoot.Sound.Mute("Music", ProxyManager.UserProxy.IsMediaMuted((int)Media.music));
+            Framework.GameRoot.Sound.Mute("Sound", ProxyManager.UserProxy.IsMediaMuted((int)Media.voice));
         }
 
         public void StartGame()

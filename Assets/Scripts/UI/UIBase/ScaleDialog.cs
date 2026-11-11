@@ -36,15 +36,15 @@ public abstract class ScaleDialog : UGuiForm
         base.OnOpen(userData);
         UIAnimationFinish = false;
 
-        if (panel && m_CanvasGroup)
+        if (Panel && MCanvasGroup)
         {
             if (sequence != null && sequence.IsActive()) sequence.Kill();
             sequence = DOTween.Sequence();
-            m_CanvasGroup.alpha = 0.6f;
+            MCanvasGroup.alpha = 0.6f;
 
-            panel.transform.localScale = Vector3.one * 0.3f;
-            sequence.Append(panel.transform.DOScale(Vector3.one, duration).SetEase(Ease.OutBack))
-                .Join(m_CanvasGroup.DOFade(1f, duration).OnComplete(OnCompleteScale));
+            Panel.transform.localScale = Vector3.one * 0.3f;
+            sequence.Append(Panel.transform.DOScale(Vector3.one, duration).SetEase(Ease.OutBack))
+                .Join(MCanvasGroup.DOFade(1f, duration).OnComplete(OnCompleteScale));
         }
         else
         {
@@ -66,13 +66,13 @@ public abstract class ScaleDialog : UGuiForm
         hasClickedClose = true;
         graphicRaycaster.enabled = false;
 
-        if (panel && m_CanvasGroup)
+        if (Panel && MCanvasGroup)
         {
             if (sequence != null && sequence.IsActive()) sequence.Kill();
             sequence = DOTween.Sequence();
 
-            sequence.Append(panel.transform.DOScale(Vector3.zero, duration).SetEase(Ease.InBack))
-                .Join(m_CanvasGroup.DOFade(0f, duration).SetEase(Ease.Linear)).OnComplete(base.Close);
+            sequence.Append(Panel.transform.DOScale(Vector3.zero, duration).SetEase(Ease.InBack))
+                .Join(MCanvasGroup.DOFade(0f, duration).SetEase(Ease.Linear)).OnComplete(base.Close);
         }
         else
         {
@@ -85,7 +85,7 @@ public abstract class ScaleDialog : UGuiForm
     protected virtual void OnCompleteScale()
     {
         UIAnimationFinish = true;
-        if (m_Params != null) m_Params.OnOpenCallback?.Invoke(this);
+        if (MParams != null) MParams.OnOpenCallback?.Invoke(this);
     }
 
 

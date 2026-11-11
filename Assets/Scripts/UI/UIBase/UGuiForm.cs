@@ -1,83 +1,222 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Framework;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityGameFramework.Runtime;
-using GameFramework;
-using System.Threading;
 
 namespace CasualGame
 {
+    /// <summary>
+    /// 所有 UGUI 界面的基类。
+    /// 由 Framework.BasePanel 派生，保留原 UIFormLogic 的生命周期方法名，
+    /// 让各界面脚本的 override 不需要改动。
+    /// </summary>
     [RequireComponent(typeof(UIConfigMono))]
-    public abstract class UGuiForm : UIFormLogic, IShowMaskInterface
+    public abstract class UGuiForm : UIFormBase, IShowMaskInterface
     {
         private readonly List<IUGUIChild> _uguiChildren = new List<IUGUIChild>();
-        public const int DepthFactor = 100;
-        private UIFormType m_formType = UIFormType.Undefined;
+        private UIFormType _mFormType = UIFormType.Undefined;
 
-        protected Canvas m_CachedCanvas = null;
-        protected CanvasGroup m_CanvasGroup = null;
-        private List<Canvas> m_CachedCanvasContainer = new List<Canvas>();
-        private RectTransform m_rect;
+        protected Canvas MCachedCanvas;
+        protected CanvasGroup MCanvasGroup;
+        protected UIConfigMono MConfig;
+        protected UGUIParams MParams;
+        protected Transform Panel;
+        protected readonly AtlasLoader AtlasLoader = new AtlasLoader();
 
-        public RectTransform Rect => m_rect;
+        /// <summary>用于取消异步任务，界面关闭时自动取消。</summary>
+        protected CancellationTokenSource CancellationTokenSource;
 
-        protected UIConfigMono m_Config;
-        protected UGUIParams m_Params;
-        protected DRUIForm drUIForm;
-        protected Transform panel;
-        /// <summary>
-        /// 用于取消异步任务，onclose时自动判定取消
-        /// </summary>
-        protected CancellationTokenSource _cancellationTokenSource;
-        protected AtlasLoader _atlasLoader = new AtlasLoader();
+        [Header("展示黑色遮罩")] [SerializeField] public bool showMask = true;
+        [Header("展示资源栏")] [SerializeField] public bool showCurrency = false;
 
-        [Header("展示黑色遮罩")][SerializeField] public bool showMask = true;
-        [Header("展示资源栏")][SerializeField] public bool showCurrency = false;
         public bool ShowMask => showMask;
         public bool ShowCurrency => showCurrency;
-        public int MaskDepth => m_CachedCanvas.sortingOrder;
 
-        public UIFormType UIType
-        {
-            get
-            {
-                if (m_formType == UIFormType.Undefined)
-                {
-                    int lastIndexOf = UIForm.UIFormAssetName.LastIndexOf('#');
-                    int lastIndexOfDot = UIForm.UIFormAssetName.LastIndexOf('.');
-                    if (lastIndexOfDot == -1)
-                    {
-                        lastIndexOfDot = UIForm.UIFormAssetName.Length;
-                    }
+        /// <summary>界面是否显示中（替代原 UIFormLogic.Visible）。</summary>
+        public bool Visible => gameObject.activeSelf;
 
-                    int assetId = Utility.Parse.parseInt(
-                        UIForm.UIFormAssetName.Substring(lastIndexOf + 1, lastIndexOfDot - lastIndexOf - 1), 0);
-                    m_formType = (UIFormType)assetId;
-                }
-
-                return m_formType;
-            }
-        }
+        /// <summary>自身 Transform 缓存（替代原 UIFormLogic.CachedTransform）。</summary>
+        public Transform CachedTransform => transform;
 
         public virtual bool UIAnimationFinish { get; set; }
 
         public int OriginalDepth { get; private set; }
 
-        public int Depth
+        private RectTransform _mRect;
+        public RectTransform Rect => _mRect;
+
+        public int MaskDepth => MCachedCanvas != null ? MCachedCanvas.sortingOrder : 0;
+
+        /// <summary>界面类型，从预制体名字（如 UIMainForm#10001）里解析。</summary>
+        public UIFormType UIType
         {
-            get { return m_CachedCanvas.sortingOrder; }
+            get
+            {
+                if (_mFormType != UIFormType.Undefined) return _mFormType;
+
+                string objName = gameObject.name;
+                int hash = objName.LastIndexOf('#');
+                if (hash < 0) return _mFormType;
+
+                int dot = objName.LastIndexOf('.');
+                if (dot < 0) dot = objName.Length;
+
+                if (int.TryParse(objName.Substring(hash + 1, dot - hash - 1), out int assetId))
+                {
+                    _mFormType = (UIFormType)assetId;
+                }
+
+                return _mFormType;
+            }
+        }
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            Panel = transform.Find("Panel");
+            MConfig = GetComponent<UIConfigMono>();
+            if (MConfig == null)
+            {
+                Debug.LogError($"[UGuiForm] {gameObject.name} 未挂载 UIConfigMono");
+                return;
+            }
+
+            MConfig.Init();
+
+            MCachedCanvas = gameObject.GetOrAddComponent<Canvas>();
+            MCachedCanvas.overrideSorting = true;
+            OriginalDepth = MCachedCanvas.sortingOrder;
+
+            _mRect = GetComponent<RectTransform>();
+            _mRect.anchorMin = Vector2.zero;
+            _mRect.anchorMax = Vector2.one;
+            _mRect.anchoredPosition = Vector2.zero;
+            _mRect.sizeDelta = Vector2.zero;
+
+            gameObject.GetOrAddComponent<GraphicRaycaster>();
+
+            GameRoot.Config?.GetTable<DRUIForm>()?.GetDataRow((int)UIType);
+
+            GetComponentsInChildren(true, _uguiChildren);
+            foreach (IUGUIChild child in _uguiChildren)
+            {
+                child.OnInit();
+            }
+
+            if (Panel != null)
+            {
+                MCanvasGroup = Panel.gameObject.GetOrAddComponent<CanvasGroup>();
+            }
+
+            OnInit(null);
+            OnDepthChanged(0, 0);
+        }
+
+        private void Update()
+        {
+            OnUpdate(Time.deltaTime, Time.unscaledDeltaTime);
+
+            foreach (IUGUIChild child in _uguiChildren)
+            {
+                child.OnUpdate(Time.deltaTime, Time.unscaledDeltaTime);
+            }
         }
 
         private void OnDestroy()
         {
-            _atlasLoader?.Dispose();
+            AtlasLoader?.Dispose();
+
+            if (CancellationTokenSource == null) return;
+            CancellationTokenSource.Cancel();
+            CancellationTokenSource.Dispose();
+            CancellationTokenSource = null;
+        }
+
+        #region 生命周期（签名与原 UIFormLogic 一致，供各界面 override）
+
+        protected virtual void OnInit(object userData)
+        {
+        }
+
+        protected virtual void OnOpen(object userData)
+        {
+        }
+
+        protected virtual void OnClose(bool isShutdown, object userData)
+        {
+        }
+
+        protected virtual void OnUpdate(float elapseSeconds, float realElapseSeconds)
+        {
+        }
+
+        protected virtual void OnDepthChanged(int uiGroupDepth, int depthInUIGroup)
+        {
+        }
+
+        protected virtual void OnOpenCallback()
+        {
+            MParams?.OnOpenCallback?.Invoke(this);
+        }
+
+        #endregion
+
+        public override void Show()
+        {
+            base.Show();
+
+            CancellationTokenSource = new CancellationTokenSource();
+            UIAnimationFinish = true;
+
+            StopAllCoroutines();
+            OnOpen(MParams);
+
+            foreach (IUGUIChild child in _uguiChildren)
+            {
+                child.OnOpen();
+            }
+
+            OnOpenCallback();
+        }
+
+        public override void Hide()
+        {
+            if (IsClosing) return;
+
+            OnClose(false, MParams);
+
+            if (MParams != null)
+            {
+                MParams.OnCloseCallback?.Invoke();
+                MParams = null;
+            }
+
+            foreach (IUGUIChild child in _uguiChildren)
+            {
+                child.OnClose();
+            }
+
+            AtlasLoader?.Cancel();
+
+            CancellationTokenSource?.Cancel();
+            CancellationTokenSource?.Dispose();
+            CancellationTokenSource = null;
+
+            UIAnimationFinish = false;
+            base.Hide();
+        }
+
+        /// <summary>打开时由 UIManager 塞入参数。</summary>
+        public void SetParams(object userData)
+        {
+            MParams = userData as UGUIParams;
         }
 
         public virtual void Close()
         {
-            GameEntry.UI.CloseUIForm(this);
+            UIMgr.Instance.CloseUIForm(this);
         }
 
         public void PlayUISound(int uiSoundId)
@@ -87,270 +226,45 @@ namespace CasualGame
 
         public void OpenUIForm(UIFormType formType)
         {
-            GameEntry.UI.OpenUIForm(formType);
+            UIMgr.Instance.OpenUIForm(formType);
         }
 
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnInit(object userData)
-#else
-        protected internal override void OnInit(object userData)
-#endif
-        {
-            base.OnInit(userData);
+        #region UIConfigMono 绑定
 
-            m_Config = gameObject.GetComponent<UIConfigMono>();
-            if (m_Config == null)
+        public T GetRef<T>(string key) where T : Object
+        {
+            if (MConfig == null)
             {
-                Log.Error("UI组建未挂载UIConfigMono，请检查");
-                return;
-            }
-
-            m_Config.Init();
-
-            m_CachedCanvas = gameObject.GetOrAddComponent<Canvas>();
-            m_CachedCanvas.overrideSorting = true;
-            OriginalDepth = m_CachedCanvas.sortingOrder;
-
-            RectTransform transform = GetComponent<RectTransform>();
-            transform.anchorMin = Vector2.zero;
-            transform.anchorMax = Vector2.one;
-            transform.anchoredPosition = Vector2.zero;
-            transform.sizeDelta = Vector2.zero;
-            m_rect = transform;
-
-            gameObject.GetOrAddComponent<GraphicRaycaster>();
-
-            if (UIComponentExtend.dtUIForm != null)
-                drUIForm = UIComponentExtend.dtUIForm.GetDataRow((int)UIType);
-
-            GetComponentsInChildren(true, _uguiChildren);
-
-            foreach (var iChild in _uguiChildren)
-            {
-                iChild.OnInit();
-            }
-
-            if (panel != null)
-                m_CanvasGroup = panel.gameObject.GetOrAddComponent<CanvasGroup>();
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnRecycle()
-#else
-        protected internal override void OnRecycle()
-#endif
-        {
-            base.OnRecycle();
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnOpen(object userData)
-#else
-        protected internal override void OnOpen(object userData)
-#endif
-        {
-            base.OnOpen(userData);
-            _cancellationTokenSource = new CancellationTokenSource();
-            UIAnimationFinish = true;
-
-            if (userData is UGUIParams) m_Params = (UGUIParams)userData;
-            StopAllCoroutines();
-
-            OnOpenCallback();
-
-            foreach (var iChild in _uguiChildren)
-            {
-                iChild.OnOpen();
-            }
-        }
-
-        protected virtual void OnOpenCallback()
-        {
-            if (m_Params != null)
-                m_Params.OnOpenCallback?.Invoke(this);
-        }
-
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnClose(bool isShutdown, object userData)
-#else
-        protected internal override void OnClose(bool isShutdown, object userData)
-#endif
-        {
-            base.OnClose(isShutdown, userData);
-            UIAnimationFinish = false;
-
-            if (m_Params != null)
-            {
-                m_Params.OnCloseCallback?.Invoke();
-                ReferencePool.Release(m_Params);
-                m_Params = null;
-            }
-
-            if (GameEntry.UI.CacheUIInfo.Count > 0)
-            {
-                UIComponent.SingleUIInfo info = GameEntry.UI.CacheUIInfo[0];
-                if (GameEntry.UI.HasMutexUI())
-                {
-                    return;
-                }
-
-                GameEntry.UI.OpenUIForm((UIFormType)info.uiType, info.userData, false);
-                GameEntry.UI.CacheUIInfo.RemoveAt(0);
-            }
-
-            foreach (var iChild in _uguiChildren)
-            {
-                iChild.OnClose();
-            }
-
-            if (_cancellationTokenSource != null)
-            {
-                _cancellationTokenSource.Cancel();
-                _cancellationTokenSource.Dispose();
-                _cancellationTokenSource = null;
-            }
-
-            _atlasLoader?.Cancel();
-            UGuiScreenMaskHelper.CloseUI(this);
-            CasualCurrencyGroup.CloseUI(this);
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnPause()
-#else
-        protected internal override void OnPause()
-#endif
-        {
-            base.OnPause();
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnResume()
-#else
-        protected internal override void OnResume()
-#endif
-        {
-            base.OnResume();
-
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnCover()
-#else
-        protected internal override void OnCover()
-#endif
-        {
-            base.OnCover();
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnReveal()
-#else
-        protected internal override void OnReveal()
-#endif
-        {
-            base.OnReveal();
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnRefocus(object userData)
-#else
-        protected internal override void OnRefocus(object userData)
-#endif
-        {
-            base.OnRefocus(userData);
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnUpdate(float elapseSeconds, float realElapseSeconds)
-#else
-        protected internal override void OnUpdate(float elapseSeconds, float realElapseSeconds)
-#endif
-        {
-            base.OnUpdate(elapseSeconds, realElapseSeconds);
-
-            foreach (var iChild in _uguiChildren)
-            {
-                iChild.OnUpdate(elapseSeconds, realElapseSeconds);
-            }
-        }
-
-#if UNITY_2017_3_OR_NEWER
-        protected override void OnDepthChanged(int uiGroupDepth, int depthInUIGroup)
-#else
-        protected internal override void OnDepthChanged(int uiGroupDepth, int depthInUIGroup)
-#endif
-        {
-            int oldDepth = Depth;
-            base.OnDepthChanged(uiGroupDepth, depthInUIGroup);
-            int deltaDepth = UGuiGroupHelper.DepthFactor * uiGroupDepth + DepthFactor * depthInUIGroup - oldDepth +
-                             OriginalDepth;
-            GetComponentsInChildren(true, m_CachedCanvasContainer);
-            for (int i = 0; i < m_CachedCanvasContainer.Count; i++)
-            {
-                m_CachedCanvasContainer[i].sortingOrder += deltaDepth;
-            }
-
-            foreach (var uidepth in GetComponentsInChildren<UIDepth>())
-            {
-                uidepth.Refresh();
-            }
-
-            foreach (var uidepth in GetComponentsInChildren<UIEffectDepth>())
-            {
-                uidepth.Refresh();
-            }
-
-            m_CachedCanvasContainer.Clear();
-
-            UGuiScreenMaskHelper.OnDepthChanged(this);
-            CasualCurrencyGroup.OnDepthChanged(this);
-        }
-
-        #region UIConfigMono
-
-        public T GetRef<T>(string key) where T : UnityEngine.Object
-        {
-            if (m_Config == null)
-            {
-                Log.Error("{0} {1} null point", gameObject.name, key);
+                Debug.LogError($"[{gameObject.name}] UIConfigMono 为空，取不到 {key}");
                 return null;
             }
 
-            var bind = m_Config.GetBindEntityByTag(key);
+            var bind = MConfig.GetBindEntityByTag(key);
             if (bind == null)
             {
-                Log.Error("{0} {1} key not find", gameObject.name, key);
+                Debug.LogError($"[{gameObject.name}] 找不到绑定 key: {key}");
                 return null;
             }
 
-            if (typeof(T) == typeof(GameObject))
-            {
-                return (bind.obj) as T;
-            }
-            else if (typeof(T) == typeof(Transform))
-            {
-                return (bind.obj.transform) as T;
-            }
+            if (typeof(T) == typeof(GameObject)) return bind.obj as T;
+            if (typeof(T) == typeof(Transform)) return bind.obj.transform as T;
 
             return bind.obj.GetComponent<T>();
         }
 
-
         public void RegisterObjectEvent(string key, GameObject obj)
         {
             if (obj.tag == "Unclick") return;
+
             var btn = obj.GetComponent<Button>();
             if (btn != null)
             {
                 btn.gameObject.GetOrAddComponent<UIButtonScale>();
                 btn.onClick.AddListener(() =>
                 {
-                    if (m_Params != null) m_Params.OnClickCallback?.Invoke(key);
-                    gameObject.SendMessage(Utility.Text.Format("OnClick_{0}", key), SendMessageOptions.DontRequireReceiver);
-
-                    Log.Info("按钮 {0}.{1}被点击", gameObject.name, key);
+                    MParams?.OnClickCallback?.Invoke(key);
+                    gameObject.SendMessage($"OnClick_{key}", SendMessageOptions.DontRequireReceiver);
+                    Debug.Log($"按钮 {gameObject.name}.{key} 被点击");
                 });
                 return;
             }
@@ -358,22 +272,19 @@ namespace CasualGame
             var toggle = obj.GetComponent<Toggle>();
             if (toggle != null)
             {
-                toggle.onValueChanged.AddListener((isOn) =>
+                toggle.onValueChanged.AddListener(isOn =>
                 {
-                    gameObject.SendMessage(Utility.Text.Format("OnToggle_{0}", key), isOn,
-                        SendMessageOptions.DontRequireReceiver);
+                    gameObject.SendMessage($"OnToggle_{key}", isOn, SendMessageOptions.DontRequireReceiver);
                 });
                 return;
             }
 
-
             var slider = obj.GetComponent<Slider>();
             if (slider != null)
             {
-                slider.onValueChanged.AddListener((precent) =>
+                slider.onValueChanged.AddListener(percent =>
                 {
-                    gameObject.SendMessage(Utility.Text.Format("OnSlider_{0}", key), precent,
-                        SendMessageOptions.DontRequireReceiver);
+                    gameObject.SendMessage($"OnSlider_{key}", percent, SendMessageOptions.DontRequireReceiver);
                 });
                 return;
             }
@@ -381,16 +292,12 @@ namespace CasualGame
             var img = obj.GetComponent<Image>();
             if (img != null && img.raycastTarget)
             {
-                UGUIEventListener.Get(obj).onClick = (go) =>
+                UGUIEventListener.Get(obj).onClick = go =>
                 {
-                    if (m_Params != null) m_Params.OnClickCallback?.Invoke(key);
-                    gameObject.SendMessage(Utility.Text.Format("OnClick_{0}", key), go,
-                        SendMessageOptions.DontRequireReceiver);
+                    MParams?.OnClickCallback?.Invoke(key);
+                    gameObject.SendMessage($"OnClick_{key}", go, SendMessageOptions.DontRequireReceiver);
                 };
-                return;
             }
-
-            //TODO 需要框架Auto注册事件的请在这里写
         }
 
         #endregion

@@ -27,7 +27,7 @@ namespace CasualGame
                 {
                     if (!int.TryParse(param, out int result)) return;
 
-                    GameEntry.UI.OpenUIForm((UIFormType)result);
+                    Framework.UIMgr.Instance.OpenUIForm((UIFormType)result);
 
                     CloseDebuggerUI();
                 },
@@ -39,7 +39,7 @@ namespace CasualGame
                 {
                     if (!int.TryParse(param, out int result)) return;
 
-                    GameEntry.UI.CloseUIForm((UIFormType)result);
+                    Framework.UIMgr.Instance.CloseUIForm((UIFormType)result);
 
                     CloseDebuggerUI();
                 },
@@ -51,9 +51,9 @@ namespace CasualGame
                 {
                     if (!int.TryParse(param, out int result)) return;
 
-                    GameEntry.Base.GameSpeed = result;
+                    Framework.GameRoot.Instance.GameSpeed = result;
                 },
-                Info = () => $"speed: {GameEntry.Base.GameSpeed}",
+                Info = () => $"speed: {Framework.GameRoot.Instance.GameSpeed}",
             },
             new CommandData()
             {
@@ -149,8 +149,8 @@ namespace CasualGame
                 Action = (param) =>
                 {
                     ProxyManager.UserProxy.SetGameLevel(0);
-                    GameEntry.Setting.SetBool("IsOrganic", false);
-                    GameEntry.Setting.SetBool("IsConfirmIsOrganic", true);
+                    SettingMgr.Instance.SetBool("IsOrganic", false);
+                    SettingMgr.Instance.SetBool("IsConfirmIsOrganic", true);
                     UIManager.Toast("RESTART GAME!");
                     YieldHepler.CallAfterOnSeconds(() => Application.Quit(), 1f);
                 }

@@ -43,7 +43,7 @@
 //             this.m_dotRectTransform = m_dotBtn.GetComponent<RectTransform>();
 //             Refresh();
 
-//             m_title.text = GameEntry.Localization.GetString($"{media + 7}");
+//             m_title.text = LocalizationMgr.Instance.GetString($"{media + 7}");
 
 //             _curSprite = await AtlasPool.Instance.Spawn(AtlasId.Setting, $"icon{media}", _cts.Token);
 //             m_dotIcon.sprite = _curSprite;

@@ -1,0 +1,164 @@
+[
+  {
+    "id": 10001,
+    "name": "UIMainForm",
+    "directoryName": "None",
+    "uIGroupName": "Default",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10002,
+    "name": "UIGameForm",
+    "directoryName": "None",
+    "uIGroupName": "Default",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10003,
+    "name": "TopcoverForm",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10009,
+    "name": "GlobalToast",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10096,
+    "name": "ScoreGuideDialog",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10097,
+    "name": "NetWorkErrorDialog",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10098,
+    "name": "TransitionForm",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10099,
+    "name": "LoadingDialog",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 10999,
+    "name": "GuideUI",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11006,
+    "name": "GameplayTutorialForm",
+    "directoryName": "None",
+    "uIGroupName": "Loading",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11007,
+    "name": "GetItemForm",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11008,
+    "name": "NewItemDialog",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11009,
+    "name": "WinUIForm",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11010,
+    "name": "FailUIForm",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11101,
+    "name": "SettingDialog",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11102,
+    "name": "ContinueUIForm",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 11103,
+    "name": "ExitConfirmDialog",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  },
+  {
+    "id": 12008,
+    "name": "GetLifeDialog",
+    "directoryName": "None",
+    "uIGroupName": "Dialog",
+    "allowMultiInstance": false,
+    "pauseCoveredUIForm": false,
+    "mutex": false
+  }
+]

@@ -53,7 +53,7 @@ namespace CasualGame
 
             if (targetCamera == null)
             {
-                targetCamera = GameEntry.UI.MainCanvas.worldCamera;
+                targetCamera = Framework.UIMgr.Instance.MainCanvas.worldCamera;
             }
 
             Vector2 screenPoint =
@@ -63,7 +63,7 @@ namespace CasualGame
             CUtility.Mono.SetIdentity(CachedTransform);
             CachedTransform.position = _targetGuidePosition;
             CachedTransform.eulerAngles =
-                Vector3.up * (180 * (screenPoint.x >= GameEntry.UI.MainCanvas.pixelRect.width - 120f ? 1 : 0));
+                Vector3.up * (180 * (screenPoint.x >= Framework.UIMgr.Instance.MainCanvas.pixelRect.width - 120f ? 1 : 0));
 
             skeletonGraphic.GetComponent<IAnimationStateComponent>().AnimationState.SetAnimation(0, "click", true);
         }

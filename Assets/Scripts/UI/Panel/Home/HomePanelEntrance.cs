@@ -65,11 +65,13 @@ namespace CasualGame
                 _cancellationTokenSource.Dispose();
                 _cancellationTokenSource = null;
             }
+
             if (_skeletonDataAsset != null)
             {
-                GameEntry.Resource.UnloadAsset(_skeletonDataAsset);
+                Framework.GameRoot.Res.UnloadAsset(_skeletonDataAsset);
                 _skeletonDataAsset = null;
             }
+
             _button.onClick.RemoveListener(OnClick);
             _activity.OnDespawnEntrance(this);
         }
@@ -82,7 +84,9 @@ namespace CasualGame
                 _activity.ClickActivityUI();
             else
             {
-                GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("655", _activity.ActivityInfo.UnlockLv)));
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast,
+                    UGUIParams.Create().AddValue("Toast",
+                        LocalizationMgr.Instance.GetString("655", _activity.ActivityInfo.UnlockLv)));
             }
         }
 
@@ -105,14 +109,15 @@ namespace CasualGame
                 int key = _activity.GetTextKey();
                 if (key > 0)
                 {
-                    _activityName.text = GameEntry.Localization.GetString(key.ToString()).Replace("\n", "").ToUpper();
+                    _activityName.text = LocalizationMgr.Instance.GetString(key.ToString()).Replace("\n", "").ToUpper();
                 }
                 else
                 {
                     _activityName.text = _activity.GetEntranceName();
                 }
             }
-            else if (_activity.ActivityInfo.ConditionType == (int)ActivityConditionType.ByTime && _activity.ActivityInfo.IsLevelCondition(ProxyManager.UserProxy.GameLevel))
+            else if (_activity.ActivityInfo.ConditionType == (int)ActivityConditionType.ByTime &&
+                     _activity.ActivityInfo.IsLevelCondition(ProxyManager.UserProxy.GameLevel))
             {
                 _activityName.text = _activity.GetEntranceName();
             }
@@ -127,11 +132,15 @@ namespace CasualGame
             RefreshActivityName();
 
             DRActivityInfo info = _activity.ActivityInfo;
-            string spinePath = !string.IsNullOrEmpty(info.SpinePath) && info.SpinePath != "-1" ? SPINE_PATH + "_" + info.SpinePath : null;
+            string spinePath = !string.IsNullOrEmpty(info.SpinePath) && info.SpinePath != "-1"
+                ? SPINE_PATH + "_" + info.SpinePath
+                : null;
             if (spinePath != null)
             {
                 _activitySpine.gameObject.SetActive(false);
-                _skeletonDataAsset = await GameEntry.Resource.LoadAsset<SkeletonDataAsset>(spinePath + "/Icon.asset", _cancellationTokenSource.Token);
+                _skeletonDataAsset =
+                    await Framework.GameRoot.Res.LoadAsset<SkeletonDataAsset>(spinePath + "/Icon.asset",
+                        _cancellationTokenSource.Token);
                 _activitySpine.skeletonDataAsset = _skeletonDataAsset;
 
                 _activitySpine.gameObject.SetActive(true);

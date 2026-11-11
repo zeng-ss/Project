@@ -119,99 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &1127795194
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 375698916851000588, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 8319036560699306514}
-    - target: {fileID: 3585358537031003308, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510225672, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510440908, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_Name
-      value: GameFramework
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061510440908, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061515962010, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: m_AvailableProcedureTypeNames.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061515962010, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: 'm_AvailableProcedureTypeNames.Array.data[1]'
-      value: CasualGame.ProcedureCoffeeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061515962010, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: 'm_AvailableProcedureTypeNames.Array.data[2]'
-      value: CasualGame.ProcedureLaunch
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061515962010, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: 'm_AvailableProcedureTypeNames.Array.data[3]'
-      value: CasualGame.ProcedureMainGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061515962010, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: 'm_AvailableProcedureTypeNames.Array.data[4]'
-      value: CasualGame.ProcedurePreload
-      objectReference: {fileID: 0}
-    - target: {fileID: 6599762061515962010, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
-      propertyPath: 'm_AvailableProcedureTypeNames.Array.data[5]'
-      value: CasualGame.ProcedureSplash
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: aeaf889a415a9442b9a9427f5d4472f8, type: 3}
 --- !u!1001 &8319036560699306513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,6 +138,14 @@ PrefabInstance:
     - target: {fileID: 4145892067178097034, guid: b04ce80ccfd3041f0bcc8e010c644a02, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610113417248897113, guid: b04ce80ccfd3041f0bcc8e010c644a02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908934670566530037, guid: b04ce80ccfd3041f0bcc8e010c644a02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8027306521409779591, guid: b04ce80ccfd3041f0bcc8e010c644a02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -277,14 +192,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b04ce80ccfd3041f0bcc8e010c644a02, type: 3}
---- !u!20 &8319036560699306514 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 5788856709873943269, guid: b04ce80ccfd3041f0bcc8e010c644a02, type: 3}
-  m_PrefabInstance: {fileID: 8319036560699306513}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 8319036560699306513}
-  - {fileID: 1127795194}

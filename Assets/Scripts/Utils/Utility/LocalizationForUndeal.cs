@@ -112,15 +112,14 @@ public class LocalizationForUndeal : MonoBehaviour
 
     private string GetLocalization(string localizationKey)
     {
-        if (GameEntry.Localization == null) return null;
 
         if (string.IsNullOrEmpty(localizationKey))
         {
-            UnityGameFramework.Runtime.Log.Error("{0}/{1}", transform.parent.name, transform.name);
+            Log.Error("{0}/{1}", transform.parent.name, transform.name);
             return null;
         }
 
-        var str = GameEntry.Localization.GetString(localizationKey);
+        var str = LocalizationMgr.Instance.GetString(localizationKey);
         if (replaceList != null && replaceList.Length > 0)
         {
             foreach (var replace in replaceList)

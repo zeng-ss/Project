@@ -1,16 +1,15 @@
-//------------------------------------------------------------
+﻿//------------------------------------------------------------
 // File : GameplayTutorialForm.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using System.Text.RegularExpressions;
 using DG.Tweening;
-using GameFramework;
 using NodeCanvas.Framework;
 using Tutorial;
 using Tutorial.Action;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 namespace CasualGame
 {
@@ -32,8 +31,8 @@ namespace CasualGame
 
         private Image m_MaskImg => GetRef<Image>("GuideMask");
         private Color m_MaskColor;
-        private GameFramework.GameFrameworkAction OnClickMasking = null;// 点击蒙版时的监听
-        private GameFramework.GameFrameworkAction OnClickTargetBtn = null;// 点击对应的按钮
+        private Action OnClickMasking = null;// 点击蒙版时的监听
+        private Action OnClickTargetBtn = null;// 点击对应的按钮
 
         public Blackboard blackboard { get => GetComponent<Blackboard>(); }
 
@@ -50,13 +49,13 @@ namespace CasualGame
         //Show Tips 下的按钮
         private void OnClick_Continue()
         {
-            UnityGameFramework.Runtime.Log.Info("OnClick_Continue");
+            Log.Info("OnClick_Continue");
             OnClickTargetBtn?.Invoke();
         }
 
         private void OnClick_GuideMask()
         {
-            UnityGameFramework.Runtime.Log.Info("OnClick_GuideMask");
+            Log.Info("OnClick_GuideMask");
             OnClickMasking?.Invoke();
             // if (maskIsSafe && Time.realtimeSinceStartup - startObstructTime >= 5)
             // {
@@ -66,13 +65,13 @@ namespace CasualGame
 
         private void OnTargetBtnClick(GameObject go)
         {
-            UnityGameFramework.Runtime.Log.Info("OnTargetBtnClick Go");
+            Log.Info("OnTargetBtnClick Go");
             OnClickTargetBtn?.Invoke();
         }
 
         private void OnTargetBtnClick()
         {
-            UnityGameFramework.Runtime.Log.Info("OnTargetBtnClick");
+            Log.Info("OnTargetBtnClick");
             if (m_CloneRect != null && m_TargetBtn != null)
             {
                 m_TargetBtn.onClick.Invoke();
@@ -178,7 +177,7 @@ namespace CasualGame
             string localizations = tipActionData.Tips;
             if (!string.IsNullOrEmpty(tipActionData.LocalizationKey))
             {
-                localizations = GameEntry.Localization.GetString(tipActionData.LocalizationKey);
+                localizations = LocalizationMgr.Instance.GetString(tipActionData.LocalizationKey);
             }
 
             string pattern = @"{\d}";
@@ -210,7 +209,7 @@ namespace CasualGame
                     m_ContinueTxt.gameObject.SetActive(tipActionData.HasContinue);
                 });
             }
-            UnityGameFramework.Runtime.Log.Info("执行提示内容 {0}", localizations);
+            Log.Info("执行提示内容 {0}", localizations);
             return true;
         }
 
@@ -231,7 +230,7 @@ namespace CasualGame
             m_TargetImg = targetRectTrans.GetComponent<Image>();
             if (m_TargetImg != null)
             {
-                UnityGameFramework.Runtime.Log.Info("AttachBtnEvent  UGUIEventListener  GoName={0}", targetRectTrans.gameObject.name);
+                Log.Info("AttachBtnEvent  UGUIEventListener  GoName={0}", targetRectTrans.gameObject.name);
                 UGUIEventListener.Get(targetRectTrans.gameObject).onClick = OnTargetBtnClick;
             }
         }
@@ -263,7 +262,7 @@ namespace CasualGame
             Image targetImg = targetRectTrans.GetComponent<Image>();
             if (targetImg != null)
             {
-                UnityGameFramework.Runtime.Log.Info("AttachBtnEvent  UGUIEventListener  GoName={0}", targetRectTrans.gameObject.name);
+                Log.Info("AttachBtnEvent  UGUIEventListener  GoName={0}", targetRectTrans.gameObject.name);
                 UGUIEventListener.Get(targetRectTrans.gameObject).onClick += OnTargetBtnClick;
                 return;
             }
@@ -276,8 +275,8 @@ namespace CasualGame
                 targetBtn2.onClick.AddListener(OnTargetBtnClick);
 
                 //临时处理特色点击
-                var defaultCanvas = GameEntry.UI.MainCanvas;
-                var anchoredPositionInRect = TransformUtility.WorldToScreenPoints(GameEntry.UI.UICamera, Rect, targetBtn2.transform.position);
+                var defaultCanvas = Framework.UIMgr.Instance.MainCanvas;
+                var anchoredPositionInRect = TransformUtility.WorldToScreenPoints(Framework.UIMgr.Instance.UICamera, Rect, targetBtn2.transform.position);
                 m_Finger.anchoredPosition = anchoredPositionInRect;
                 m_TargetBtn = original.GetComponentInChildren<Button>();
                 return;

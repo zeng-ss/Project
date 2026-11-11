@@ -6,7 +6,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityGameFramework.Runtime;
 using System;
 using Custom.Activity;
 
@@ -45,13 +44,13 @@ namespace CasualGame
                 LogHandler.Info("修改了本地时间");
             }
 
-            GameEntry.Base.AttachTimer(1, OneSecondCall, null, true, true);
-            GameEntry.Setting.Save();
+            Framework.GameRoot.Instance.Repeat(1f, OneSecondCall);
+            SettingMgr.Instance.Save();
         }
 
         public static void LoginOut()
         {
-            GameEntry.Setting.Save();
+            SettingMgr.Instance.Save();
         }
 
         /// <summary>

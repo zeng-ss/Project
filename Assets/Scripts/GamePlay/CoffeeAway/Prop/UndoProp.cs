@@ -36,14 +36,14 @@ namespace CasualGame.CoffeeAway
         {
             if (core is null || _undoRecords.Count == 0)
             {
-                GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("2")));
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", LocalizationMgr.Instance.GetString("2")));
                 return false;
             }
 
             var record = _undoRecords[_undoRecords.Count - 1];
             if (!core.CanApplyUndo(record))
             {
-                GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("2")));
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", LocalizationMgr.Instance.GetString("2")));
                 return false;
             }
 

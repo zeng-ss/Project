@@ -71,7 +71,7 @@ namespace CasualGame
                 return true;
             }
 
-            // GameEntry.UI.OpenUIForm(UIFormType.LackOfPower);
+            // Framework.UIMgr.Instance.OpenUIForm(UIFormType.LackOfPower);
             return false;
         }
         public static void UseEnergy(int count)
@@ -82,7 +82,7 @@ namespace CasualGame
             }
 
             int curLevel = ProxyManager.UserProxy.GameLevel;
-            if (curLevel <= GameEntry.Config.GetInt("EntraceHomeLevel", 12))
+            if (curLevel <= GameConfigMgr.Instance.GetInt("EntraceHomeLevel", 12))
             {
                 return;
             }

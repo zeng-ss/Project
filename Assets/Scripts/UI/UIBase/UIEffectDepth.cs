@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : UIEffectDepth.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 特效层级管理
 
 /// UI 特效做好会有很多层级

@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : UGUIEventListener.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 动态监听
 //------------------------------------------------------------
 using UnityEngine;

@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : LaunchPage.cs
-// Email: yang.li@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using System.Collections;
@@ -8,7 +7,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using GameFramework;
 using UnityEngine.Video;
 
 namespace CasualGame
@@ -178,7 +176,7 @@ namespace CasualGame
         {
             if (launchPage == null)
             {
-                launchPage = GameEntry.UI.OpenUIInResources<LaunchPage>("Prefabs/LaunchPage", Constant.UIGroup.Loading, null);
+                launchPage = Framework.UIMgr.Instance.OpenUIInResources<LaunchPage>("Prefabs/LaunchPage");
                 launchPage.ChangeState(status);
             }
             else

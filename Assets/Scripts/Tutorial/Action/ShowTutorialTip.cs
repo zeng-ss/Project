@@ -1,5 +1,4 @@
 using CasualGame;
-using GameFramework;
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 using UnityEngine;
@@ -34,9 +33,9 @@ namespace Tutorial.Action
         public string LocalizationKey { get; set; }
         public Vector2 TipPosition { get; set; }
         public bool HasContinue { get; set; }
-        public GameFrameworkAction OnClickTargetBtn { get; set; }
+        public System.Action OnClickTargetBtn { get; set; }
 
-        public static ShowTutorialTipActionData Create(ShowTutorialTip tutorialTip, GameFrameworkAction onClickTargetBtn)
+        public static ShowTutorialTipActionData Create(ShowTutorialTip tutorialTip, System.Action onClickTargetBtn)
         {
             var data = ReferencePool.Acquire<ShowTutorialTipActionData>();
             data.Tips = tutorialTip.tips.value;

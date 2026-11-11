@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "anchorID": 1,
+    "clothID": 1,
+    "content": "8000",
+    "audioAssetID": 1008003
+  },
+  {
+    "id": 3,
+    "anchorID": 1,
+    "clothID": 1,
+    "content": "8001",
+    "audioAssetID": 1008003
+  },
+  {
+    "id": 12,
+    "anchorID": 1,
+    "clothID": 1,
+    "content": "8002",
+    "audioAssetID": 1008003
+  }
+]

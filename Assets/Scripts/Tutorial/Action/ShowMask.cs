@@ -1,5 +1,4 @@
 using CasualGame;
-using GameFramework;
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
 
@@ -11,7 +10,7 @@ namespace Tutorial.Action
         public int Alpha { get; set; }
         public bool IsShow { get; set; }
         public bool ClearHole { get; set; }
-        public GameFrameworkAction OnClickMask { get; set; }
+        public System.Action OnClickMask { get; set; }
 
         public void Clear()
         {
@@ -20,7 +19,7 @@ namespace Tutorial.Action
             ClearHole = true;
             OnClickMask = null;
         }
-        public static MaskActionData Create(int alpha, bool isShow, bool clearHole = true, GameFrameworkAction onClickMask = null)
+        public static MaskActionData Create(int alpha, bool isShow, bool clearHole = true, System.Action onClickMask = null)
         {
             var data = ReferencePool.Acquire<MaskActionData>();
             data.Alpha = alpha;

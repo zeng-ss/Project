@@ -5,7 +5,6 @@
 //------------------------------------------------------------
 using System.Threading;
 using UnityEngine;
-using UnityGameFramework.Runtime;
 
 namespace CasualGame
 {
@@ -51,7 +50,7 @@ namespace CasualGame
             // else
             // {
             //      var collectItem = await PrefabPool.Instance.Spawn<GameObject>(m_EffectAssetId, new CancellationTokenSource().Token);
-            //     // trans = ((GameObject)GameEntry.Resource.LoadAssetSync<GameObject>(m_EffectAssetId)).transform;
+            //     // trans = ((GameObject)Framework.GameRoot.Res.LoadAssetSync<GameObject>(m_EffectAssetId)).transform;
             // }
 
             if (trans == null)

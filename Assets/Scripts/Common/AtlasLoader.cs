@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
-using GameFramework;
 using UnityEngine;
 
 namespace CasualGame
@@ -128,16 +127,14 @@ namespace CasualGame
                 {
                     return refInfo.Sprites[0];
                 }
-                else
-                {
-                    ReferencePool.Release(refInfo);
-                    _loadedSprites.Remove(assetPath);
-                }
+
+                ReferencePool.Release(refInfo);
+                _loadedSprites.Remove(assetPath);
             }
 
             try
             {
-                Sprite sprite = await GameEntry.Resource.LoadAsset<Sprite>(assetPath, _cancellationTokenSource.Token);
+                Sprite sprite = await Framework.GameRoot.Res.LoadAsset<Sprite>(assetPath, _cancellationTokenSource.Token);
                 if (sprite != null)
                 {
                     if (_loadedSprites.TryGetValue(assetPath, out SpriteRefInfo existingRef))
@@ -199,7 +196,7 @@ namespace CasualGame
                 {
                     for (int i = 0; i < refInfo.Sprites.Count; i++)
                     {
-                        GameEntry.Resource.UnloadAsset(refInfo.Sprites[i]);
+                        Framework.GameRoot.Res.UnloadAsset(refInfo.Sprites[i]);
                     }
                 }
                 ReferencePool.Release(refInfo);

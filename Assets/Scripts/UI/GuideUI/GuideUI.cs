@@ -60,7 +60,7 @@ namespace CasualGame
 
             m_TipsFrame.gameObject.SetActive(false);
 
-            _guideID = m_Params.GetIntParams("GuideId");
+            _guideID = MParams.GetIntParams("GuideId");
             _drGuide = GuideManager.DrGuideDataTable.GetDataRow(_guideID);
 
             if (_drGuide == null)
@@ -99,7 +99,7 @@ namespace CasualGame
                 case GuideStyle.Finger:
                 {
                     DRFingerGuide drFingerGuide =
-                        GameEntry.DataTable.GetDataTable<DRFingerGuide>().GetDataRow(_drGuide.Id);
+                        Framework.GameRoot.Config.GetTable<DRFingerGuide>().GetDataRow(_drGuide.Id);
 
                     FingerCell_GuideFingerCell.Guide(drFingerGuide, Close);
                     break;
@@ -107,7 +107,7 @@ namespace CasualGame
                 case GuideStyle.Dialog:
                 {
                     DRDialogGuide drDialogGuide =
-                        GameEntry.DataTable.GetDataTable<DRDialogGuide>().GetDataRow(_drGuide.Id);
+                        Framework.GameRoot.Config.GetTable<DRDialogGuide>().GetDataRow(_drGuide.Id);
 
                     DialogCell_GuideDialogCell.ShowDialog(drDialogGuide);
                     break;
@@ -119,7 +119,6 @@ namespace CasualGame
         {
             base.OnClose(isShutdown, userData);
 
-            GameEntry.Sound.StopSound(_currentAudioID);
 
             _drGuide = null;
 

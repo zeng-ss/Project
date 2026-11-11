@@ -31,10 +31,10 @@ public class PropBtn : AttachPoolPrefabBase
     {
         m_UnlockLevel = m_ItemType switch
         {
-            ItemType.Undo => GameEntry.Config.GetInt(Constant.Config.PropUnlock11, 9),
-            ItemType.Shuffle => GameEntry.Config.GetInt(Constant.Config.PropUnlock12, 12),
-            ItemType.ExpandRoad => GameEntry.Config.GetInt(Constant.Config.PropUnlock13, 15),
-            ItemType.EliminateColor => GameEntry.Config.GetInt(Constant.Config.PropUnlock14, 18),
+            ItemType.Undo => GameConfigMgr.Instance.GetInt(Constant.Config.PropUnlock11, 9),
+            ItemType.Shuffle => GameConfigMgr.Instance.GetInt(Constant.Config.PropUnlock12, 12),
+            ItemType.ExpandRoad => GameConfigMgr.Instance.GetInt(Constant.Config.PropUnlock13, 15),
+            ItemType.EliminateColor => GameConfigMgr.Instance.GetInt(Constant.Config.PropUnlock14, 18),
             _ => 0
         };
         bool hasItem = ProxyManager.UserProxy.ItemCount((int)m_ItemType) > 0;
@@ -70,9 +70,9 @@ public class PropBtn : AttachPoolPrefabBase
     {
         if (m_IsLocked)
         {
-            GameEntry.UI.OpenUIForm(UIFormType.GlobalToast,
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast,
                 UGUIParams.Create().AddValue("Toast",
-                    String.Format(GameEntry.Localization.GetString("66").ToString(), m_UnlockLevel)));
+                    String.Format(LocalizationMgr.Instance.GetString("66").ToString(), m_UnlockLevel)));
             return;
         }
         PropMgr propMgr = CoffeeAwayGame.Instance.PropMgr;
@@ -99,7 +99,7 @@ public class PropBtn : AttachPoolPrefabBase
             @params.AddValue("ItemType", (ItemType)itemData.id);
             @params.AddValue("TitleText", itemData.id);
             @params.AddValue("Icon", transform);
-            GameEntry.UI.OpenUIForm(UIFormType.GetItemForm, @params);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GetItemForm, @params);
         }
     }
 
@@ -107,10 +107,10 @@ public class PropBtn : AttachPoolPrefabBase
     // {
     //     Vector2 screenPoint = TransformUtility.WorldToScreenPoint(camera, transform.position);
     //     TransformUtility.ScreenPointToWorldPointInRectangle(
-    //         GameEntry.UI.MainCanvas.GetComponent<RectTransform>(), screenPoint, out Vector3 uiWorldPoint);
+    //         Framework.UIMgr.Instance.MainCanvas.GetComponent<RectTransform>(), screenPoint, out Vector3 uiWorldPoint);
     //     UGUIParams uiParams = UGUIParams.Create().AddValue("unlockType", itemType).AddValue("Target", uiWorldPoint)
     //         .AddValue("Icon", transform);
-    //     GameEntry.UI.OpenUIForm(UIFormType.NewItemDialog, uiParams);
+    //     Framework.UIMgr.Instance.OpenUIForm(UIFormType.NewItemDialog, uiParams);
     // }
 
 

@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : TopcoverForm.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
@@ -13,7 +12,7 @@ namespace CasualGame
         {
             if (Instance == null)
             {
-                GameEntry.UI.OpenUIForm(UIFormType.TopcoverForm);
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.TopcoverForm);
             }
         }
         protected override void OnOpen(object userData)

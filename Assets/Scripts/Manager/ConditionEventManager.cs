@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : ConditionEventManager.cs
-// Email: yang.li@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using UnityEngine;

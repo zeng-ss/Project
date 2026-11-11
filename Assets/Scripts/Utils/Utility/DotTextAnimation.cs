@@ -44,7 +44,7 @@ public class DotTextAnimation : MonoBehaviour
         }
         else
         {
-            textComponent.text = GameEntry.Localization.GetString(baseTextId) + new string('.', _currentDots);
+            textComponent.text = LocalizationMgr.Instance.GetString(baseTextId) + new string('.', _currentDots);
         }
     }
 }

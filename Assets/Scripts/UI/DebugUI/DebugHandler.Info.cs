@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : DebugHandler.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 作弊指令处理
 /*
  * AddCoin=100

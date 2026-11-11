@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using CasualGame;
-using GameFramework;
 using Newtonsoft.Json;
 
 namespace Custom.Activity
@@ -310,7 +309,7 @@ namespace Custom.Activity
 
         public bool HasPopForm()
         {
-            int popup = GameEntry.UI.CurrentPopUpCount() + GameEntry.UI.CurrentDefaultUpCount();
+            int popup = Framework.UIMgr.Instance.CurrentPopUpCount() + Framework.UIMgr.Instance.CurrentDefaultUpCount();
             return popup >= 2;
         }
     }

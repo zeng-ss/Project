@@ -23,7 +23,7 @@ public abstract class AlphaDialog : UGuiForm
         base.OnInit(userData);
 
         graphicRaycaster = GetComponent<GraphicRaycaster>();
-        originalPosition = panel.transform.localPosition;
+        originalPosition = Panel.transform.localPosition;
 
         var imgMask = gameObject.transform.Find("Mask");
         if (imgMask != null && imgMask.GetComponent<Image>() != null)
@@ -43,10 +43,10 @@ public abstract class AlphaDialog : UGuiForm
         base.OnOpen(userData);
         UIAnimationFinish = false;
 
-        if (panel && m_CanvasGroup)
+        if (Panel && MCanvasGroup)
         {
             if (sequence != null && sequence.IsActive()) sequence.Kill();
-            m_CanvasGroup.alpha = 1f;
+            MCanvasGroup.alpha = 1f;
         }
         else
         {
@@ -68,11 +68,11 @@ public abstract class AlphaDialog : UGuiForm
         hasClickedClose = true;
         graphicRaycaster.enabled = false;
 
-        if (panel && m_CanvasGroup)
+        if (Panel && MCanvasGroup)
         {
             if (sequence != null && sequence.IsActive()) sequence.Kill();
             sequence = DOTween.Sequence();
-            sequence.Append(m_CanvasGroup.DOFade(0f, duration).SetEase(Ease.Linear)).OnComplete(base.Close);
+            sequence.Append(MCanvasGroup.DOFade(0f, duration).SetEase(Ease.Linear)).OnComplete(base.Close);
         }
         else
         {
@@ -85,7 +85,7 @@ public abstract class AlphaDialog : UGuiForm
     protected virtual void OnCompleteScale()
     {
         UIAnimationFinish = true;
-        if (m_Params != null) m_Params.OnOpenCallback?.Invoke(this);
+        if (MParams != null) MParams.OnOpenCallback?.Invoke(this);
     }
 
     // protected override void OnInit(object userData)

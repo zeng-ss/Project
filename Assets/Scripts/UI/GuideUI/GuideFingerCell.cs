@@ -5,7 +5,6 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityGameFramework.Runtime;
 using UnityEngine.UI;
 
 namespace CasualGame
@@ -62,12 +61,12 @@ namespace CasualGame
             Transform rootTransform = null;
             if (drFingerGuide.SceneName == "UI" && int.TryParse(drFingerGuide.RootName, out int formType))
             {
-                UGuiForm form = GameEntry.UI.GetUIForm<UGuiForm>((UIFormType)formType);
+                UGuiForm form = Framework.UIMgr.Instance.GetUIForm<UGuiForm>((UIFormType)formType);
                 if (form == null)
                 {
                     Log.Error("Cant find form formtype = {0}  guide Step={1} ", formType,
                         drFingerGuide.Id);
-                    GameEntry.UI.CloseUIForm(UIFormType.GuideUI);
+                    Framework.UIMgr.Instance.CloseUIForm(UIFormType.GuideUI);
                     return;
                 }
 
@@ -81,7 +80,7 @@ namespace CasualGame
             if (rootTransform == null)
             {
                 Log.Error("Cant find targetTrans path = {0}  guide Step={1} ", drFingerGuide.RootName, drFingerGuide.Id);
-                GameEntry.UI.CloseUIForm(UIFormType.GuideUI);
+                Framework.UIMgr.Instance.CloseUIForm(UIFormType.GuideUI);
                 return;
             }
 
@@ -96,7 +95,7 @@ namespace CasualGame
                 if (tempTransform == null)
                 {
                     Log.Error("Cant find targetTrans path = {0}  guide Step={1} ", highLightPath, drFingerGuide.Id);
-                    GameEntry.UI.CloseUIForm(UIFormType.GuideUI);
+                    Framework.UIMgr.Instance.CloseUIForm(UIFormType.GuideUI);
                     return;
                 }
 
@@ -127,7 +126,7 @@ namespace CasualGame
             Camera targetCamera = CameraTool.GetTargetTransformCamera(guideClickTransform);
 
             _targetCamera = targetCamera;
-            bool isUICamera = _targetCamera == GameEntry.UI.MainCanvas.worldCamera;
+            bool isUICamera = _targetCamera == Framework.UIMgr.Instance.MainCanvas.worldCamera;
             GuideCamera_Camera.gameObject.SetActive(!isUICamera);
 
             if (!isUICamera)
@@ -186,9 +185,9 @@ namespace CasualGame
             Vector2 screenCenter = screenRect.center;
             Vector2 localPoint;
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                GameEntry.UI.MainCanvas.GetComponent<RectTransform>(),
+                Framework.UIMgr.Instance.MainCanvas.GetComponent<RectTransform>(),
                 screenCenter,
-                GameEntry.UI.MainCanvas.worldCamera,
+                Framework.UIMgr.Instance.MainCanvas.worldCamera,
                 out localPoint
             );
             GuideButton_Button.GetComponent<RectTransform>().localPosition = localPoint;

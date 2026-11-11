@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : WinUIForm.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 胜利通关面板
 //------------------------------------------------------------
 
@@ -49,13 +48,13 @@ namespace CasualGame.CoffeeAway
             m_IsRewarding = false;
             ResetUI();
 
-            m_RewardCount = m_Params.GetAnyParams<List<ItemData>>("rewards")[0].num;
+            m_RewardCount = MParams.GetAnyParams<List<ItemData>>("rewards")[0].num;
 
             claimBtn.onClick.RemoveAllListeners();
             lookAdBtn.onClick.RemoveAllListeners();
             claimBtn.onClick.AddListener(() => GetReward(m_RewardCount));
             lookAdBtn.onClick.AddListener(() => GetReward(m_RewardCount * 3));
-            List<ItemData> rewards = m_Params.GetAnyParams<List<ItemData>>("rewards");
+            List<ItemData> rewards = MParams.GetAnyParams<List<ItemData>>("rewards");
             m_Level = ProxyManager.UserProxy.GameLevel;
             for (int i = 0; i < rewards.Count; i++)
             {
@@ -144,7 +143,7 @@ namespace CasualGame.CoffeeAway
             progressText.text = $"{progressCount}/{segmentLength}";
             tweens.Add(progressBar.DOSizeDelta(new Vector2(targetWidth, progressBar.sizeDelta.y), 1)
                 .SetEase(Ease.OutQuad).SetDelay(2f));
-            _atlasLoader.LoadSprite(newShipImage, Constant.AtlasId.Item, new ItemData((int)unlockType).GetIconName());
+            AtlasLoader.LoadSprite(newShipImage, Constant.AtlasId.Item, new ItemData((int)unlockType).GetIconName());
         }
 
         // 重置 UI 状态

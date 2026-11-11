@@ -1,6 +1,5 @@
 using NodeCanvas.Framework;
 using ParadoxNotion.Design;
-using GameFramework;
 
 namespace Tutorial.Condition
 {

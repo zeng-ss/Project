@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : FailUIForm.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 通关失败面板
 //------------------------------------------------------------
 
@@ -63,12 +62,12 @@ namespace CasualGame.CoffeeAway
 
             m_IsPeeking = true;
 
-            if (m_CanvasGroup != null)
+            if (MCanvasGroup != null)
             {
-                m_CanvasGroup.DOKill();
-                m_CanvasGroup.interactable = false;
-                m_CanvasGroup.blocksRaycasts = false;
-                m_CanvasGroup.DOFade(0f, PeekFadeDuration);
+                MCanvasGroup.DOKill();
+                MCanvasGroup.interactable = false;
+                MCanvasGroup.blocksRaycasts = false;
+                MCanvasGroup.DOFade(0f, PeekFadeDuration);
             }
 
             UGuiScreenMaskHelper.SetPeekSuppressed(true);
@@ -82,12 +81,12 @@ namespace CasualGame.CoffeeAway
             m_IsPeeking = false;
             UGuiScreenMaskHelper.SetPeekSuppressed(false);
 
-            if (m_CanvasGroup != null)
+            if (MCanvasGroup != null)
             {
-                m_CanvasGroup.DOKill();
-                m_CanvasGroup.interactable = true;
-                m_CanvasGroup.blocksRaycasts = true;
-                m_CanvasGroup.DOFade(1f, PeekFadeDuration);
+                MCanvasGroup.DOKill();
+                MCanvasGroup.interactable = true;
+                MCanvasGroup.blocksRaycasts = true;
+                MCanvasGroup.DOFade(1f, PeekFadeDuration);
             }
         }
 
@@ -102,7 +101,7 @@ namespace CasualGame.CoffeeAway
                 return;
             }
             UGUIParams @params = UGUIParams.Create().AddValue("fromHome", false);
-            GameEntry.UI.OpenUIForm(UIFormType.GetLifeDialog, @params);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GetLifeDialog, @params);
             Close();
         }
     }

@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : TransformUtility.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
@@ -31,7 +30,7 @@ namespace CasualGame
         private static Camera _scenceCamera;
 
 
-        public static Camera UGUICamera => GameEntry.UI.MainCanvas.worldCamera;
+        public static Camera UGUICamera => Framework.UIMgr.Instance.MainCanvas.worldCamera;
 
         /// <summary>
         /// 世界坐标转屏幕坐标

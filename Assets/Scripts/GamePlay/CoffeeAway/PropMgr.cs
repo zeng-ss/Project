@@ -42,8 +42,8 @@ namespace CasualGame.CoffeeAway
             {
                 if (!_core.ShouldShowShuffleHighlight())
                 {
-                    GameEntry.UI.OpenUIForm(UIFormType.GlobalToast,
-                        UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("93")));
+                    Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast,
+                        UGUIParams.Create().AddValue("Toast", LocalizationMgr.Instance.GetString("93")));
                     return false;
                 }
 

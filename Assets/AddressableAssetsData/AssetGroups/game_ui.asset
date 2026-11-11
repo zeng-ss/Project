@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: game_ui
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: game_ui
+  m_GUID: c221503efca69e245b7a169d55a9d372
+  m_SerializeEntries:
+  - m_GUID: 05b3923b78fb6495386c47e98c4366ea
+    m_Address: CasualCurrency#12005
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0db70ea3e5029436bba05a6a07aac569
+    m_Address: TransitionForm#10098
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0f2af7152f50142318e5ddee2466ee98
+    m_Address: LoadingDialog#10099
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0ff552078075f42cf99b744dfb8605b8
+    m_Address: Text
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 174b2518ade164257aae0e6dce307d05
+    m_Address: ContinueUIForm#11102
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 1ea23d0305ea245509a5e6afcec0feb3
+    m_Address: UIMainForm#10001
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25addbe1cb58c4e0aa7ce0e55ee7a6d7
+    m_Address: GetLifeDialog#12008
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 366e4fe71ca5c48d8ad48ae1a4eac0d6
+    m_Address: SettingDialog#11101
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a4c6c23c4cc24a018d23af77cfe192d
+    m_Address: UIGameForm#10002
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5ee3a80d0d24c4083a1b6274094d3107
+    m_Address: GlobalToast#10009
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7258066228f824ba4ab52b172b1440b2
+    m_Address: FailUIForm#11010
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adb04ce5443fc4ca7b673a018c2f0401
+    m_Address: WinUIForm#11009
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: cca9036f4f8174cce8cec3b26c565d42
+    m_Address: ExitConfirmDialog#11103
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd941ab5204064b2187982c52245e9e2
+    m_Address: TopcoverForm#10003
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: de6cbfe8096d44287bc3d1e91296f522
+    m_Address: NewItemDialog#11008
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e76e90a2b9e70425b9af70a3dfc3876f
+    m_Address: EffectPool#31005
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fadbfc3a92db54e7bbeb9cc28ef186d4
+    m_Address: GetItemForm#11007
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 0101c30a5f96c9a43a6b86caa98762b5, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 6ac6e5de6c3a5a14c82b7c49a81a036f, type: 2}
+    - {fileID: 11400000, guid: 41e19001ef5bfd849a3bfd7f9b98a26b, type: 2}

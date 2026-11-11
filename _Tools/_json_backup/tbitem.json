@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "体力",
+    "icons": "icon_power",
+    "style": 1
+  },
+  {
+    "id": 2,
+    "name": "金币",
+    "icons": "Coin_1,Coin_2,Coin_3,Coin_4,Coin_5,Coin_6",
+    "style": 2
+  },
+  {
+    "id": 3,
+    "name": "Undo",
+    "icons": "icon_undo",
+    "style": 2
+  },
+  {
+    "id": 4,
+    "name": "Shuffle",
+    "icons": "icon_shuffle",
+    "style": 2
+  },
+  {
+    "id": 5,
+    "name": "ExpandRoad",
+    "icons": "icon_expandroad",
+    "style": 2
+  },
+  {
+    "id": 6,
+    "name": "EliminateColor",
+    "icons": "icon_eliminatecolor",
+    "style": 2
+  },
+  {
+    "id": 20,
+    "name": "Hidden",
+    "icons": "questionCar",
+    "style": 4
+  },
+  {
+    "id": 21,
+    "name": "Glass",
+    "icons": "icon_item_TransparentCover",
+    "style": 4
+  },
+  {
+    "id": 22,
+    "name": "Contai8ner",
+    "icons": "container",
+    "style": 4
+  },
+  {
+    "id": 23,
+    "name": "Colored",
+    "icons": "icon_item_ColorTray",
+    "style": 4
+  }
+]

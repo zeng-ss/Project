@@ -1,11 +1,9 @@
 ﻿//------------------------------------------------------------
 // File : ObjectPool.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 对象池
 //------------------------------------------------------------
 using System.Collections.Generic;
 using UnityEngine.Events;
-using UnityGameFramework.Runtime;
 
 
 public class ObjectPool<T> where T : new()

@@ -5,8 +5,11 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Resources/Scenes/KBScene.unity
     guid: 8a9dec20d91ad41a08038be5944ad3fe
-  m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0
+  - enabled: 0
+    path: Assets/Game/GameScenes/MyGame.unity
+    guid: c009d5fc9ca7a4bc19a4a3c10e9c449d
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: f74e7f745c6664a469b71ca9f4fd3cd8, type: 2}

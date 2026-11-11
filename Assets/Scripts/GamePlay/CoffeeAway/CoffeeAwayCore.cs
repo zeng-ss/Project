@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityGameFramework.Runtime;
 using Random = System.Random;
 
 namespace CasualGame.CoffeeAway
@@ -250,11 +249,11 @@ namespace CasualGame.CoffeeAway
                             _hasContinue = true;
                             _isRoadFullPending = true; // 购买继续后，额外容器出现，重新进入满载判定
                         });
-                        GameEntry.UI.OpenUIForm(UIFormType.ContinueUIForm, uiParams);
+                        Framework.UIMgr.Instance.OpenUIForm(UIFormType.ContinueUIForm, uiParams);
                     }
                     else
                     {
-                        GameEntry.UI.OpenUIForm(UIFormType.FailUIForm);
+                        Framework.UIMgr.Instance.OpenUIForm(UIFormType.FailUIForm);
                     }
                 }
                 else _vehicleMgr.ReduceCarMinCarGap(); // 满就减少间距防止走走停停

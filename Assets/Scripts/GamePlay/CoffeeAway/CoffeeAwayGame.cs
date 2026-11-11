@@ -2,7 +2,6 @@ using Cysharp.Threading.Tasks;
 using Dreamteck.Splines;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityGameFramework.Runtime;
 using System.Collections.Generic;
 
 namespace CasualGame.CoffeeAway
@@ -73,7 +72,7 @@ namespace CasualGame.CoffeeAway
 
         private void Win()
         {
-            GameEntry.UI.OpenUIForm(UIFormType.WinUIForm);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.WinUIForm);
             if (ProxyManager.UserProxy.GameLevel >= 89) // 循环
             {
                 int level = Random.Range(10, 91);
@@ -91,7 +90,7 @@ namespace CasualGame.CoffeeAway
         private void HandleInput()
         {
             if (_core.IsAutoCompleting || _core.IsShowingExtraHolder) return;
-            if (Input.GetMouseButtonDown(0) && !GameEntry.UI.HasDialogUI())
+            if (Input.GetMouseButtonDown(0) && !Framework.UIMgr.Instance.HasDialogUI())
             {
                 if (EventSystem.current is not null && EventSystem.current.IsPointerOverGameObject()) return;
                 Ray ray = Camera.main!.ScreenPointToRay(Input.mousePosition);
@@ -163,11 +162,11 @@ namespace CasualGame.CoffeeAway
             {
                 UGUIParams uiParams = UGUIParams.Create();
                 uiParams.AddValue("unlockType", unlockType);
-                GameEntry.UI.OpenUIForm(UIFormType.NewItemDialog, uiParams);
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.NewItemDialog, uiParams);
             }
 
-            await UniTask.WaitUntil(() => GameEntry.UI.GetUIForm<UIGameForm>(UIFormType.UIGameForm) != null);
-            var form = GameEntry.UI.GetUIForm<UIGameForm>(UIFormType.UIGameForm);
+            await UniTask.WaitUntil(() => Framework.UIMgr.Instance.GetUIForm<UIGameForm>(UIFormType.UIGameForm) != null);
+            var form = Framework.UIMgr.Instance.GetUIForm<UIGameForm>(UIFormType.UIGameForm);
             form.UpdateVisual();
             form.SetBtnShow(level != 1);
             TryStartFirstLevelGuide();

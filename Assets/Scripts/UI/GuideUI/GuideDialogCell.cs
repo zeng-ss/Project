@@ -1,7 +1,5 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using UnityEngine;
-using UnityGameFramework.Runtime;
-using GameFramework.Event;
 
 namespace CasualGame
 {
@@ -30,7 +28,6 @@ namespace CasualGame
 
 		public void OnOpen()
 		{
-			GameEntry.Event.Subscribe(PlaySoundSuccessEventArgs.EventId, PlaySoundSuccessEvent);
 		}
 
 		public void OnUpdate(float elapseSeconds, float realElapseSeconds)
@@ -38,20 +35,8 @@ namespace CasualGame
 
 		}
 
-		private void PlaySoundSuccessEvent(object sender, GameEventArgs e)
-		{
-			PlaySoundSuccessEventArgs playSoundSuccessEventArgs = (PlaySoundSuccessEventArgs)e;
-
-			// if (playSoundSuccessEventArgs.SerialId == _currentAudioID)
-			// {
-			//  _sequence = ItemAnimation.TypeWrite(m_TextContent, _contentText, playSoundSuccessEventArgs.SoundAgent.Length - 0.6f);
-			// }
-		}
-
 		public void OnClose()
 		{
-			GameEntry.Event.Unsubscribe(PlaySoundSuccessEventArgs.EventId, PlaySoundSuccessEvent);
-
 			if (_sequence.IsActive())
 			{
 				_sequence.Kill();

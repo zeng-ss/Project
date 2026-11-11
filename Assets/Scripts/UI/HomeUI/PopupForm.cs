@@ -1,9 +1,9 @@
+﻿using System;
 //------------------------------------------------------------
 // File : PopupForm.cs
 // Email: mailto:zhiqiang.yang
 // Desc : 
 //------------------------------------------------------------
-using GameFramework;
 
 namespace CasualGame
 {
@@ -11,7 +11,7 @@ namespace CasualGame
     {
         private UIFormType m_FormType;
         private UGUIParams m_GUIParams;
-        private GameFrameworkFunc<bool> m_FinishCb; //返回true表示Task完成
+        private Func<bool> m_FinishCb; //返回true表示Task完成
 
         public PopupForm(UIFormType formType, UGUIParams _guiParams)
         {
@@ -19,7 +19,7 @@ namespace CasualGame
             this.m_GUIParams = _guiParams;
         }
 
-        public PopupForm(UIFormType formType, UGUIParams _guiParams, GameFrameworkFunc<bool> finishCb)
+        public PopupForm(UIFormType formType, UGUIParams _guiParams, Func<bool> finishCb)
         {
             this.m_FormType = formType;
             this.m_GUIParams = _guiParams;
@@ -28,14 +28,14 @@ namespace CasualGame
 
         public override void Execute(UIMainForm uIHome)
         {
-            GameEntry.UI.OpenUIForm(m_FormType, m_GUIParams);
+            Framework.UIMgr.Instance.OpenUIForm(m_FormType, m_GUIParams);
         }
 
         public override void Update()
         {
             if (m_FinishCb == null)
             {
-                var form = GameEntry.UI.GetUIForm<UIMainForm>(m_FormType);
+                var form = Framework.UIMgr.Instance.GetUIForm<UIMainForm>(m_FormType);
                 if (form == null) return;
 
                 if (form.UIAnimationFinish)

@@ -1,13 +1,12 @@
 ﻿//------------------------------------------------------------
 // File : MainController.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityGameFramework.Runtime;
+
 
 namespace CasualGame
 {
@@ -93,14 +92,14 @@ namespace CasualGame
         {
             if (bindObject.obj == null)
             {
-                Log.Error(" {0}/{1}对象为空", mOwnerUIHandler.name, tag);
+                Debug.LogError(string.Format(" {0}/{1}对象为空", mOwnerUIHandler.name, tag));
                 return;
             }
             if (!comBindObjectHash.ContainsKey(tag))
                 comBindObjectHash.Add(tag, bindObject);
             else
             {
-                Log.Error(" {0}/{1} 有重复key ", mOwnerUIHandler.name, tag);
+                Debug.LogError(string.Format(" {0}/{1} 有重复key ", mOwnerUIHandler.name, tag));
             }
         }
 

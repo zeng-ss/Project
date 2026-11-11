@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : UserProxy.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 玩家数据存储
 //------------------------------------------------------------
 
@@ -8,8 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
-using GameFramework;
-using GameFramework.DataTable;
 using Tutorial;
 using UnityEngine;
 using Custom.Activity;
@@ -34,7 +31,7 @@ namespace CasualGame
 
         public int GameLevel => userModel.level;
 
-        public IDataTable<DRItem> ItemTables;
+        public Framework.ConfigTable<DRItem> ItemTables;
 
         public bool IsNewUser => IsProxyNull;
 
@@ -93,7 +90,7 @@ namespace CasualGame
 
         public override void OnRegister()
         {
-            ItemTables = GameEntry.DataTable.GetDataTable<DRItem>();
+            ItemTables = Framework.GameRoot.Config.GetTable<DRItem>();
         }
 
 

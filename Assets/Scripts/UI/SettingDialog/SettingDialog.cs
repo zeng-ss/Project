@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : SettingDialog.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 游戏中暂停 / 设置面板
 //------------------------------------------------------------
 
@@ -25,7 +24,7 @@ namespace CasualGame.CoffeeAway
         protected override void OnOpen(object userData)
         {
             base.OnOpen(userData);
-            bool fromHome = m_Params.GetBoolParams("FromHome");
+            bool fromHome = MParams.GetBoolParams("FromHome");
             if (fromHome)
             {
                 m_BottomParent.gameObject.SetActive(false);
@@ -41,12 +40,12 @@ namespace CasualGame.CoffeeAway
             debugBtn.onClick.RemoveAllListeners();
             debugBtn.onClick.AddListener(OnClick_DebugBtn);
 
-            version.text = GameEntry.Localization.GetString("9") + ":" + Application.version;
+            version.text = LocalizationMgr.Instance.GetString("9") + ":" + Application.version;
 
             homeBtn.onClick.RemoveAllListeners();
             homeBtn.onClick.AddListener(OnClick_HomeBtn);
 
-            bool shouldShowHomeBtn = ProxyManager.UserProxy.GameLevel >= GameEntry.Config.GetInt("EntraceHomeLevel", 12);
+            bool shouldShowHomeBtn = ProxyManager.UserProxy.GameLevel >= GameConfigMgr.Instance.GetInt("EntraceHomeLevel", 12);
             homeBtn.gameObject.SetActive(shouldShowHomeBtn);
 
             // restartBtn.onClick.RemoveAllListeners();
@@ -56,7 +55,7 @@ namespace CasualGame.CoffeeAway
             for (int i = 0; i < count; i++)
             {
                 SettingBtn btn = attachParentPrefabPool.Spawn<SettingBtn>(0, m_SettingBtnParent);
-                btn.SetData((Media)i, _atlasLoader);
+                btn.SetData((Media)i, AtlasLoader);
                 btns.Add(btn);
             }
 
@@ -103,7 +102,7 @@ namespace CasualGame.CoffeeAway
             {
                 UGUIParams uiParams = UGUIParams.Create();
                 uiParams.AddValue("is_back_home", true);
-                GameEntry.UI.OpenUIForm(UIFormType.ExitConfirmDialog, uiParams);
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.ExitConfirmDialog, uiParams);
                 Close();
                 return;
             }
@@ -140,12 +139,12 @@ namespace CasualGame.CoffeeAway
 
         public void OnBtnPolicy()
         {
-            Application.OpenURL(GameEntry.Config.GetString(Constant.Config.URL_Privacy_Policy));
+            Application.OpenURL(GameConfigMgr.Instance.GetString(Constant.Config.URL_Privacy_Policy));
         }
 
         public void OnBtnTerm()
         {
-            Application.OpenURL(GameEntry.Config.GetString(Constant.Config.URL_User_Agreement));
+            Application.OpenURL(GameConfigMgr.Instance.GetString(Constant.Config.URL_User_Agreement));
         }
     }
 }

@@ -5,7 +5,6 @@
 //------------------------------------------------------------
 using System.Collections;
 using System.Collections.Generic;
-using GameFramework.UI;
 using CasualGame;
 using UnityEngine;
 using UnityEngine.EventSystems;

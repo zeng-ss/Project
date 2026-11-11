@@ -28,14 +28,14 @@ namespace CasualGame.CoffeeAway
         public void UpdateVisual()
         {
             ClearPropBtns();
-            levelText.text = GameEntry.Localization.GetString("1").ToUpper() + " " +
+            levelText.text = LocalizationMgr.Instance.GetString("1").ToUpper() + " " +
                              (ProxyManager.UserProxy.GameLevel + 1);
             List<ItemType> propBtns = new List<ItemType>()
                 { ItemType.Undo, ItemType.Shuffle, ItemType.ExpandRoad, ItemType.EliminateColor };
             for (int i = 0; i < propBtns.Count; i++)
             {
                 var propBtn = m_Pool.Spawn<PropBtn>(0, m_PropContainer);
-                propBtn.Init(this, propBtns[i], _atlasLoader);
+                propBtn.Init(this, propBtns[i], AtlasLoader);
                 propBtn.transform.name = $"PropBtn_{(int)propBtns[i]}";
                 m_PropBtns.Add(propBtn);
             }
@@ -53,7 +53,7 @@ namespace CasualGame.CoffeeAway
         public void SetFingerShow(bool show, Vector3 position)
         {
             finger.gameObject.SetActive(show);
-            SetGuide(show, GameEntry.Localization.GetString("95"));
+            SetGuide(show, LocalizationMgr.Instance.GetString("95"));
             if (!show || m_PropBtns.Count == 0) return;
 
             finger.transform.localEulerAngles = new Vector3(0, 0, -28.3f);
@@ -72,7 +72,7 @@ namespace CasualGame.CoffeeAway
         {
             UGUIParams _params = UGUIParams.Create();
             _params.AddValue("FromHome", false);
-            GameEntry.UI.OpenUIForm(UIFormType.SettingDialog, _params);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.SettingDialog, _params);
             PlaySoundManager.Instance.PlaySound(Constant.Audio.ClickButton);
         }
 
@@ -80,11 +80,11 @@ namespace CasualGame.CoffeeAway
         {
             PlaySoundManager.Instance.PlaySound(Constant.Audio.ClickButton);
             // 挽留 UI
-            if (CoffeeAwayGame.Instance.IsBackShouldReduceEnergy && ProxyManager.UserProxy.GameLevel >= GameEntry.Config.GetInt("EntraceHomeLevel", 12))
+            if (CoffeeAwayGame.Instance.IsBackShouldReduceEnergy && ProxyManager.UserProxy.GameLevel >= GameConfigMgr.Instance.GetInt("EntraceHomeLevel", 12))
             {
                 UGUIParams uiParams = UGUIParams.Create();
                 uiParams.AddValue("is_back_home", false);
-                GameEntry.UI.OpenUIForm(UIFormType.ExitConfirmDialog, uiParams);
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.ExitConfirmDialog, uiParams);
             }
             else CoffeeAwayGame.Instance.Restart();
         }

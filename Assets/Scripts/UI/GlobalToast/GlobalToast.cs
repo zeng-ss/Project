@@ -19,13 +19,13 @@ namespace CasualGame
             transform.localScale = Vector3.one * 0.5f;
             transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack).OnComplete(() =>
             {
-                if (m_Params.HasKey("ToastCall"))
+                if (MParams.HasKey("ToastCall"))
                 {
-                    Action callback = (Action)m_Params.GetObjectParams("ToastCall");
+                    Action callback = (Action)MParams.GetObjectParams("ToastCall");
                     callback?.Invoke();
                 }
             });
-            m_Toast.text = m_Params.GetStringParams("Toast");
+            m_Toast.text = MParams.GetStringParams("Toast");
             StartCoroutine(DelayAction(2, () =>
             {
                 Close();

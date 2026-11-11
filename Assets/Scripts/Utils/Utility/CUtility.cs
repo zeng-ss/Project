@@ -6,7 +6,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityGameFramework.Runtime;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -944,7 +943,7 @@ public static partial class CUtility
             }
             catch (System.Exception)
             {
-                UnityGameFramework.Runtime.Log.Error("SplitStringToInt parse fail source: ", source);
+                Log.Error("SplitStringToInt parse fail source: ", source);
             }
 
             return results;

@@ -1,13 +1,12 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using GameFramework.DataTable;
 
 namespace CasualGame
 {
     public partial class GuideManager
     {
-        public static IDataTable<DRGuide> DrGuideDataTable => GameEntry.DataTable.GetDataTable<DRGuide>();
+        public static Framework.ConfigTable<DRGuide> DrGuideDataTable => Framework.GameRoot.Config.GetTable<DRGuide>();
         private static int _currentGuideId = -1;
         public static GuideKey CurrentGuideKey => (GuideKey)_currentGuideId;
         private static Action _finishGuideEvent;
@@ -58,7 +57,7 @@ namespace CasualGame
                 return;
             }
 
-            GameEntry.Base.StartCoroutine(WaitGuideFormOpen((UIFormType)guideData.WaitUIOpenType, () =>
+            Framework.GameRoot.Instance.StartCoroutine(WaitGuideFormOpen((UIFormType)guideData.WaitUIOpenType, () =>
             {
                 OpenGuideUI(guideId);
             }));
@@ -76,7 +75,7 @@ namespace CasualGame
                 EventSystemTool.EnableEventSystem();
             };
 
-            GameEntry.UI.OpenUIForm(UIFormType.GuideUI, @params);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GuideUI, @params);
         }
 
         static IEnumerator WaitGuideFormOpen(UIFormType formType, System.Action CallBack)
@@ -87,7 +86,7 @@ namespace CasualGame
                 yield break;
             }
 
-            UGuiForm form = GameEntry.UI.GetUIForm<UGuiForm>(formType);
+            UGuiForm form = Framework.UIMgr.Instance.GetUIForm<UGuiForm>(formType);
             if (form != null && form.UIAnimationFinish)
             {
                 CallBack?.Invoke();
@@ -99,7 +98,7 @@ namespace CasualGame
             while ((form == null || (form != null && !form.UIAnimationFinish)) && count < 300)
             {
                 if (form == null)
-                    form = GameEntry.UI.GetUIForm<UGuiForm>(formType);
+                    form = Framework.UIMgr.Instance.GetUIForm<UGuiForm>(formType);
                 yield return new WaitForFixedUpdate();
                 count++;
             }
@@ -111,7 +110,7 @@ namespace CasualGame
 
         private static void CheckToStopGuide()
         {
-            var form = GameEntry.UI.GetUIForm<UGuiForm>(UIFormType.GuideUI);
+            var form = Framework.UIMgr.Instance.GetUIForm<UGuiForm>(UIFormType.GuideUI);
             if (form != null) form.Close();
         }
     }

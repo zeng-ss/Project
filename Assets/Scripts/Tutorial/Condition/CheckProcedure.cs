@@ -19,7 +19,7 @@ namespace Tutorial.Condition
         protected override bool OnCheck()
         {
             // var procedure = GameEntry.Procedure.CurrentProcedure as CasualGame.ProcedureBase;
-            return ProcedureBase.CurrentSceneName == valueA.value;
+            return Framework.GameFlow.CurrentSceneName == valueA.value;
         }
     }
 }

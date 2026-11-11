@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : ContinueUIForm.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 
@@ -37,14 +36,14 @@ namespace CasualGame.CoffeeAway
             m_CloseBtn.onClick.RemoveAllListeners();
             m_UseCoinBtn.onClick.AddListener(OnClick_UseCoin);
             m_CloseBtn.onClick.AddListener(OnClick_Close);
-            coinCount = GameEntry.Config.GetInt(Constant.Config.ContinueCost, 400);
+            coinCount = GameConfigMgr.Instance.GetInt(Constant.Config.ContinueCost, 400);
             m_CoinCountText.text = coinCount.ToString();
-            onContinue = m_Params.GetDelegage("OnContinue");
+            onContinue = MParams.GetDelegage("OnContinue");
         }
 
         private void OnClick_Close()
         {
-            GameEntry.UI.OpenUIForm(UIFormType.FailUIForm);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.FailUIForm);
             Close();
         }
 
@@ -61,8 +60,8 @@ namespace CasualGame.CoffeeAway
             else
             {
                 isBuySuccess = false;
-                GameEntry.UI.OpenUIForm(UIFormType.GlobalToast,
-                    UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("58")));
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast,
+                    UGUIParams.Create().AddValue("Toast", LocalizationMgr.Instance.GetString("58")));
             }
         }
 
@@ -94,12 +93,12 @@ namespace CasualGame.CoffeeAway
 
             m_IsPeeking = true;
 
-            if (m_CanvasGroup != null)
+            if (MCanvasGroup != null)
             {
-                m_CanvasGroup.DOKill();
-                m_CanvasGroup.interactable = false;
-                m_CanvasGroup.blocksRaycasts = false;
-                m_CanvasGroup.DOFade(0f, PeekFadeDuration);
+                MCanvasGroup.DOKill();
+                MCanvasGroup.interactable = false;
+                MCanvasGroup.blocksRaycasts = false;
+                MCanvasGroup.DOFade(0f, PeekFadeDuration);
             }
 
             UGuiScreenMaskHelper.SetPeekSuppressed(true);
@@ -113,12 +112,12 @@ namespace CasualGame.CoffeeAway
             m_IsPeeking = false;
             UGuiScreenMaskHelper.SetPeekSuppressed(false);
 
-            if (m_CanvasGroup != null)
+            if (MCanvasGroup != null)
             {
-                m_CanvasGroup.DOKill();
-                m_CanvasGroup.interactable = true;
-                m_CanvasGroup.blocksRaycasts = true;
-                m_CanvasGroup.DOFade(1f, PeekFadeDuration);
+                MCanvasGroup.DOKill();
+                MCanvasGroup.interactable = true;
+                MCanvasGroup.blocksRaycasts = true;
+                MCanvasGroup.DOFade(1f, PeekFadeDuration);
             }
         }
     }

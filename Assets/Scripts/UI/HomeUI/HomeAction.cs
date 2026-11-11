@@ -1,25 +1,25 @@
+﻿using System;
 //------------------------------------------------------------
 // File : HomeAction.cs
 // Email: mailto:zhiqiang.yang
 // Desc : 
 //------------------------------------------------------------
-using GameFramework;
 
 namespace CasualGame
 {
     public class HomeAction : IHomeTask
     {
-        private GameFramework.GameFrameworkAction gameFrameworkAction;
+        private Action gameFrameworkAction;
 
-        private GameFrameworkFunc<bool> m_FinishCb; //返回true表示Task完成
+        private Func<bool> m_FinishCb; //返回true表示Task完成
 
-        public HomeAction(GameFramework.GameFrameworkAction action)
+        public HomeAction(Action action)
         {
             this.gameFrameworkAction = action;
         }
 
         //等待finishCb返回true表示完成
-        public HomeAction(GameFramework.GameFrameworkAction action, GameFrameworkFunc<bool> finishCb)
+        public HomeAction(Action action, Func<bool> finishCb)
         {
             this.gameFrameworkAction = action;
             this.m_FinishCb = finishCb;

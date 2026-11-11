@@ -64,7 +64,7 @@ namespace Custom.Activity
         {
             UIFormType form = HomeClickForm;
             if (form != UIFormType.Undefined)
-                GameEntry.UI.OpenUIForm(form);
+                Framework.UIMgr.Instance.OpenUIForm(form);
         }
 
         /// <summary>

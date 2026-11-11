@@ -34,7 +34,7 @@
 
 //             if (SceneHelper.IsGamePlayScene() || SceneHelper.IsHomeScene())
 //             {
-//                 bool hasDialogUI = GameEntry.UI.HasDialogUI();
+//                 bool hasDialogUI = Framework.UIMgr.Instance.HasDialogUI();
 //                 m_casualCurrencyGroup.SetCasualCurrencyGroup(hasDialogUI);
 //             }
 //         }

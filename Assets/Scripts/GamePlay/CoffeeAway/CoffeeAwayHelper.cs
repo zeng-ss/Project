@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
-using UnityGameFramework.Runtime;
 
 namespace CasualGame.CoffeeAway
 {
@@ -21,7 +20,7 @@ namespace CasualGame.CoffeeAway
                 return null;
             }
 
-            var textAssets = await GameEntry.Resource.LoadAsset<TextAsset>(path, new CancellationTokenSource().Token);
+            var textAssets = await Framework.GameRoot.Res.LoadAsset<TextAsset>(path, new CancellationTokenSource().Token);
             var data = LevelData.FromJson(textAssets.text);
             onSuccess?.Invoke(data);
             return data;
@@ -321,7 +320,7 @@ namespace CasualGame.CoffeeAway
         public static void SetFinger(bool isShow, Holder holder)
         {
             // 优先走 UIGameForm 自带的 2D 手指；预制体未绑定 finger 时回退到项目通用 FingerGuide（3D 手指）
-            UIGameForm form = GameEntry.UI.GetUIForm<UIGameForm>(UIFormType.UIGameForm);
+            UIGameForm form = Framework.UIMgr.Instance.GetUIForm<UIGameForm>(UIFormType.UIGameForm);
             var screenPos = Camera.main.WorldToScreenPoint(holder.transform.position);
             form.SetFingerShow(isShow, screenPos);
         }

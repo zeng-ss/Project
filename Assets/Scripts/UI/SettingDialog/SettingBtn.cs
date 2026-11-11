@@ -44,12 +44,12 @@ namespace CasualGame.CoffeeAway
             {
                 case Media.music:
                     uIGray.IsGray = isMuted;
-                    GameEntry.Sound.Mute("Music", isMuted);
+                    Framework.GameRoot.Sound.Mute("Music", isMuted);
                     _atlasLoader.LoadSprite(m_Icon, Constant.AtlasId.Setting, "icon_music_on");
                     break;
                 case Media.voice:
                     uIGray.IsGray = isMuted;
-                    GameEntry.Sound.Mute("Sound", isMuted);
+                    Framework.GameRoot.Sound.Mute("Sound", isMuted);
                     _atlasLoader.LoadSprite(m_Icon, Constant.AtlasId.Setting, "icon_voice_on");
                     break;
                 case Media.shock:

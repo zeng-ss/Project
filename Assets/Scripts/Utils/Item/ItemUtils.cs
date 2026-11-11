@@ -110,7 +110,7 @@ namespace CasualGame
             catch (Exception ex)
             {
 
-                UnityGameFramework.Runtime.Log.Error("解析异常 ex:{0}   reward:{1}", ex.Message, rewardStr);
+                Log.Error("解析异常 ex:{0}   reward:{1}", ex.Message, rewardStr);
 
                 return retList;
             }

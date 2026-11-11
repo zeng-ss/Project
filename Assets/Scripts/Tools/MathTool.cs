@@ -1,13 +1,10 @@
 //------------------------------------------------------------
 // File : MathTool.cs
-// Email: mailto:zhuofeng.cai@kingboat.cn
 // Desc : 
 //------------------------------------------------------------
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityGameFramework.Runtime;
-using GameFramework;
 
 namespace CasualGame
 {

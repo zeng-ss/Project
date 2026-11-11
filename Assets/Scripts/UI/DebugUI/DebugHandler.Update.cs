@@ -21,13 +21,13 @@ namespace CasualGame
                 }
             },
             {
-                KeyCode.F, () => { GameEntry.Base.GameSpeed += 0.5f; }
+                KeyCode.F, () => { Framework.GameRoot.Instance.GameSpeed += 0.5f; }
             },
             {
-                KeyCode.S, () => { GameEntry.Base.GameSpeed -= 0.5f; }
+                KeyCode.S, () => { Framework.GameRoot.Instance.GameSpeed -= 0.5f; }
             },
             {
-                KeyCode.R, () => { GameEntry.Base.GameSpeed = 1f; }
+                KeyCode.R, () => { Framework.GameRoot.Instance.GameSpeed = 1f; }
             },
             {
                 KeyCode.B, () =>

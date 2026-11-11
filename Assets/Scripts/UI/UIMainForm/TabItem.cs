@@ -37,7 +37,7 @@ namespace CasualGame
             switch (_panelType)
             {
                 case ActivityType.HomePanel:
-                    _text.text = GameEntry.Localization.GetString("82").ToUpper();
+                    _text.text = LocalizationMgr.Instance.GetString("82").ToUpper();
                     atlasLoader.LoadSprite(_icon, Constant.AtlasId.Home, "icon_home");
                     break;
             }

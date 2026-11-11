@@ -86,7 +86,7 @@ namespace CasualGame
 
             try
             {
-                _asset = await GameEntry.Resource.LoadAsset<Object>(assetId, cancellationToken);
+                _asset = await Framework.GameRoot.Res.LoadAsset<Object>(assetId, cancellationToken);
                 loadingTcs.TrySetResult(_asset);
                 return _asset;
             }
@@ -139,7 +139,7 @@ namespace CasualGame
         {
             if (_asset != null)
             {
-                GameEntry.Resource.UnloadAsset(_asset);
+                Framework.GameRoot.Res.UnloadAsset(_asset);
                 _asset = null;
             }
 

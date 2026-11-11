@@ -15,9 +15,9 @@ namespace Tutorial.Action
         protected override void OnExecute()
         {
             base.OnExecute();
-            if (GameEntry.UI.HasUIForm(formType.value))
+            if (Framework.UIMgr.Instance.HasUIForm(formType.value))
             {
-                GameEntry.UI.CloseUIForm(formType.value);
+                Framework.UIMgr.Instance.CloseUIForm(formType.value);
             }
             EndAction();
         }

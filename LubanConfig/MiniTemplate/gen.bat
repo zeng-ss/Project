@@ -6,6 +6,6 @@ dotnet %LUBAN_DLL% ^
     -t all ^
     -d json ^
     --conf %CONF_ROOT%\luban.conf ^
-    -x outputDataDir=../../Assets/StreamingAssets
+    -x outputDataDir=../../Assets/StreamingAssets/LubanConfig
 
 pause

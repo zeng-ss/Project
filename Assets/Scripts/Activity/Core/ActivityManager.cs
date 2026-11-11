@@ -24,7 +24,7 @@ namespace Custom.Activity
         }
         private Dictionary<Type, IActivity> _activities;
         private float _updatePerSecond = 0;
-        public GameFramework.DataTable.IDataTable<DRActivityInfo> tableActivityInfo;
+        public Framework.ConfigTable<DRActivityInfo> tableActivityInfo;
         public bool isInited = false;
 
         private void Awake()
@@ -69,7 +69,7 @@ namespace Custom.Activity
         public void Initialize()
         {
             _activities = new Dictionary<Type, IActivity>();
-            tableActivityInfo = GameEntry.DataTable.GetDataTable<DRActivityInfo>();
+            tableActivityInfo = Framework.GameRoot.Config.GetTable<DRActivityInfo>();
             RegisterActivity(new HomePanelActivity());
 
 #if UNITY_EDITOR

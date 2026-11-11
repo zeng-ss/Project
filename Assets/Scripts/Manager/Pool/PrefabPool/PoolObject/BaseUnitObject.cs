@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : PoolPrefabBase.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using UnityEngine;

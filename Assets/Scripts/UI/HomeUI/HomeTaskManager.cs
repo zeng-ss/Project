@@ -1,8 +1,8 @@
-using GameFramework;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 using Custom.Activity;
 using Cysharp.Threading.Tasks;
+using System;
 
 namespace CasualGame
 {
@@ -15,7 +15,7 @@ namespace CasualGame
 
     public class HomeTaskManager : Singleton<HomeTaskManager>
     {
-        private readonly GameFrameworkLinkedList<IHomeTask> m_HomeTasks;
+        private readonly LinkedList<IHomeTask> m_HomeTasks;
         private UIMainForm m_HomeForm;
 
         private bool isColdStart = true;
@@ -23,7 +23,7 @@ namespace CasualGame
 
         public HomeTaskManager()
         {
-            m_HomeTasks = new GameFrameworkLinkedList<IHomeTask>();
+            m_HomeTasks = new LinkedList<IHomeTask>();
         }
 
         public void Init(UIMainForm homeForm)
@@ -114,7 +114,7 @@ namespace CasualGame
         //                 while (GUIAPManager.Instance.PurchasedProducts.Count > 0 && totalCount < 20)
         //                 {
         //                     string product = GUIAPManager.Instance.PurchasedProducts.Dequeue();
-        //                     GameFrameworkAction action = GUIAPManager.Instance.GetPurchasedProduct(product, false);
+        //                     Action action = GUIAPManager.Instance.GetPurchasedProduct(product, false);
         //                     HomeAction homeAction = new HomeAction(action, () => !HasPopForm());
         //                     AddTaskLast(homeAction);
         //                     totalCount++;
@@ -124,7 +124,7 @@ namespace CasualGame
 
         //         private bool HasPopForm()
         //         {
-        //             int popup = GameEntry.UI.CurrentPopUpCount() + GameEntry.UI.CurrentDefaultUpCount();
+        //             int popup = Framework.UIMgr.Instance.CurrentPopUpCount() + Framework.UIMgr.Instance.CurrentDefaultUpCount();
         //             return popup >= 2;
         //         }
     }

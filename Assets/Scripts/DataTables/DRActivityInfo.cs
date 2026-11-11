@@ -1,128 +1,21 @@
-﻿//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
-// 此文件由工具自动生成，请勿直接修改。
+// 配置表：活动配置表
+// 数据来源：Assets/StreamingAssets/tbactivityinfo.json（由 LuBan 生成）
+// 读取方式：GameManager.Instance.Config.GetTable<DRActivityInfo>()
 //------------------------------------------------------------
-
-using GameFramework;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using UnityEngine;
-using UnityGameFramework.Runtime;
 
 namespace CasualGame
 {
     /// <summary>
-    /// Id。
+    /// 活动配置表。
     /// </summary>
-    public class DRActivityInfo : DataRowBase
+    public class DRActivityInfo
     {
-        private int m_Id = 0;
-
-        /// <summary>
-        /// 获取Id。
-        /// </summary>
-        public override int Id
-        {
-            get
-            {
-                return m_Id;
-            }
-        }
-
-        /// <summary>
-        /// 获取UnlockLv。
-        /// </summary>
-        public int UnlockLv
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取ConditionType。
-        /// </summary>
-        public int ConditionType
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取Duration。
-        /// </summary>
-        public int Duration
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取Interval。
-        /// </summary>
-        public int Interval
-        {
-            get;
-            private set;
-        }
-
-        /// <summary>
-        /// 获取SpinePath。
-        /// </summary>
-        public string SpinePath
-        {
-            get;
-            private set;
-        }
-
-        public override bool ParseDataRow(string dataRowString, object userData)
-        {
-            string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
-            for (int i = 0; i < columnStrings.Length; i++)
-            {
-                columnStrings[i] = columnStrings[i].Trim(DataTableExtension.DataTrimSeparators);
-            }
-
-            int index = 0;
-            index++;
-            m_Id = int.Parse(columnStrings[index++]);
-            UnlockLv = int.Parse(columnStrings[index++]);
-            ConditionType = int.Parse(columnStrings[index++]);
-            Duration = int.Parse(columnStrings[index++]);
-            Interval = int.Parse(columnStrings[index++]);
-            SpinePath = columnStrings[index++];
-
-            GeneratePropertyArray();
-            return true;
-        }
-
-        public override bool ParseDataRow(byte[] dataRowBytes, int startIndex, int length, object userData)
-        {
-            using (MemoryStream memoryStream = new MemoryStream(dataRowBytes, startIndex, length, false))
-            {
-                using (BinaryReader binaryReader = new BinaryReader(memoryStream, Encoding.UTF8))
-                {
-                    m_Id = binaryReader.Read7BitEncodedInt32();
-                    UnlockLv = binaryReader.Read7BitEncodedInt32();
-                    ConditionType = binaryReader.Read7BitEncodedInt32();
-                    Duration = binaryReader.Read7BitEncodedInt32();
-                    Interval = binaryReader.Read7BitEncodedInt32();
-                    SpinePath = binaryReader.ReadString();
-                }
-            }
-
-            GeneratePropertyArray();
-            return true;
-        }
-
-        private void GeneratePropertyArray()
-        {
-
-        }
+        public int Id { get; set; }
+        public int UnlockLv { get; set; }
+        public int ConditionType { get; set; }
+        public int Duration { get; set; }
+        public int Interval { get; set; }
+        public string SpinePath { get; set; }
     }
 }

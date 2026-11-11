@@ -38,7 +38,7 @@ namespace Tutorial
         public void InitTutorial()
         {
 
-            GameEntry.UI.OpenUIForm(UIFormType.GameplayTutorialForm, UGUIParams.Create(null, (UGuiForm ui) =>
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GameplayTutorialForm, UGUIParams.Create(null, (UGuiForm ui) =>
             {
                 tutorialForm = (GameplayTutorialForm)ui;
                 globalBlackboard = tutorialForm.blackboard;

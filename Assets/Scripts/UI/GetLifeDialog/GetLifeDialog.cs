@@ -1,6 +1,5 @@
 ﻿//------------------------------------------------------------
 // File : GetLifeDialog.cs
-// Email: mailto:TemplateAuthor@kingboat.io
 // Desc : 
 //------------------------------------------------------------
 using UnityEngine;
@@ -26,7 +25,7 @@ namespace CasualGame
             m_ADBtn.onClick.RemoveAllListeners();
             m_CloseBtn.onClick.AddListener(Close);
             m_CoinBtn.onClick.AddListener(OnClickCoinBtn);
-            m_Price = GameEntry.Config.GetInt("OneHeartCost", 80);
+            m_Price = GameConfigMgr.Instance.GetInt("OneHeartCost", 80);
             m_PriceText.text = m_Price.ToString();
         }
 
@@ -35,7 +34,7 @@ namespace CasualGame
             int remain = EnergyManager.GetNextEnergyRecoverTime(out bool showFull);
             if (showFull)
             {
-                m_TimeText.text = GameEntry.Localization.GetString("Full");
+                m_TimeText.text = LocalizationMgr.Instance.GetString("Full");
                 return;
             }
             m_TimeText.text = TimeUtils.TimeFormat(remain, TimeFormatType.MM_SS, "{0}:{1}", true, false);
@@ -54,13 +53,13 @@ namespace CasualGame
             }
             else
             {
-                GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", GameEntry.Localization.GetString("58")));
+                Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", LocalizationMgr.Instance.GetString("58")));
             }
         }
 
         protected override void OnClose(bool isShutdown, object userData)
         {
-            bool fromHome = m_Params.GetBoolParams("fromHome");
+            bool fromHome = MParams.GetBoolParams("fromHome");
             bool gotReward = reward;
 
             base.OnClose(isShutdown, userData);

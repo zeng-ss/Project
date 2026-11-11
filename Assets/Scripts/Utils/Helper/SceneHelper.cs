@@ -1,48 +1,39 @@
 //------------------------------------------------------------
 // File : SceneHelper.cs
-// Email: mailto:yang.li@kingboat.io
-// Desc : 
+// Desc : 主界面 / 对局界面的切换
 //------------------------------------------------------------
 
 using System;
-using Cysharp.Threading.Tasks;
-using UnityGameFramework.Runtime;
-using ProcedureOwner = GameFramework.Fsm.IFsm<GameFramework.Procedure.IProcedureManager>;
 using CasualGame.CoffeeAway;
+using Cysharp.Threading.Tasks;
+using Framework;
 using UnityEngine;
 
 namespace CasualGame
 {
-    public class SceneHelper
+    public static class SceneHelper
     {
+        /// <summary>回主界面（Home 没有独立场景，只切界面）。</summary>
         public static void LoadHomeScene(int hard, Action onCompleteAction = null)
         {
-            try
+            if (IsHomeScene())
             {
-                if (IsHomeScene())
-                {
-                    onCompleteAction?.Invoke();
-                    return;
-                }
+                onCompleteAction?.Invoke();
+                return;
+            }
 
-                var state = GameEntry.Procedure.CurrentProcedure as ProcedureBase;
-                TransitionForm.Open(0, async () =>
-                {
-                    state.SwitchScene(Constant.Scene.Home, (owner) =>
-                    {
-                        VarAction<ProcedureOwner> varAction = new VarAction<ProcedureOwner>();
-                        varAction.Value = (owner) => onCompleteAction?.Invoke();
-                        state.SwitchProcedure<ProcedureMainGame>(varAction);
-                    });
-                    await UniTask.WaitUntil(() => GameEntry.UI.GetUIForm<UIMainForm>(UIFormType.UIMainForm) != null);
-                });
-            }
-            catch (Exception e)
+            TransitionForm.Open(hard, async () =>
             {
-                Debug.LogError(e);
-            }
+                UIMgr.Instance.CloseUIForm(UIFormType.UIGameForm);
+                UIMgr.Instance.OpenUIForm(UIFormType.UIMainForm);
+
+                await UniTask.WaitUntil(() => UIMgr.Instance.GetUIForm<UIMainForm>(UIFormType.UIMainForm) != null);
+
+                onCompleteAction?.Invoke();
+            });
         }
 
+        /// <summary>进对局界面：加载 MyGame 场景并打开对局 UI。</summary>
         public static void LoadGameScene(Action onCompleteAction = null)
         {
             if (IsGamePlayScene())
@@ -51,30 +42,28 @@ namespace CasualGame
                 return;
             }
 
-            var state = GameEntry.Procedure.CurrentProcedure as ProcedureBase;
-            int hard = 0;
-            //EnergyManager.UseEnergy(1);
-
-            TransitionForm.Open(hard, async () =>
+            TransitionForm.Open(0, async () =>
             {
-                state.SwitchScene(Constant.Scene.MyGame, (owner) =>
+                UIMgr.Instance.CloseUIForm(UIFormType.UIMainForm);
+                GameFlow.Instance.SwitchScene(Constant.Scene.MyGame, () =>
                 {
-                    VarAction<ProcedureOwner> varAction = new VarAction<ProcedureOwner>();
-                    varAction.Value = (owner) => onCompleteAction?.Invoke();
-                    state.SwitchProcedure<ProcedureCoffeeGame>(varAction);
+                    UIMgr.Instance.OpenUIForm(UIFormType.UIGameForm);
                 });
+
                 await UniTask.WaitUntil(() => CoffeeAwayGame.Instance != null);
+
+                onCompleteAction?.Invoke();
             });
         }
 
         public static bool IsHomeScene()
         {
-            return GameEntry.Procedure.CurrentProcedure is ProcedureMainGame;
+            return UIMgr.Instance.HasUIForm(UIFormType.UIMainForm);
         }
 
         public static bool IsGamePlayScene()
         {
-            return GameEntry.Procedure.CurrentProcedure is ProcedureCoffeeGame;
+            return UIMgr.Instance.HasUIForm(UIFormType.UIGameForm);
         }
     }
 }

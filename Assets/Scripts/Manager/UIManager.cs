@@ -1,14 +1,8 @@
 ﻿//------------------------------------------------------------
 // File : UIManager.cs
-// Email: mailto:zhiqiang.yang
-// Desc : 
+// Desc : 界面快捷门面（Toast / Loading / 网络错误弹窗）
 //------------------------------------------------------------
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityGameFramework.Runtime;
-using GameFramework;
 using System;
 
 namespace CasualGame
@@ -17,29 +11,29 @@ namespace CasualGame
     {
         public static void Toast(string toast, Action callback = null)
         {
-            GameEntry.UI.OpenUIForm(UIFormType.GlobalToast, UGUIParams.Create().AddValue("Toast", toast)
-                    .AddValue("ToastCall", callback));
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.GlobalToast,
+                UGUIParams.Create().AddValue("Toast", toast).AddValue("ToastCall", callback));
         }
 
-        public static void ShowLoading(bool isPurchase = false, float duration = float.MaxValue, GameFrameworkAction closeCB = null)
+        public static void ShowLoading(bool isPurchase = false, float duration = float.MaxValue, Action closeCB = null)
         {
             UGUIParams uguiParams = UGUIParams.Create(closeCB);
             uguiParams.AddValue("Duration", duration);
             uguiParams.AddValue("isPurchase", isPurchase);
-            GameEntry.UI.OpenUIForm(UIFormType.LoadingDialog, uguiParams);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.LoadingDialog, uguiParams);
         }
 
-        public static void ShowNetworkErrorDialog(GameFrameworkAction retryCB = null, GameFrameworkAction failCB = null)
+        public static void ShowNetworkErrorDialog(Action retryCB = null, Action failCB = null)
         {
             UGUIParams uguiParams = UGUIParams.Create();
             uguiParams.AddValue("retryCB", retryCB);
             uguiParams.AddValue("failCB", failCB);
-            GameEntry.UI.OpenUIForm(UIFormType.NetWorkErrorDialog, uguiParams);
+            Framework.UIMgr.Instance.OpenUIForm(UIFormType.NetWorkErrorDialog, uguiParams);
         }
 
         public static void CloseLoading()
         {
-            GameEntry.UI.CloseUIForm(UIFormType.LoadingDialog);
+            Framework.UIMgr.Instance.CloseUIForm(UIFormType.LoadingDialog);
         }
     }
 }

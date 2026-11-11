@@ -1,51 +1,52 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
 
 namespace CasualGame
 {
     public class NewItemDialog : ScaleDialog
     {
-        [SerializeField] private TextMeshProUGUI _desText;
-        [SerializeField] private Image _icon;
-        [SerializeField] private Button _CloseButton;
-        private bool m_IsClosingHandled;
-        private ItemData m_ItemData;
-        private ItemType m_UnlockType;
+        [FormerlySerializedAs("_desText")] [SerializeField] private TextMeshProUGUI desText;
+        [FormerlySerializedAs("_icon")] [SerializeField] private Image icon;
+        [FormerlySerializedAs("_CloseButton")] [SerializeField] private Button closeButton;
+        private bool _isClosingHandled;
+        private ItemData _itemData;
+        private ItemType _unlockType;
 
         protected override void OnOpen(object userData)
         {
             base.OnOpen(userData);
-            m_IsClosingHandled = false;
-            m_UnlockType = m_Params.GetAnyParams<ItemType>("unlockType");
-            m_ItemData = new ItemData((int)m_UnlockType);
+            _isClosingHandled = false;
+            _unlockType = MParams.GetAnyParams<ItemType>("unlockType");
+            _itemData = new ItemData((int)_unlockType);
 
-            switch (m_UnlockType)
+            switch (_unlockType)
             {
                 case ItemType.Hidden:
                     //_titleText.text = "Hidden";
-                    _desText.text = GameEntry.Localization.GetString("89");
-                    _atlasLoader.LoadSprite(_icon, m_ItemData.GetSpritePath());
+                    desText.text = LocalizationMgr.Instance.GetString("89");
+                    AtlasLoader.LoadSprite(icon, _itemData.GetSpritePath());
                     break;
                 case ItemType.Glass:
                     //_titleText.text = "Glass";
-                    _desText.text = "Glass";
-                    _atlasLoader.LoadSprite(_icon, m_ItemData.GetSpritePath());
+                    desText.text = "Glass";
+                    AtlasLoader.LoadSprite(icon, _itemData.GetSpritePath());
                     break;
                 case ItemType.Container:
                     // _titleText.text = "Container";
-                    _desText.text = GameEntry.Localization.GetString("90");
-                    _atlasLoader.LoadSprite(_icon, m_ItemData.GetSpritePath());
+                    desText.text = LocalizationMgr.Instance.GetString("90");
+                    AtlasLoader.LoadSprite(icon, _itemData.GetSpritePath());
                     break;
                 case ItemType.Colored:
                     //_titleText.text = "Colored";
-                    _desText.text = "Colored";
-                    _atlasLoader.LoadSprite(_icon, m_ItemData.GetSpritePath());
+                    desText.text = "Colored";
+                    AtlasLoader.LoadSprite(icon, _itemData.GetSpritePath());
                     break;
             }
 
-            _CloseButton.onClick.RemoveAllListeners();
-            _CloseButton.onClick.AddListener(OnClick_CloseBtn);
+            closeButton.onClick.RemoveAllListeners();
+            closeButton.onClick.AddListener(OnClick_CloseBtn);
             // _OKBtn.onClick.RemoveAllListeners();
             // _OKBtn.onClick.AddListener(OnClick_CloseBtn);
         }
@@ -58,11 +59,11 @@ namespace CasualGame
         protected override void OnClose(bool isShutdown, object userData)
         {
             PlaySoundManager.Instance.PlaySound(Constant.Audio.ClickButton);
-            if (m_IsClosingHandled)
+            if (_isClosingHandled)
             {
                 return;
             }
-            ProxyManager.UserProxy.UnlockBooster(m_ItemData.id);
+            ProxyManager.UserProxy.UnlockBooster(_itemData.id);
 
             base.OnClose(isShutdown, userData);
         }

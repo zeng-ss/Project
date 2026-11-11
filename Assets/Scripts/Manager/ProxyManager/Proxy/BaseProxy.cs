@@ -1,12 +1,10 @@
 ﻿//------------------------------------------------------------
 // File : BaseProxy.cs
-// Email: mailto:zhiqiang.yang@kingboat.io
 // Desc : 数据存储基类
 //------------------------------------------------------------
 
 using System;
 using System.Collections.Generic;
-using UnityGameFramework.Runtime;
 
 namespace CasualGame
 {
@@ -30,7 +28,7 @@ namespace CasualGame
         {
             ProxyName = proxyName;
 
-            if (!GameEntry.Setting.HasSetting(this.ProxyName))
+            if (!SettingMgr.Instance.HasSetting(this.ProxyName))
             {
                 this.Data = Activator.CreateInstance<T>();
 
@@ -40,7 +38,7 @@ namespace CasualGame
             }
             else
             {
-                this.Data = GameEntry.Setting.GetObject<T>(this.ProxyName);
+                this.Data = SettingMgr.Instance.GetObject<T>(this.ProxyName);
             }
         }
 
@@ -79,9 +77,9 @@ namespace CasualGame
 
         public void SaveImmediately()
         {
-            GameEntry.Setting.SetObject(this.ProxyName, Data);
+            SettingMgr.Instance.SetObject(this.ProxyName, Data);
 
-            GameEntry.Setting.Save();
+            SettingMgr.Instance.Save();
         }
 
         public virtual void ClearDataOnNewDay() { }

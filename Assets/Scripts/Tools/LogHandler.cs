@@ -1,6 +1,5 @@
 //------------------------------------------------------------
 // File : LogHandler.cs
-// Email: mailto:yang.li@kingboat.io
 // Desc : 日志工具
 //------------------------------------------------------------
 using CasualGame;
@@ -12,11 +11,11 @@ public class LogHandler
     {
         get
         {
-            return GameEntry.Setting.GetBool("ENABLE_DEBUG", false);
+            return SettingMgr.Instance.GetBool("ENABLE_DEBUG", false);
         }
         set
         {
-            GameEntry.Setting.SetBool("ENABLE_DEBUG", value);
+            SettingMgr.Instance.SetBool("ENABLE_DEBUG", value);
         }
     }
 
