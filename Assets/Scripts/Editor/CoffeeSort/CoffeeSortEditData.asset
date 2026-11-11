@@ -1,0 +1,3599 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7287e23c258924eb4b9effec4331323c, type: 3}
+  m_Name: CoffeeSortEditData
+  m_EditorClassIdentifier: 
+  IsActive: 0
+  EditorSceneName: KBScene
+  GridSizeX: 80
+  GridSizeY: 80
+  Capacity: 16
+  IsCloseConveyor: 1
+  IsChangeCapacity: 1
+  CapTextX: 7.5
+  CapTextY: 16.5
+  SymmetryAxisIsX: 1
+  SymmetryValue: 35
+  RoadLayerSpacing: 8
+  RoadMesh: {fileID: -6290937404134674621, guid: 2daa6428fcbf33c48978f21f290c7231, type: 3}
+  RoadMaterial: {fileID: 2100000, guid: f10d25641a86a384cbe4eb3a7b01f1e4, type: 2}
+  RoadSegments:
+  - Start:
+      Gx: 32
+      Gy: 58
+      Y: 32
+      OffsetX: 0.28418732
+      OffsetZ: 0.17359924
+    End:
+      Gx: 38
+      Gy: 58
+      Y: 32
+      OffsetX: -0.28418732
+      OffsetZ: 0.17359924
+    PathPoints:
+    - Gx: 30
+      Gy: 62
+      Y: 31.55294
+      OffsetX: 0.31975937
+      OffsetZ: -0.2828102
+    - Gx: 27
+      Gy: 64
+      Y: 31.105883
+      OffsetX: 0.1459961
+      OffsetZ: 0.23577118
+    - Gx: 23
+      Gy: 65
+      Y: 30.658823
+      OffsetX: 0.24877167
+      OffsetZ: 0.3437729
+    - Gx: 19
+      Gy: 65
+      Y: 30.211765
+      OffsetX: 0.22471237
+      OffsetZ: -0.12844086
+    - Gx: 16
+      Gy: 63
+      Y: 29.764706
+      OffsetX: -0.31013298
+      OffsetZ: -0.108566284
+    - Gx: 13
+      Gy: 60
+      Y: 29.317648
+      OffsetX: 0.18538761
+      OffsetZ: -0.29346848
+    - Gx: 12
+      Gy: 56
+      Y: 28.870588
+      OffsetX: 0.094685555
+      OffsetZ: -0.19556808
+    - Gx: 13
+      Gy: 52
+      Y: 28.423529
+      OffsetX: -0.41526127
+      OffsetZ: -0.21749115
+    - Gx: 15
+      Gy: 48
+      Y: 27.97647
+      OffsetX: -0.41947556
+      OffsetZ: 0.25647736
+    - Gx: 18
+      Gy: 46
+      Y: 27.529411
+      OffsetX: -0.22349548
+      OffsetZ: -0.23384857
+    - Gx: 22
+      Gy: 45
+      Y: 27.082354
+      OffsetX: -0.31659508
+      OffsetZ: -0.30723572
+    - Gx: 26
+      Gy: 45
+      Y: 26.635294
+      OffsetX: -0.29688454
+      OffsetZ: 0.20065308
+    - Gx: 29
+      Gy: 47
+      Y: 26.188234
+      OffsetX: 0.2202568
+      OffsetZ: 0.2120552
+    - Gx: 32
+      Gy: 50
+      Y: 25.741177
+      OffsetX: -0.30361557
+      OffsetZ: 0.41905212
+    - Gx: 33
+      Gy: 54
+      Y: 25.294117
+      OffsetX: -0.24757004
+      OffsetZ: 0.33067322
+    - Gx: 32
+      Gy: 58
+      Y: 24.84706
+      OffsetX: 0.2267189
+      OffsetZ: 0.34809113
+    - Gx: 30
+      Gy: 61
+      Y: 24.4
+      OffsetX: -0.40898514
+      OffsetZ: 0.32149124
+    - Gx: 27
+      Gy: 64
+      Y: 23.95294
+      OffsetX: -0.37513733
+      OffsetZ: -0.4092636
+    - Gx: 23
+      Gy: 65
+      Y: 23.505882
+      OffsetX: 0.015035629
+      OffsetZ: -0.4518509
+    - Gx: 19
+      Gy: 64
+      Y: 23.058823
+      OffsetX: 0.31415558
+      OffsetZ: 0.047157288
+    - Gx: 16
+      Gy: 62
+      Y: 22.611765
+      OffsetX: 0.0887928
+      OffsetZ: 0.1644516
+    - Gx: 14
+      Gy: 59
+      Y: 22.164705
+      OffsetX: -0.16727448
+      OffsetZ: 0.18826294
+    - Gx: 13
+      Gy: 56
+      Y: 21.717648
+      OffsetX: -0.108662605
+      OffsetZ: -0.42577744
+    - Gx: 13
+      Gy: 52
+      Y: 21.270588
+      OffsetX: 0.40874386
+      OffsetZ: -0.12440109
+    - Gx: 15
+      Gy: 49
+      Y: 20.82353
+      OffsetX: 0.30573082
+      OffsetZ: -0.34137344
+    - Gx: 18
+      Gy: 46
+      Y: 20.37647
+      OffsetX: 0.29189682
+      OffsetZ: 0.4157791
+    - Gx: 22
+      Gy: 45
+      Y: 19.929413
+      OffsetX: -0.089925766
+      OffsetZ: 0.49043274
+    - Gx: 26
+      Gy: 46
+      Y: 19.482353
+      OffsetX: -0.39363098
+      OffsetZ: 0.024234772
+    - Gx: 29
+      Gy: 48
+      Y: 19.035295
+      OffsetX: -0.18510437
+      OffsetZ: -0.064525604
+    - Gx: 31
+      Gy: 51
+      Y: 18.588236
+      OffsetX: 0.044475555
+      OffsetZ: -0.0684433
+    - Gx: 32
+      Gy: 55
+      Y: 18.141176
+      OffsetX: -0.046230316
+      OffsetZ: -0.4461975
+    - Gx: 31
+      Gy: 58
+      Y: 17.694118
+      OffsetX: 0.403574
+      OffsetZ: 0.24769211
+    - Gx: 29
+      Gy: 61
+      Y: 17.247059
+      OffsetX: 0.47812653
+      OffsetZ: 0.44771194
+    - Gx: 26
+      Gy: 63
+      Y: 16.8
+      OffsetX: 0.1282177
+      OffsetZ: -0.06965637
+    - Gx: 23
+      Gy: 64
+      Y: 16.352942
+      OffsetX: -0.19019318
+      OffsetZ: -0.25226593
+    - Gx: 19
+      Gy: 63
+      Y: 15.905882
+      OffsetX: 0.43175697
+      OffsetZ: 0.22925949
+    - Gx: 17
+      Gy: 61
+      Y: 15.458824
+      OffsetX: -0.48876953
+      OffsetZ: 0.4542923
+    - Gx: 14
+      Gy: 59
+      Y: 15.0117655
+      OffsetX: 0.49531937
+      OffsetZ: -0.30544662
+    - Gx: 14
+      Gy: 55
+      Y: 14.564706
+      OffsetX: -0.3073473
+      OffsetZ: 0.37254333
+    - Gx: 14
+      Gy: 52
+      Y: 14.117646
+      OffsetX: 0.22610474
+      OffsetZ: -0.0031661987
+    - Gx: 16
+      Gy: 49
+      Y: 13.670589
+      OffsetX: 0.014003754
+      OffsetZ: 0.08421326
+    - Gx: 19
+      Gy: 47
+      Y: 13.22353
+      OffsetX: -0.2173481
+      OffsetZ: 0.08056259
+    - Gx: 22
+      Gy: 46
+      Y: 12.77647
+      OffsetX: 0.10819054
+      OffsetZ: 0.29263306
+    - Gx: 25
+      Gy: 47
+      Y: 12.3294115
+      OffsetX: 0.48151016
+      OffsetZ: -0.15894699
+    - Gx: 28
+      Gy: 49
+      Y: 11.882354
+      OffsetX: 0.38617134
+      OffsetZ: -0.35815048
+    - Gx: 30
+      Gy: 51
+      Y: 11.435295
+      OffsetX: 0.37752342
+      OffsetZ: 0.4193573
+    - Gx: 31
+      Gy: 55
+      Y: 10.988235
+      OffsetX: 0.1506958
+      OffsetZ: -0.25164032
+    - Gx: 31
+      Gy: 58
+      Y: 10.541176
+      OffsetX: -0.41267967
+      OffsetZ: 0.119213104
+    - Gx: 29
+      Gy: 61
+      Y: 10.094119
+      OffsetX: -0.22634315
+      OffsetZ: 0.015857697
+    - Gx: 26
+      Gy: 63
+      Y: 9.647059
+      OffsetX: -0.0126571655
+      OffsetZ: -0.005126953
+    - Gx: 23
+      Gy: 63
+      Y: 9.200001
+      OffsetX: -0.3668213
+      OffsetZ: -0.056705475
+    - Gx: 20
+      Gy: 62
+      Y: 8.752941
+      OffsetX: -0.4226818
+      OffsetZ: 0.41862106
+    - Gx: 17
+      Gy: 61
+      Y: 8.3058815
+      OffsetX: -0.043308258
+      OffsetZ: -0.2384491
+    - Gx: 15
+      Gy: 58
+      Y: 7.8588243
+      OffsetX: 0.17250061
+      OffsetZ: 0.2257843
+    - Gx: 14
+      Gy: 55
+      Y: 7.411765
+      OffsetX: 0.4978695
+      OffsetZ: 0.19949341
+    - Gx: 15
+      Gy: 52
+      Y: 6.964706
+      OffsetX: 0.036089897
+      OffsetZ: 0.14598846
+    - Gx: 17
+      Gy: 50
+      Y: 6.517647
+      OffsetX: -0.29523468
+      OffsetZ: -0.46726227
+    - Gx: 19
+      Gy: 48
+      Y: 6.070589
+      OffsetX: 0.24842453
+      OffsetZ: -0.2401886
+    - Gx: 22
+      Gy: 47
+      Y: 5.62353
+      OffsetX: 0.27767754
+      OffsetZ: 0.098609924
+    - Gx: 25
+      Gy: 48
+      Y: 5.1764708
+      OffsetX: 0.32876205
+      OffsetZ: -0.34963226
+    - Gx: 28
+      Gy: 49
+      Y: 4.7294116
+      OffsetX: -0.06541252
+      OffsetZ: 0.330616
+    - Gx: 30
+      Gy: 52
+      Y: 4.282354
+      OffsetX: -0.30378532
+      OffsetZ: -0.11788559
+    - Gx: 30
+      Gy: 55
+      Y: 3.8352947
+      OffsetX: 0.34397507
+      OffsetZ: -0.08573151
+    - Gx: 30
+      Gy: 58
+      Y: 3.3882356
+      OffsetX: -0.22130966
+      OffsetZ: -0.037124634
+    - Gx: 28
+      Gy: 61
+      Y: 2.9411764
+      OffsetX: 0.08690071
+      OffsetZ: -0.43877792
+    - Gx: 26
+      Gy: 62
+      Y: 2.494119
+      OffsetX: -0.4723854
+      OffsetZ: 0.31151962
+    - Gx: 22
+      Gy: 63
+      Y: 2.0470595
+      OffsetX: 0.49261665
+      OffsetZ: -0.05417633
+    - Gx: 19
+      Gy: 62
+      Y: 1.6000004
+      OffsetX: 0.44654655
+      OffsetZ: 0.36702347
+    - Gx: 15
+      Gy: 60
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 13
+      Gy: 56
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 13
+      Gy: 53
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 14
+      Gy: 50
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 16
+      Gy: 46
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 18
+      Gy: 43
+      Y: 0
+      OffsetX: -0.5
+      OffsetZ: 0
+    - Gx: 19
+      Gy: 40
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 22
+      Gy: 34
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0.5
+    - Gx: 26
+      Gy: 29
+      Y: 0
+      OffsetX: -0.5
+      OffsetZ: 0
+    - Gx: 29
+      Gy: 25
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 30
+      Gy: 24
+      Y: 0
+      OffsetX: 0.5
+      OffsetZ: -0.5
+    - Gx: 32
+      Gy: 22
+      Y: 0
+      OffsetX: -0.5
+      OffsetZ: 0.5
+    - Gx: 33
+      Gy: 22
+      Y: 0
+      OffsetX: 0
+      OffsetZ: -0.5
+    - Gx: 35
+      Gy: 21
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    - Gx: 35
+      Gy: 21
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 37
+      Gy: 22
+      Y: 0
+      OffsetX: -0
+      OffsetZ: -0.5
+    - Gx: 38
+      Gy: 22
+      Y: 0
+      OffsetX: 0.5
+      OffsetZ: 0.5
+    - Gx: 40
+      Gy: 24
+      Y: 0
+      OffsetX: -0.5
+      OffsetZ: -0.5
+    - Gx: 41
+      Gy: 25
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 44
+      Gy: 29
+      Y: 0
+      OffsetX: 0.5
+      OffsetZ: 0
+    - Gx: 48
+      Gy: 34
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0.5
+    - Gx: 51
+      Gy: 40
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 52
+      Gy: 43
+      Y: 0
+      OffsetX: 0.5
+      OffsetZ: 0
+    - Gx: 54
+      Gy: 46
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 56
+      Gy: 50
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 57
+      Gy: 53
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 57
+      Gy: 56
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 55
+      Gy: 60
+      Y: 0
+      OffsetX: -0
+      OffsetZ: 0
+    - Gx: 51
+      Gy: 62
+      Y: 1.6000004
+      OffsetX: -0.44654655
+      OffsetZ: 0.36702347
+    - Gx: 48
+      Gy: 63
+      Y: 2.0470595
+      OffsetX: -0.49261665
+      OffsetZ: -0.05417633
+    - Gx: 44
+      Gy: 62
+      Y: 2.494119
+      OffsetX: 0.4723854
+      OffsetZ: 0.31151962
+    - Gx: 42
+      Gy: 61
+      Y: 2.9411764
+      OffsetX: -0.08690071
+      OffsetZ: -0.43877792
+    - Gx: 40
+      Gy: 58
+      Y: 3.3882356
+      OffsetX: 0.22130966
+      OffsetZ: -0.037124634
+    - Gx: 40
+      Gy: 55
+      Y: 3.8352947
+      OffsetX: -0.34397507
+      OffsetZ: -0.08573151
+    - Gx: 40
+      Gy: 52
+      Y: 4.282354
+      OffsetX: 0.30378532
+      OffsetZ: -0.11788559
+    - Gx: 42
+      Gy: 49
+      Y: 4.7294116
+      OffsetX: 0.06541252
+      OffsetZ: 0.330616
+    - Gx: 45
+      Gy: 48
+      Y: 5.1764708
+      OffsetX: -0.32876205
+      OffsetZ: -0.34963226
+    - Gx: 48
+      Gy: 47
+      Y: 5.62353
+      OffsetX: -0.27767754
+      OffsetZ: 0.098609924
+    - Gx: 51
+      Gy: 48
+      Y: 6.070589
+      OffsetX: -0.24842453
+      OffsetZ: -0.2401886
+    - Gx: 53
+      Gy: 50
+      Y: 6.517647
+      OffsetX: 0.29523468
+      OffsetZ: -0.46726227
+    - Gx: 55
+      Gy: 52
+      Y: 6.964706
+      OffsetX: -0.036089897
+      OffsetZ: 0.14598846
+    - Gx: 56
+      Gy: 55
+      Y: 7.411765
+      OffsetX: -0.4978695
+      OffsetZ: 0.19949341
+    - Gx: 55
+      Gy: 58
+      Y: 7.8588243
+      OffsetX: -0.17250061
+      OffsetZ: 0.2257843
+    - Gx: 53
+      Gy: 61
+      Y: 8.3058815
+      OffsetX: 0.043308258
+      OffsetZ: -0.2384491
+    - Gx: 50
+      Gy: 62
+      Y: 8.752941
+      OffsetX: 0.4226818
+      OffsetZ: 0.41862106
+    - Gx: 47
+      Gy: 63
+      Y: 9.200001
+      OffsetX: 0.3668213
+      OffsetZ: -0.056705475
+    - Gx: 44
+      Gy: 63
+      Y: 9.647059
+      OffsetX: 0.0126571655
+      OffsetZ: -0.005126953
+    - Gx: 41
+      Gy: 61
+      Y: 10.094119
+      OffsetX: 0.22634315
+      OffsetZ: 0.015857697
+    - Gx: 39
+      Gy: 58
+      Y: 10.541176
+      OffsetX: 0.41267967
+      OffsetZ: 0.119213104
+    - Gx: 39
+      Gy: 55
+      Y: 10.988235
+      OffsetX: -0.1506958
+      OffsetZ: -0.25164032
+    - Gx: 40
+      Gy: 51
+      Y: 11.435295
+      OffsetX: -0.37752342
+      OffsetZ: 0.4193573
+    - Gx: 42
+      Gy: 49
+      Y: 11.882354
+      OffsetX: -0.38617134
+      OffsetZ: -0.35815048
+    - Gx: 45
+      Gy: 47
+      Y: 12.3294115
+      OffsetX: -0.48151016
+      OffsetZ: -0.15894699
+    - Gx: 48
+      Gy: 46
+      Y: 12.77647
+      OffsetX: -0.10819054
+      OffsetZ: 0.29263306
+    - Gx: 51
+      Gy: 47
+      Y: 13.22353
+      OffsetX: 0.2173481
+      OffsetZ: 0.08056259
+    - Gx: 54
+      Gy: 49
+      Y: 13.670589
+      OffsetX: -0.014003754
+      OffsetZ: 0.08421326
+    - Gx: 56
+      Gy: 52
+      Y: 14.117646
+      OffsetX: -0.22610474
+      OffsetZ: -0.0031661987
+    - Gx: 56
+      Gy: 55
+      Y: 14.564706
+      OffsetX: 0.3073473
+      OffsetZ: 0.37254333
+    - Gx: 56
+      Gy: 59
+      Y: 15.0117655
+      OffsetX: -0.49531937
+      OffsetZ: -0.30544662
+    - Gx: 53
+      Gy: 61
+      Y: 15.458824
+      OffsetX: 0.48876953
+      OffsetZ: 0.4542923
+    - Gx: 51
+      Gy: 63
+      Y: 15.905882
+      OffsetX: -0.43175697
+      OffsetZ: 0.22925949
+    - Gx: 47
+      Gy: 64
+      Y: 16.352942
+      OffsetX: 0.19019318
+      OffsetZ: -0.25226593
+    - Gx: 44
+      Gy: 63
+      Y: 16.8
+      OffsetX: -0.1282177
+      OffsetZ: -0.06965637
+    - Gx: 41
+      Gy: 61
+      Y: 17.247059
+      OffsetX: -0.47812653
+      OffsetZ: 0.44771194
+    - Gx: 39
+      Gy: 58
+      Y: 17.694118
+      OffsetX: -0.403574
+      OffsetZ: 0.24769211
+    - Gx: 38
+      Gy: 55
+      Y: 18.141176
+      OffsetX: 0.046230316
+      OffsetZ: -0.4461975
+    - Gx: 39
+      Gy: 51
+      Y: 18.588236
+      OffsetX: -0.044475555
+      OffsetZ: -0.0684433
+    - Gx: 41
+      Gy: 48
+      Y: 19.035295
+      OffsetX: 0.18510437
+      OffsetZ: -0.064525604
+    - Gx: 44
+      Gy: 46
+      Y: 19.482353
+      OffsetX: 0.39363098
+      OffsetZ: 0.024234772
+    - Gx: 48
+      Gy: 45
+      Y: 19.929413
+      OffsetX: 0.089925766
+      OffsetZ: 0.49043274
+    - Gx: 52
+      Gy: 46
+      Y: 20.37647
+      OffsetX: -0.29189682
+      OffsetZ: 0.4157791
+    - Gx: 55
+      Gy: 49
+      Y: 20.82353
+      OffsetX: -0.30573082
+      OffsetZ: -0.34137344
+    - Gx: 57
+      Gy: 52
+      Y: 21.270588
+      OffsetX: -0.40874386
+      OffsetZ: -0.12440109
+    - Gx: 57
+      Gy: 56
+      Y: 21.717648
+      OffsetX: 0.108662605
+      OffsetZ: -0.42577744
+    - Gx: 56
+      Gy: 59
+      Y: 22.164705
+      OffsetX: 0.16727448
+      OffsetZ: 0.18826294
+    - Gx: 54
+      Gy: 62
+      Y: 22.611765
+      OffsetX: -0.0887928
+      OffsetZ: 0.1644516
+    - Gx: 51
+      Gy: 64
+      Y: 23.058823
+      OffsetX: -0.31415558
+      OffsetZ: 0.047157288
+    - Gx: 47
+      Gy: 65
+      Y: 23.505882
+      OffsetX: -0.015035629
+      OffsetZ: -0.4518509
+    - Gx: 43
+      Gy: 64
+      Y: 23.95294
+      OffsetX: 0.37513733
+      OffsetZ: -0.4092636
+    - Gx: 40
+      Gy: 61
+      Y: 24.4
+      OffsetX: 0.40898514
+      OffsetZ: 0.32149124
+    - Gx: 38
+      Gy: 58
+      Y: 24.84706
+      OffsetX: -0.2267189
+      OffsetZ: 0.34809113
+    - Gx: 37
+      Gy: 54
+      Y: 25.294117
+      OffsetX: 0.24757004
+      OffsetZ: 0.33067322
+    - Gx: 38
+      Gy: 50
+      Y: 25.741177
+      OffsetX: 0.30361557
+      OffsetZ: 0.41905212
+    - Gx: 41
+      Gy: 47
+      Y: 26.188234
+      OffsetX: -0.2202568
+      OffsetZ: 0.2120552
+    - Gx: 44
+      Gy: 45
+      Y: 26.635294
+      OffsetX: 0.29688454
+      OffsetZ: 0.20065308
+    - Gx: 48
+      Gy: 45
+      Y: 27.082354
+      OffsetX: 0.31659508
+      OffsetZ: -0.30723572
+    - Gx: 52
+      Gy: 46
+      Y: 27.529411
+      OffsetX: 0.22349548
+      OffsetZ: -0.23384857
+    - Gx: 55
+      Gy: 48
+      Y: 27.97647
+      OffsetX: 0.41947556
+      OffsetZ: 0.25647736
+    - Gx: 57
+      Gy: 52
+      Y: 28.423529
+      OffsetX: 0.41526127
+      OffsetZ: -0.21749115
+    - Gx: 58
+      Gy: 56
+      Y: 28.870588
+      OffsetX: -0.094685555
+      OffsetZ: -0.19556808
+    - Gx: 57
+      Gy: 60
+      Y: 29.317648
+      OffsetX: -0.18538761
+      OffsetZ: -0.29346848
+    - Gx: 54
+      Gy: 63
+      Y: 29.764706
+      OffsetX: 0.31013298
+      OffsetZ: -0.108566284
+    - Gx: 51
+      Gy: 65
+      Y: 30.211765
+      OffsetX: -0.22471237
+      OffsetZ: -0.12844086
+    - Gx: 47
+      Gy: 65
+      Y: 30.658823
+      OffsetX: -0.24877167
+      OffsetZ: 0.3437729
+    - Gx: 43
+      Gy: 64
+      Y: 31.105883
+      OffsetX: -0.1459961
+      OffsetZ: 0.23577118
+    - Gx: 40
+      Gy: 62
+      Y: 31.55294
+      OffsetX: -0.31975937
+      OffsetZ: -0.2828102
+  CurrentSegmentIndex: 0
+  Holders:
+  - HolderType: 0
+    X: 35.5
+    Y: 12.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  - HolderType: 0
+    X: 41
+    Y: 13.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  - HolderType: 0
+    X: 30
+    Y: 13.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  - HolderType: 0
+    X: 24.5
+    Y: 18.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  - HolderType: 0
+    X: 46.5
+    Y: 19.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  - HolderType: 0
+    X: 33
+    Y: 33.5
+    Width: 2
+    Height: 4
+    DirectionValue: 180
+    CarColors: 
+  - HolderType: 0
+    X: 38
+    Y: 33.5
+    Width: 2
+    Height: 4
+    DirectionValue: 180
+    CarColors: 
+  - HolderType: 0
+    X: 29.5
+    Y: 42.5
+    Width: 2
+    Height: 4
+    DirectionValue: 270
+    CarColors: 
+  - HolderType: 0
+    X: 41.5
+    Y: 42.5
+    Width: 2
+    Height: 4
+    DirectionValue: 90
+    CarColors: 
+  - HolderType: 0
+    X: 52
+    Y: 26.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  - HolderType: 0
+    X: 19
+    Y: 26.5
+    Width: 2
+    Height: 4
+    DirectionValue: 0
+    CarColors: 
+  UndoStack:
+  - OpType: 12
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot:
+    - Start:
+        Gx: 32
+        Gy: 58
+        Y: 32
+        OffsetX: 0.28418732
+        OffsetZ: 0.17359924
+      End:
+        Gx: 48
+        Gy: 58
+        Y: 32
+        OffsetX: -0.26908875
+        OffsetZ: 0.07302475
+      PathPoints:
+      - Gx: 30
+        Gy: 62
+        Y: 31.55294
+        OffsetX: 0.31975937
+        OffsetZ: -0.2828102
+      - Gx: 27
+        Gy: 64
+        Y: 31.105883
+        OffsetX: 0.1459961
+        OffsetZ: 0.23577118
+      - Gx: 23
+        Gy: 65
+        Y: 30.658823
+        OffsetX: 0.24877167
+        OffsetZ: 0.3437729
+      - Gx: 19
+        Gy: 65
+        Y: 30.211765
+        OffsetX: 0.22471237
+        OffsetZ: -0.12844086
+      - Gx: 16
+        Gy: 63
+        Y: 29.764706
+        OffsetX: -0.31013298
+        OffsetZ: -0.108566284
+      - Gx: 13
+        Gy: 60
+        Y: 29.317648
+        OffsetX: 0.18538761
+        OffsetZ: -0.29346848
+      - Gx: 12
+        Gy: 56
+        Y: 28.870588
+        OffsetX: 0.094685555
+        OffsetZ: -0.19556808
+      - Gx: 13
+        Gy: 52
+        Y: 28.423529
+        OffsetX: -0.41526127
+        OffsetZ: -0.21749115
+      - Gx: 15
+        Gy: 48
+        Y: 27.97647
+        OffsetX: -0.41947556
+        OffsetZ: 0.25647736
+      - Gx: 18
+        Gy: 46
+        Y: 27.529411
+        OffsetX: -0.22349548
+        OffsetZ: -0.23384857
+      - Gx: 22
+        Gy: 45
+        Y: 27.082354
+        OffsetX: -0.31659508
+        OffsetZ: -0.30723572
+      - Gx: 26
+        Gy: 45
+        Y: 26.635294
+        OffsetX: -0.29688454
+        OffsetZ: 0.20065308
+      - Gx: 29
+        Gy: 47
+        Y: 26.188234
+        OffsetX: 0.2202568
+        OffsetZ: 0.2120552
+      - Gx: 32
+        Gy: 50
+        Y: 25.741177
+        OffsetX: -0.30361557
+        OffsetZ: 0.41905212
+      - Gx: 33
+        Gy: 54
+        Y: 25.294117
+        OffsetX: -0.24757004
+        OffsetZ: 0.33067322
+      - Gx: 32
+        Gy: 58
+        Y: 24.84706
+        OffsetX: 0.2267189
+        OffsetZ: 0.34809113
+      - Gx: 30
+        Gy: 61
+        Y: 24.4
+        OffsetX: -0.40898514
+        OffsetZ: 0.32149124
+      - Gx: 27
+        Gy: 64
+        Y: 23.95294
+        OffsetX: -0.37513733
+        OffsetZ: -0.4092636
+      - Gx: 23
+        Gy: 65
+        Y: 23.505882
+        OffsetX: 0.015035629
+        OffsetZ: -0.4518509
+      - Gx: 19
+        Gy: 64
+        Y: 23.058823
+        OffsetX: 0.31415558
+        OffsetZ: 0.047157288
+      - Gx: 16
+        Gy: 62
+        Y: 22.611765
+        OffsetX: 0.0887928
+        OffsetZ: 0.1644516
+      - Gx: 14
+        Gy: 59
+        Y: 22.164705
+        OffsetX: -0.16727448
+        OffsetZ: 0.18826294
+      - Gx: 13
+        Gy: 56
+        Y: 21.717648
+        OffsetX: -0.108662605
+        OffsetZ: -0.42577744
+      - Gx: 13
+        Gy: 52
+        Y: 21.270588
+        OffsetX: 0.40874386
+        OffsetZ: -0.12440109
+      - Gx: 15
+        Gy: 49
+        Y: 20.82353
+        OffsetX: 0.30573082
+        OffsetZ: -0.34137344
+      - Gx: 18
+        Gy: 46
+        Y: 20.37647
+        OffsetX: 0.29189682
+        OffsetZ: 0.4157791
+      - Gx: 22
+        Gy: 45
+        Y: 19.929413
+        OffsetX: -0.089925766
+        OffsetZ: 0.49043274
+      - Gx: 26
+        Gy: 46
+        Y: 19.482353
+        OffsetX: -0.39363098
+        OffsetZ: 0.024234772
+      - Gx: 29
+        Gy: 48
+        Y: 19.035295
+        OffsetX: -0.18510437
+        OffsetZ: -0.064525604
+      - Gx: 31
+        Gy: 51
+        Y: 18.588236
+        OffsetX: 0.044475555
+        OffsetZ: -0.0684433
+      - Gx: 32
+        Gy: 55
+        Y: 18.141176
+        OffsetX: -0.046230316
+        OffsetZ: -0.4461975
+      - Gx: 31
+        Gy: 58
+        Y: 17.694118
+        OffsetX: 0.403574
+        OffsetZ: 0.24769211
+      - Gx: 29
+        Gy: 61
+        Y: 17.247059
+        OffsetX: 0.47812653
+        OffsetZ: 0.44771194
+      - Gx: 26
+        Gy: 63
+        Y: 16.8
+        OffsetX: 0.1282177
+        OffsetZ: -0.06965637
+      - Gx: 23
+        Gy: 64
+        Y: 16.352942
+        OffsetX: -0.19019318
+        OffsetZ: -0.25226593
+      - Gx: 19
+        Gy: 63
+        Y: 15.905882
+        OffsetX: 0.43175697
+        OffsetZ: 0.22925949
+      - Gx: 17
+        Gy: 61
+        Y: 15.458824
+        OffsetX: -0.48876953
+        OffsetZ: 0.4542923
+      - Gx: 14
+        Gy: 59
+        Y: 15.0117655
+        OffsetX: 0.49531937
+        OffsetZ: -0.30544662
+      - Gx: 14
+        Gy: 55
+        Y: 14.564706
+        OffsetX: -0.3073473
+        OffsetZ: 0.37254333
+      - Gx: 14
+        Gy: 52
+        Y: 14.117646
+        OffsetX: 0.22610474
+        OffsetZ: -0.0031661987
+      - Gx: 16
+        Gy: 49
+        Y: 13.670589
+        OffsetX: 0.014003754
+        OffsetZ: 0.08421326
+      - Gx: 19
+        Gy: 47
+        Y: 13.22353
+        OffsetX: -0.2173481
+        OffsetZ: 0.08056259
+      - Gx: 22
+        Gy: 46
+        Y: 12.77647
+        OffsetX: 0.10819054
+        OffsetZ: 0.29263306
+      - Gx: 25
+        Gy: 47
+        Y: 12.3294115
+        OffsetX: 0.48151016
+        OffsetZ: -0.15894699
+      - Gx: 28
+        Gy: 49
+        Y: 11.882354
+        OffsetX: 0.38617134
+        OffsetZ: -0.35815048
+      - Gx: 30
+        Gy: 51
+        Y: 11.435295
+        OffsetX: 0.37752342
+        OffsetZ: 0.4193573
+      - Gx: 31
+        Gy: 55
+        Y: 10.988235
+        OffsetX: 0.1506958
+        OffsetZ: -0.25164032
+      - Gx: 31
+        Gy: 58
+        Y: 10.541176
+        OffsetX: -0.41267967
+        OffsetZ: 0.119213104
+      - Gx: 29
+        Gy: 61
+        Y: 10.094119
+        OffsetX: -0.22634315
+        OffsetZ: 0.015857697
+      - Gx: 26
+        Gy: 63
+        Y: 9.647059
+        OffsetX: -0.0126571655
+        OffsetZ: -0.005126953
+      - Gx: 23
+        Gy: 63
+        Y: 9.200001
+        OffsetX: -0.3668213
+        OffsetZ: -0.056705475
+      - Gx: 20
+        Gy: 62
+        Y: 8.752941
+        OffsetX: -0.4226818
+        OffsetZ: 0.41862106
+      - Gx: 17
+        Gy: 61
+        Y: 8.3058815
+        OffsetX: -0.043308258
+        OffsetZ: -0.2384491
+      - Gx: 15
+        Gy: 58
+        Y: 7.8588243
+        OffsetX: 0.17250061
+        OffsetZ: 0.2257843
+      - Gx: 14
+        Gy: 55
+        Y: 7.411765
+        OffsetX: 0.4978695
+        OffsetZ: 0.19949341
+      - Gx: 15
+        Gy: 52
+        Y: 6.964706
+        OffsetX: 0.036089897
+        OffsetZ: 0.14598846
+      - Gx: 17
+        Gy: 50
+        Y: 6.517647
+        OffsetX: -0.29523468
+        OffsetZ: -0.46726227
+      - Gx: 19
+        Gy: 48
+        Y: 6.070589
+        OffsetX: 0.24842453
+        OffsetZ: -0.2401886
+      - Gx: 22
+        Gy: 47
+        Y: 5.62353
+        OffsetX: 0.27767754
+        OffsetZ: 0.098609924
+      - Gx: 25
+        Gy: 48
+        Y: 5.1764708
+        OffsetX: 0.32876205
+        OffsetZ: -0.34963226
+      - Gx: 28
+        Gy: 49
+        Y: 4.7294116
+        OffsetX: -0.06541252
+        OffsetZ: 0.330616
+      - Gx: 30
+        Gy: 52
+        Y: 4.282354
+        OffsetX: -0.30378532
+        OffsetZ: -0.11788559
+      - Gx: 30
+        Gy: 55
+        Y: 3.8352947
+        OffsetX: 0.34397507
+        OffsetZ: -0.08573151
+      - Gx: 30
+        Gy: 58
+        Y: 3.3882356
+        OffsetX: -0.22130966
+        OffsetZ: -0.037124634
+      - Gx: 28
+        Gy: 61
+        Y: 2.9411764
+        OffsetX: 0.08690071
+        OffsetZ: -0.43877792
+      - Gx: 26
+        Gy: 62
+        Y: 2.494119
+        OffsetX: -0.4723854
+        OffsetZ: 0.31151962
+      - Gx: 22
+        Gy: 63
+        Y: 2.0470595
+        OffsetX: 0.49261665
+        OffsetZ: -0.05417633
+      - Gx: 19
+        Gy: 62
+        Y: 1.6000004
+        OffsetX: 0.44654655
+        OffsetZ: 0.36702347
+      - Gx: 15
+        Gy: 60
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 13
+        Gy: 56
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 13
+        Gy: 53
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 14
+        Gy: 50
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 16
+        Gy: 46
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 18
+        Gy: 43
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 19
+        Gy: 40
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 22
+        Gy: 34
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0.5
+      - Gx: 26
+        Gy: 29
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 29
+        Gy: 25
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 32
+        Gy: 23
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 33
+        Gy: 22
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 34
+        Gy: 21
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 38
+        Gy: 20
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 40
+        Gy: 20
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 41
+        Gy: 20
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 42
+        Gy: 20
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 46
+        Gy: 21
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 47
+        Gy: 22
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 48
+        Gy: 23
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 51
+        Gy: 25
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 54
+        Gy: 29
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 58
+        Gy: 34
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0.5
+      - Gx: 61
+        Gy: 40
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 62
+        Gy: 43
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 64
+        Gy: 46
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 66
+        Gy: 50
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 67
+        Gy: 53
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 67
+        Gy: 56
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 65
+        Gy: 59
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 61
+        Gy: 62
+        Y: 1.6
+        OffsetX: 0.3779831
+        OffsetZ: 0.20832443
+      - Gx: 58
+        Gy: 63
+        Y: 2.0470588
+        OffsetX: 0.31937027
+        OffsetZ: 0.12919235
+      - Gx: 55
+        Gy: 63
+        Y: 2.4941177
+        OffsetX: 0.14208221
+        OffsetZ: -0.19940948
+      - Gx: 52
+        Gy: 61
+        Y: 2.9411764
+        OffsetX: 0.3366661
+        OffsetZ: 0.27325058
+      - Gx: 50
+        Gy: 59
+        Y: 3.3882353
+        OffsetX: 0.3362465
+        OffsetZ: -0.21701813
+      - Gx: 49
+        Gy: 56
+        Y: 3.8352942
+        OffsetX: 0.44966888
+        OffsetZ: -0.28574753
+      - Gx: 50
+        Gy: 53
+        Y: 4.282353
+        OffsetX: -0.18619156
+        OffsetZ: -0.45915604
+      - Gx: 51
+        Gy: 50
+        Y: 4.7294116
+        OffsetX: 0.37244797
+        OffsetZ: -0.24730301
+      - Gx: 54
+        Gy: 48
+        Y: 5.1764708
+        OffsetX: -0.115047455
+        OffsetZ: -0.21972656
+      - Gx: 57
+        Gy: 47
+        Y: 5.6235294
+        OffsetX: -0.03658676
+        OffsetZ: -0.07190323
+      - Gx: 60
+        Gy: 47
+        Y: 6.0705886
+        OffsetX: 0.13254929
+        OffsetZ: 0.32772827
+      - Gx: 63
+        Gy: 49
+        Y: 6.5176473
+        OffsetX: -0.09692383
+        OffsetZ: -0.082523346
+      - Gx: 65
+        Gy: 51
+        Y: 6.964706
+        OffsetX: -0.15274048
+        OffsetZ: 0.45190048
+      - Gx: 66
+        Gy: 55
+        Y: 7.4117646
+        OffsetX: -0.33507538
+        OffsetZ: -0.46029663
+      - Gx: 65
+        Gy: 58
+        Y: 7.858824
+        OffsetX: 0.22985077
+        OffsetZ: -0.2958336
+      - Gx: 64
+        Gy: 60
+        Y: 8.305882
+        OffsetX: -0.3908081
+        OffsetZ: 0.45672607
+      - Gx: 61
+        Gy: 62
+        Y: 8.752941
+        OffsetX: 0.053173065
+        OffsetZ: 0.37242126
+      - Gx: 58
+        Gy: 64
+        Y: 9.2
+        OffsetX: -0.007835388
+        OffsetZ: -0.12898254
+      - Gx: 55
+        Gy: 63
+        Y: 9.647059
+        OffsetX: -0.44566727
+        OffsetZ: 0.3590889
+      - Gx: 52
+        Gy: 62
+        Y: 10.094117
+        OffsetX: -0.42088318
+        OffsetZ: -0.43780518
+      - Gx: 50
+        Gy: 59
+        Y: 10.541177
+        OffsetX: -0.47414398
+        OffsetZ: -0.2422409
+      - Gx: 49
+        Gy: 55
+        Y: 10.988235
+        OffsetX: -0.28844833
+        OffsetZ: 0.3787651
+      - Gx: 49
+        Gy: 52
+        Y: 11.435294
+        OffsetX: 0.26192856
+        OffsetZ: -0.05312729
+      - Gx: 51
+        Gy: 49
+        Y: 11.882353
+        OffsetX: 0.09200287
+        OffsetZ: -0.008037567
+      - Gx: 54
+        Gy: 47
+        Y: 12.3294115
+        OffsetX: -0.08075714
+        OffsetZ: -0.029785156
+      - Gx: 57
+        Gy: 46
+        Y: 12.77647
+        OffsetX: 0.30713654
+        OffsetZ: 0.19377899
+      - Gx: 61
+        Gy: 47
+        Y: 13.22353
+        OffsetX: -0.26734543
+        OffsetZ: -0.21747208
+      - Gx: 64
+        Gy: 49
+        Y: 13.670588
+        OffsetX: -0.33309937
+        OffsetZ: -0.35443878
+      - Gx: 66
+        Gy: 51
+        Y: 14.117647
+        OffsetX: -0.3431244
+        OffsetZ: 0.4952507
+      - Gx: 66
+        Gy: 55
+        Y: 14.564706
+        OffsetX: 0.3953476
+        OffsetZ: -0.10837555
+      - Gx: 66
+        Gy: 58
+        Y: 15.011765
+        OffsetX: -0.23170471
+        OffsetZ: 0.31033707
+      - Gx: 64
+        Gy: 61
+        Y: 15.458823
+        OffsetX: -0.12745667
+        OffsetZ: 0.22354889
+      - Gx: 61
+        Gy: 63
+        Y: 15.905882
+        OffsetX: 0.00076293945
+        OffsetZ: 0.18150711
+      - Gx: 58
+        Gy: 64
+        Y: 16.352942
+        OffsetX: -0.40367126
+        OffsetZ: -0.11808014
+      - Gx: 54
+        Gy: 64
+        Y: 16.8
+        OffsetX: -0.08774948
+        OffsetZ: -0.12081146
+      - Gx: 51
+        Gy: 62
+        Y: 17.247059
+        OffsetX: -0.21377563
+        OffsetZ: -0.20523071
+      - Gx: 49
+        Gy: 59
+        Y: 17.694118
+        OffsetX: -0.29543304
+        OffsetZ: -0.33309555
+      - Gx: 48
+        Gy: 55
+        Y: 18.141176
+        OffsetX: -0.011333466
+        OffsetZ: -0.02148819
+      - Gx: 49
+        Gy: 51
+        Y: 18.588236
+        OffsetX: -0.25095367
+        OffsetZ: 0.29901886
+      - Gx: 51
+        Gy: 48
+        Y: 19.035294
+        OffsetX: -0.13167572
+        OffsetZ: 0.19651031
+      - Gx: 54
+        Gy: 46
+        Y: 19.482353
+        OffsetX: 0.019283295
+        OffsetZ: 0.1499939
+      - Gx: 58
+        Gy: 45
+        Y: 19.92941
+        OffsetX: -0.28454208
+        OffsetZ: 0.4754181
+      - Gx: 61
+        Gy: 46
+        Y: 20.37647
+        OffsetX: 0.38619995
+        OffsetZ: 0.27692795
+      - Gx: 64
+        Gy: 48
+        Y: 20.82353
+        OffsetX: 0.46479797
+        OffsetZ: 0.43078995
+      - Gx: 66
+        Gy: 52
+        Y: 21.270588
+        OffsetX: 0.47592926
+        OffsetZ: -0.3955269
+      - Gx: 67
+        Gy: 55
+        Y: 21.717646
+        OffsetX: 0.10909271
+        OffsetZ: 0.30794907
+      - Gx: 66
+        Gy: 59
+        Y: 22.164705
+        OffsetX: 0.26654816
+        OffsetZ: -0.030490875
+      - Gx: 64
+        Gy: 62
+        Y: 22.611765
+        OffsetX: 0.07836151
+        OffsetZ: 0.023807526
+      - Gx: 61
+        Gy: 64
+        Y: 23.058825
+        OffsetX: -0.11761093
+        OffsetZ: -0.0007171631
+      - Gx: 57
+        Gy: 65
+        Y: 23.50588
+        OffsetX: 0.17203903
+        OffsetZ: -0.40903473
+      - Gx: 54
+        Gy: 64
+        Y: 23.95294
+        OffsetX: -0.4798622
+        OffsetZ: -0.292511
+      - Gx: 50
+        Gy: 62
+        Y: 24.4
+        OffsetX: -0.03842926
+        OffsetZ: -0.031555176
+      - Gx: 48
+        Gy: 59
+        Y: 24.84706
+        OffsetX: -0.12334442
+        OffsetZ: -0.490551
+      - Gx: 47
+        Gy: 55
+        Y: 25.294119
+        OffsetX: 0.2853279
+        OffsetZ: -0.48575592
+      - Gx: 48
+        Gy: 51
+        Y: 25.741177
+        OffsetX: 0.2788658
+        OffsetZ: -0.40037155
+      - Gx: 51
+        Gy: 47
+        Y: 26.188234
+        OffsetX: -0.29610825
+        OffsetZ: 0.36996078
+      - Gx: 54
+        Gy: 45
+        Y: 26.635294
+        OffsetX: 0.18598557
+        OffsetZ: 0.32390213
+      - Gx: 58
+        Gy: 45
+        Y: 27.082354
+        OffsetX: 0.1875763
+        OffsetZ: -0.22267914
+      - Gx: 62
+        Gy: 46
+        Y: 27.529411
+        OffsetX: 0.09082794
+        OffsetZ: -0.18538666
+      - Gx: 65
+        Gy: 48
+        Y: 27.97647
+        OffsetX: 0.2931366
+        OffsetZ: 0.2756195
+      - Gx: 67
+        Gy: 52
+        Y: 28.423529
+        OffsetX: 0.30010986
+        OffsetZ: -0.21958923
+      - Gx: 68
+        Gy: 56
+        Y: 28.870588
+        OffsetX: -0.19813538
+        OffsetZ: -0.21215057
+      - Gx: 67
+        Gy: 60
+        Y: 29.317646
+        OffsetX: -0.27903748
+        OffsetZ: -0.3207512
+      - Gx: 64
+        Gy: 63
+        Y: 29.764706
+        OffsetX: 0.22425842
+        OffsetZ: -0.14617157
+      - Gx: 61
+        Gy: 65
+        Y: 30.211765
+        OffsetX: -0.30276108
+        OffsetZ: -0.17855835
+      - Gx: 57
+        Gy: 65
+        Y: 30.658823
+        OffsetX: -0.3155861
+        OffsetZ: 0.2783203
+      - Gx: 53
+        Gy: 64
+        Y: 31.10588
+        OffsetX: -0.19464111
+        OffsetZ: 0.15392303
+      - Gx: 50
+        Gy: 62
+        Y: 31.55294
+        OffsetX: -0.34106445
+        OffsetZ: -0.3781395
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 7
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 29.5
+      Y: 41
+      Width: 2
+      Height: 4
+      DirectionValue: 270
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 6
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 51.5
+      Y: 41
+      Width: 2
+      Height: 4
+      DirectionValue: 90
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 5
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 45
+      Y: 31.5
+      Width: 2
+      Height: 4
+      DirectionValue: 180
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 4
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 37
+      Y: 31.5
+      Width: 2
+      Height: 4
+      DirectionValue: 180
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 3
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 34
+      Y: 11.5
+      Width: 2
+      Height: 4
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 5
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 41
+      Y: 11.5
+      Width: 2
+      Height: 4
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 2
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 48
+      Y: 11.5
+      Width: 2
+      Height: 4
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 1
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 56
+      Y: 17.5
+      Width: 2
+      Height: 4
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 1
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 65.5
+      Y: 30
+      Width: 2
+      Height: 4
+      DirectionValue: 270
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 26
+      Y: 16.5
+      Width: 2
+      Height: 4
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 15.5
+      Y: 30
+      Width: 2
+      Height: 4
+      DirectionValue: 90
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 6
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 7
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot:
+    - Start:
+        Gx: 32
+        Gy: 58
+        Y: 32
+        OffsetX: 0.28418732
+        OffsetZ: 0.17359924
+      End:
+        Gx: 35
+        Gy: 21
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      PathPoints:
+      - Gx: 30
+        Gy: 62
+        Y: 31.55294
+        OffsetX: 0.31975937
+        OffsetZ: -0.2828102
+      - Gx: 27
+        Gy: 64
+        Y: 31.105883
+        OffsetX: 0.1459961
+        OffsetZ: 0.23577118
+      - Gx: 23
+        Gy: 65
+        Y: 30.658823
+        OffsetX: 0.24877167
+        OffsetZ: 0.3437729
+      - Gx: 19
+        Gy: 65
+        Y: 30.211765
+        OffsetX: 0.22471237
+        OffsetZ: -0.12844086
+      - Gx: 16
+        Gy: 63
+        Y: 29.764706
+        OffsetX: -0.31013298
+        OffsetZ: -0.108566284
+      - Gx: 13
+        Gy: 60
+        Y: 29.317648
+        OffsetX: 0.18538761
+        OffsetZ: -0.29346848
+      - Gx: 12
+        Gy: 56
+        Y: 28.870588
+        OffsetX: 0.094685555
+        OffsetZ: -0.19556808
+      - Gx: 13
+        Gy: 52
+        Y: 28.423529
+        OffsetX: -0.41526127
+        OffsetZ: -0.21749115
+      - Gx: 15
+        Gy: 48
+        Y: 27.97647
+        OffsetX: -0.41947556
+        OffsetZ: 0.25647736
+      - Gx: 18
+        Gy: 46
+        Y: 27.529411
+        OffsetX: -0.22349548
+        OffsetZ: -0.23384857
+      - Gx: 22
+        Gy: 45
+        Y: 27.082354
+        OffsetX: -0.31659508
+        OffsetZ: -0.30723572
+      - Gx: 26
+        Gy: 45
+        Y: 26.635294
+        OffsetX: -0.29688454
+        OffsetZ: 0.20065308
+      - Gx: 29
+        Gy: 47
+        Y: 26.188234
+        OffsetX: 0.2202568
+        OffsetZ: 0.2120552
+      - Gx: 32
+        Gy: 50
+        Y: 25.741177
+        OffsetX: -0.30361557
+        OffsetZ: 0.41905212
+      - Gx: 33
+        Gy: 54
+        Y: 25.294117
+        OffsetX: -0.24757004
+        OffsetZ: 0.33067322
+      - Gx: 32
+        Gy: 58
+        Y: 24.84706
+        OffsetX: 0.2267189
+        OffsetZ: 0.34809113
+      - Gx: 30
+        Gy: 61
+        Y: 24.4
+        OffsetX: -0.40898514
+        OffsetZ: 0.32149124
+      - Gx: 27
+        Gy: 64
+        Y: 23.95294
+        OffsetX: -0.37513733
+        OffsetZ: -0.4092636
+      - Gx: 23
+        Gy: 65
+        Y: 23.505882
+        OffsetX: 0.015035629
+        OffsetZ: -0.4518509
+      - Gx: 19
+        Gy: 64
+        Y: 23.058823
+        OffsetX: 0.31415558
+        OffsetZ: 0.047157288
+      - Gx: 16
+        Gy: 62
+        Y: 22.611765
+        OffsetX: 0.0887928
+        OffsetZ: 0.1644516
+      - Gx: 14
+        Gy: 59
+        Y: 22.164705
+        OffsetX: -0.16727448
+        OffsetZ: 0.18826294
+      - Gx: 13
+        Gy: 56
+        Y: 21.717648
+        OffsetX: -0.108662605
+        OffsetZ: -0.42577744
+      - Gx: 13
+        Gy: 52
+        Y: 21.270588
+        OffsetX: 0.40874386
+        OffsetZ: -0.12440109
+      - Gx: 15
+        Gy: 49
+        Y: 20.82353
+        OffsetX: 0.30573082
+        OffsetZ: -0.34137344
+      - Gx: 18
+        Gy: 46
+        Y: 20.37647
+        OffsetX: 0.29189682
+        OffsetZ: 0.4157791
+      - Gx: 22
+        Gy: 45
+        Y: 19.929413
+        OffsetX: -0.089925766
+        OffsetZ: 0.49043274
+      - Gx: 26
+        Gy: 46
+        Y: 19.482353
+        OffsetX: -0.39363098
+        OffsetZ: 0.024234772
+      - Gx: 29
+        Gy: 48
+        Y: 19.035295
+        OffsetX: -0.18510437
+        OffsetZ: -0.064525604
+      - Gx: 31
+        Gy: 51
+        Y: 18.588236
+        OffsetX: 0.044475555
+        OffsetZ: -0.0684433
+      - Gx: 32
+        Gy: 55
+        Y: 18.141176
+        OffsetX: -0.046230316
+        OffsetZ: -0.4461975
+      - Gx: 31
+        Gy: 58
+        Y: 17.694118
+        OffsetX: 0.403574
+        OffsetZ: 0.24769211
+      - Gx: 29
+        Gy: 61
+        Y: 17.247059
+        OffsetX: 0.47812653
+        OffsetZ: 0.44771194
+      - Gx: 26
+        Gy: 63
+        Y: 16.8
+        OffsetX: 0.1282177
+        OffsetZ: -0.06965637
+      - Gx: 23
+        Gy: 64
+        Y: 16.352942
+        OffsetX: -0.19019318
+        OffsetZ: -0.25226593
+      - Gx: 19
+        Gy: 63
+        Y: 15.905882
+        OffsetX: 0.43175697
+        OffsetZ: 0.22925949
+      - Gx: 17
+        Gy: 61
+        Y: 15.458824
+        OffsetX: -0.48876953
+        OffsetZ: 0.4542923
+      - Gx: 14
+        Gy: 59
+        Y: 15.0117655
+        OffsetX: 0.49531937
+        OffsetZ: -0.30544662
+      - Gx: 14
+        Gy: 55
+        Y: 14.564706
+        OffsetX: -0.3073473
+        OffsetZ: 0.37254333
+      - Gx: 14
+        Gy: 52
+        Y: 14.117646
+        OffsetX: 0.22610474
+        OffsetZ: -0.0031661987
+      - Gx: 16
+        Gy: 49
+        Y: 13.670589
+        OffsetX: 0.014003754
+        OffsetZ: 0.08421326
+      - Gx: 19
+        Gy: 47
+        Y: 13.22353
+        OffsetX: -0.2173481
+        OffsetZ: 0.08056259
+      - Gx: 22
+        Gy: 46
+        Y: 12.77647
+        OffsetX: 0.10819054
+        OffsetZ: 0.29263306
+      - Gx: 25
+        Gy: 47
+        Y: 12.3294115
+        OffsetX: 0.48151016
+        OffsetZ: -0.15894699
+      - Gx: 28
+        Gy: 49
+        Y: 11.882354
+        OffsetX: 0.38617134
+        OffsetZ: -0.35815048
+      - Gx: 30
+        Gy: 51
+        Y: 11.435295
+        OffsetX: 0.37752342
+        OffsetZ: 0.4193573
+      - Gx: 31
+        Gy: 55
+        Y: 10.988235
+        OffsetX: 0.1506958
+        OffsetZ: -0.25164032
+      - Gx: 31
+        Gy: 58
+        Y: 10.541176
+        OffsetX: -0.41267967
+        OffsetZ: 0.119213104
+      - Gx: 29
+        Gy: 61
+        Y: 10.094119
+        OffsetX: -0.22634315
+        OffsetZ: 0.015857697
+      - Gx: 26
+        Gy: 63
+        Y: 9.647059
+        OffsetX: -0.0126571655
+        OffsetZ: -0.005126953
+      - Gx: 23
+        Gy: 63
+        Y: 9.200001
+        OffsetX: -0.3668213
+        OffsetZ: -0.056705475
+      - Gx: 20
+        Gy: 62
+        Y: 8.752941
+        OffsetX: -0.4226818
+        OffsetZ: 0.41862106
+      - Gx: 17
+        Gy: 61
+        Y: 8.3058815
+        OffsetX: -0.043308258
+        OffsetZ: -0.2384491
+      - Gx: 15
+        Gy: 58
+        Y: 7.8588243
+        OffsetX: 0.17250061
+        OffsetZ: 0.2257843
+      - Gx: 14
+        Gy: 55
+        Y: 7.411765
+        OffsetX: 0.4978695
+        OffsetZ: 0.19949341
+      - Gx: 15
+        Gy: 52
+        Y: 6.964706
+        OffsetX: 0.036089897
+        OffsetZ: 0.14598846
+      - Gx: 17
+        Gy: 50
+        Y: 6.517647
+        OffsetX: -0.29523468
+        OffsetZ: -0.46726227
+      - Gx: 19
+        Gy: 48
+        Y: 6.070589
+        OffsetX: 0.24842453
+        OffsetZ: -0.2401886
+      - Gx: 22
+        Gy: 47
+        Y: 5.62353
+        OffsetX: 0.27767754
+        OffsetZ: 0.098609924
+      - Gx: 25
+        Gy: 48
+        Y: 5.1764708
+        OffsetX: 0.32876205
+        OffsetZ: -0.34963226
+      - Gx: 28
+        Gy: 49
+        Y: 4.7294116
+        OffsetX: -0.06541252
+        OffsetZ: 0.330616
+      - Gx: 30
+        Gy: 52
+        Y: 4.282354
+        OffsetX: -0.30378532
+        OffsetZ: -0.11788559
+      - Gx: 30
+        Gy: 55
+        Y: 3.8352947
+        OffsetX: 0.34397507
+        OffsetZ: -0.08573151
+      - Gx: 30
+        Gy: 58
+        Y: 3.3882356
+        OffsetX: -0.22130966
+        OffsetZ: -0.037124634
+      - Gx: 28
+        Gy: 61
+        Y: 2.9411764
+        OffsetX: 0.08690071
+        OffsetZ: -0.43877792
+      - Gx: 26
+        Gy: 62
+        Y: 2.494119
+        OffsetX: -0.4723854
+        OffsetZ: 0.31151962
+      - Gx: 22
+        Gy: 63
+        Y: 2.0470595
+        OffsetX: 0.49261665
+        OffsetZ: -0.05417633
+      - Gx: 19
+        Gy: 62
+        Y: 1.6000004
+        OffsetX: 0.44654655
+        OffsetZ: 0.36702347
+      - Gx: 15
+        Gy: 60
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 13
+        Gy: 56
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 13
+        Gy: 53
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 14
+        Gy: 50
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 16
+        Gy: 46
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 18
+        Gy: 43
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 19
+        Gy: 40
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 22
+        Gy: 34
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0.5
+      - Gx: 26
+        Gy: 29
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 29
+        Gy: 25
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 30
+        Gy: 24
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: -0.5
+      - Gx: 32
+        Gy: 22
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0.5
+      - Gx: 33
+        Gy: 22
+        Y: 0
+        OffsetX: 0
+        OffsetZ: -0.5
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 8
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot:
+    - Start:
+        Gx: 32
+        Gy: 58
+        Y: 32
+        OffsetX: 0.28418732
+        OffsetZ: 0.17359924
+      End:
+        Gx: 35
+        Gy: 21
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      PathPoints:
+      - Gx: 30
+        Gy: 62
+        Y: 31.55294
+        OffsetX: 0.31975937
+        OffsetZ: -0.2828102
+      - Gx: 27
+        Gy: 64
+        Y: 31.105883
+        OffsetX: 0.1459961
+        OffsetZ: 0.23577118
+      - Gx: 23
+        Gy: 65
+        Y: 30.658823
+        OffsetX: 0.24877167
+        OffsetZ: 0.3437729
+      - Gx: 19
+        Gy: 65
+        Y: 30.211765
+        OffsetX: 0.22471237
+        OffsetZ: -0.12844086
+      - Gx: 16
+        Gy: 63
+        Y: 29.764706
+        OffsetX: -0.31013298
+        OffsetZ: -0.108566284
+      - Gx: 13
+        Gy: 60
+        Y: 29.317648
+        OffsetX: 0.18538761
+        OffsetZ: -0.29346848
+      - Gx: 12
+        Gy: 56
+        Y: 28.870588
+        OffsetX: 0.094685555
+        OffsetZ: -0.19556808
+      - Gx: 13
+        Gy: 52
+        Y: 28.423529
+        OffsetX: -0.41526127
+        OffsetZ: -0.21749115
+      - Gx: 15
+        Gy: 48
+        Y: 27.97647
+        OffsetX: -0.41947556
+        OffsetZ: 0.25647736
+      - Gx: 18
+        Gy: 46
+        Y: 27.529411
+        OffsetX: -0.22349548
+        OffsetZ: -0.23384857
+      - Gx: 22
+        Gy: 45
+        Y: 27.082354
+        OffsetX: -0.31659508
+        OffsetZ: -0.30723572
+      - Gx: 26
+        Gy: 45
+        Y: 26.635294
+        OffsetX: -0.29688454
+        OffsetZ: 0.20065308
+      - Gx: 29
+        Gy: 47
+        Y: 26.188234
+        OffsetX: 0.2202568
+        OffsetZ: 0.2120552
+      - Gx: 32
+        Gy: 50
+        Y: 25.741177
+        OffsetX: -0.30361557
+        OffsetZ: 0.41905212
+      - Gx: 33
+        Gy: 54
+        Y: 25.294117
+        OffsetX: -0.24757004
+        OffsetZ: 0.33067322
+      - Gx: 32
+        Gy: 58
+        Y: 24.84706
+        OffsetX: 0.2267189
+        OffsetZ: 0.34809113
+      - Gx: 30
+        Gy: 61
+        Y: 24.4
+        OffsetX: -0.40898514
+        OffsetZ: 0.32149124
+      - Gx: 27
+        Gy: 64
+        Y: 23.95294
+        OffsetX: -0.37513733
+        OffsetZ: -0.4092636
+      - Gx: 23
+        Gy: 65
+        Y: 23.505882
+        OffsetX: 0.015035629
+        OffsetZ: -0.4518509
+      - Gx: 19
+        Gy: 64
+        Y: 23.058823
+        OffsetX: 0.31415558
+        OffsetZ: 0.047157288
+      - Gx: 16
+        Gy: 62
+        Y: 22.611765
+        OffsetX: 0.0887928
+        OffsetZ: 0.1644516
+      - Gx: 14
+        Gy: 59
+        Y: 22.164705
+        OffsetX: -0.16727448
+        OffsetZ: 0.18826294
+      - Gx: 13
+        Gy: 56
+        Y: 21.717648
+        OffsetX: -0.108662605
+        OffsetZ: -0.42577744
+      - Gx: 13
+        Gy: 52
+        Y: 21.270588
+        OffsetX: 0.40874386
+        OffsetZ: -0.12440109
+      - Gx: 15
+        Gy: 49
+        Y: 20.82353
+        OffsetX: 0.30573082
+        OffsetZ: -0.34137344
+      - Gx: 18
+        Gy: 46
+        Y: 20.37647
+        OffsetX: 0.29189682
+        OffsetZ: 0.4157791
+      - Gx: 22
+        Gy: 45
+        Y: 19.929413
+        OffsetX: -0.089925766
+        OffsetZ: 0.49043274
+      - Gx: 26
+        Gy: 46
+        Y: 19.482353
+        OffsetX: -0.39363098
+        OffsetZ: 0.024234772
+      - Gx: 29
+        Gy: 48
+        Y: 19.035295
+        OffsetX: -0.18510437
+        OffsetZ: -0.064525604
+      - Gx: 31
+        Gy: 51
+        Y: 18.588236
+        OffsetX: 0.044475555
+        OffsetZ: -0.0684433
+      - Gx: 32
+        Gy: 55
+        Y: 18.141176
+        OffsetX: -0.046230316
+        OffsetZ: -0.4461975
+      - Gx: 31
+        Gy: 58
+        Y: 17.694118
+        OffsetX: 0.403574
+        OffsetZ: 0.24769211
+      - Gx: 29
+        Gy: 61
+        Y: 17.247059
+        OffsetX: 0.47812653
+        OffsetZ: 0.44771194
+      - Gx: 26
+        Gy: 63
+        Y: 16.8
+        OffsetX: 0.1282177
+        OffsetZ: -0.06965637
+      - Gx: 23
+        Gy: 64
+        Y: 16.352942
+        OffsetX: -0.19019318
+        OffsetZ: -0.25226593
+      - Gx: 19
+        Gy: 63
+        Y: 15.905882
+        OffsetX: 0.43175697
+        OffsetZ: 0.22925949
+      - Gx: 17
+        Gy: 61
+        Y: 15.458824
+        OffsetX: -0.48876953
+        OffsetZ: 0.4542923
+      - Gx: 14
+        Gy: 59
+        Y: 15.0117655
+        OffsetX: 0.49531937
+        OffsetZ: -0.30544662
+      - Gx: 14
+        Gy: 55
+        Y: 14.564706
+        OffsetX: -0.3073473
+        OffsetZ: 0.37254333
+      - Gx: 14
+        Gy: 52
+        Y: 14.117646
+        OffsetX: 0.22610474
+        OffsetZ: -0.0031661987
+      - Gx: 16
+        Gy: 49
+        Y: 13.670589
+        OffsetX: 0.014003754
+        OffsetZ: 0.08421326
+      - Gx: 19
+        Gy: 47
+        Y: 13.22353
+        OffsetX: -0.2173481
+        OffsetZ: 0.08056259
+      - Gx: 22
+        Gy: 46
+        Y: 12.77647
+        OffsetX: 0.10819054
+        OffsetZ: 0.29263306
+      - Gx: 25
+        Gy: 47
+        Y: 12.3294115
+        OffsetX: 0.48151016
+        OffsetZ: -0.15894699
+      - Gx: 28
+        Gy: 49
+        Y: 11.882354
+        OffsetX: 0.38617134
+        OffsetZ: -0.35815048
+      - Gx: 30
+        Gy: 51
+        Y: 11.435295
+        OffsetX: 0.37752342
+        OffsetZ: 0.4193573
+      - Gx: 31
+        Gy: 55
+        Y: 10.988235
+        OffsetX: 0.1506958
+        OffsetZ: -0.25164032
+      - Gx: 31
+        Gy: 58
+        Y: 10.541176
+        OffsetX: -0.41267967
+        OffsetZ: 0.119213104
+      - Gx: 29
+        Gy: 61
+        Y: 10.094119
+        OffsetX: -0.22634315
+        OffsetZ: 0.015857697
+      - Gx: 26
+        Gy: 63
+        Y: 9.647059
+        OffsetX: -0.0126571655
+        OffsetZ: -0.005126953
+      - Gx: 23
+        Gy: 63
+        Y: 9.200001
+        OffsetX: -0.3668213
+        OffsetZ: -0.056705475
+      - Gx: 20
+        Gy: 62
+        Y: 8.752941
+        OffsetX: -0.4226818
+        OffsetZ: 0.41862106
+      - Gx: 17
+        Gy: 61
+        Y: 8.3058815
+        OffsetX: -0.043308258
+        OffsetZ: -0.2384491
+      - Gx: 15
+        Gy: 58
+        Y: 7.8588243
+        OffsetX: 0.17250061
+        OffsetZ: 0.2257843
+      - Gx: 14
+        Gy: 55
+        Y: 7.411765
+        OffsetX: 0.4978695
+        OffsetZ: 0.19949341
+      - Gx: 15
+        Gy: 52
+        Y: 6.964706
+        OffsetX: 0.036089897
+        OffsetZ: 0.14598846
+      - Gx: 17
+        Gy: 50
+        Y: 6.517647
+        OffsetX: -0.29523468
+        OffsetZ: -0.46726227
+      - Gx: 19
+        Gy: 48
+        Y: 6.070589
+        OffsetX: 0.24842453
+        OffsetZ: -0.2401886
+      - Gx: 22
+        Gy: 47
+        Y: 5.62353
+        OffsetX: 0.27767754
+        OffsetZ: 0.098609924
+      - Gx: 25
+        Gy: 48
+        Y: 5.1764708
+        OffsetX: 0.32876205
+        OffsetZ: -0.34963226
+      - Gx: 28
+        Gy: 49
+        Y: 4.7294116
+        OffsetX: -0.06541252
+        OffsetZ: 0.330616
+      - Gx: 30
+        Gy: 52
+        Y: 4.282354
+        OffsetX: -0.30378532
+        OffsetZ: -0.11788559
+      - Gx: 30
+        Gy: 55
+        Y: 3.8352947
+        OffsetX: 0.34397507
+        OffsetZ: -0.08573151
+      - Gx: 30
+        Gy: 58
+        Y: 3.3882356
+        OffsetX: -0.22130966
+        OffsetZ: -0.037124634
+      - Gx: 28
+        Gy: 61
+        Y: 2.9411764
+        OffsetX: 0.08690071
+        OffsetZ: -0.43877792
+      - Gx: 26
+        Gy: 62
+        Y: 2.494119
+        OffsetX: -0.4723854
+        OffsetZ: 0.31151962
+      - Gx: 22
+        Gy: 63
+        Y: 2.0470595
+        OffsetX: 0.49261665
+        OffsetZ: -0.05417633
+      - Gx: 19
+        Gy: 62
+        Y: 1.6000004
+        OffsetX: 0.44654655
+        OffsetZ: 0.36702347
+      - Gx: 15
+        Gy: 60
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 13
+        Gy: 56
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 13
+        Gy: 53
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 14
+        Gy: 50
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 16
+        Gy: 46
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 18
+        Gy: 43
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 19
+        Gy: 40
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 22
+        Gy: 34
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0.5
+      - Gx: 26
+        Gy: 29
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0
+      - Gx: 29
+        Gy: 25
+        Y: 0
+        OffsetX: 0
+        OffsetZ: 0
+      - Gx: 30
+        Gy: 24
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: -0.5
+      - Gx: 32
+        Gy: 22
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: 0.5
+      - Gx: 33
+        Gy: 22
+        Y: 0
+        OffsetX: 0
+        OffsetZ: -0.5
+    - Start:
+        Gx: 38
+        Gy: 58
+        Y: 32
+        OffsetX: -0.28418732
+        OffsetZ: 0.17359924
+      End:
+        Gx: 35
+        Gy: 21
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      PathPoints:
+      - Gx: 40
+        Gy: 62
+        Y: 31.55294
+        OffsetX: -0.31975937
+        OffsetZ: -0.2828102
+      - Gx: 43
+        Gy: 64
+        Y: 31.105883
+        OffsetX: -0.1459961
+        OffsetZ: 0.23577118
+      - Gx: 47
+        Gy: 65
+        Y: 30.658823
+        OffsetX: -0.24877167
+        OffsetZ: 0.3437729
+      - Gx: 51
+        Gy: 65
+        Y: 30.211765
+        OffsetX: -0.22471237
+        OffsetZ: -0.12844086
+      - Gx: 54
+        Gy: 63
+        Y: 29.764706
+        OffsetX: 0.31013298
+        OffsetZ: -0.108566284
+      - Gx: 57
+        Gy: 60
+        Y: 29.317648
+        OffsetX: -0.18538761
+        OffsetZ: -0.29346848
+      - Gx: 58
+        Gy: 56
+        Y: 28.870588
+        OffsetX: -0.094685555
+        OffsetZ: -0.19556808
+      - Gx: 57
+        Gy: 52
+        Y: 28.423529
+        OffsetX: 0.41526127
+        OffsetZ: -0.21749115
+      - Gx: 55
+        Gy: 48
+        Y: 27.97647
+        OffsetX: 0.41947556
+        OffsetZ: 0.25647736
+      - Gx: 52
+        Gy: 46
+        Y: 27.529411
+        OffsetX: 0.22349548
+        OffsetZ: -0.23384857
+      - Gx: 48
+        Gy: 45
+        Y: 27.082354
+        OffsetX: 0.31659508
+        OffsetZ: -0.30723572
+      - Gx: 44
+        Gy: 45
+        Y: 26.635294
+        OffsetX: 0.29688454
+        OffsetZ: 0.20065308
+      - Gx: 41
+        Gy: 47
+        Y: 26.188234
+        OffsetX: -0.2202568
+        OffsetZ: 0.2120552
+      - Gx: 38
+        Gy: 50
+        Y: 25.741177
+        OffsetX: 0.30361557
+        OffsetZ: 0.41905212
+      - Gx: 37
+        Gy: 54
+        Y: 25.294117
+        OffsetX: 0.24757004
+        OffsetZ: 0.33067322
+      - Gx: 38
+        Gy: 58
+        Y: 24.84706
+        OffsetX: -0.2267189
+        OffsetZ: 0.34809113
+      - Gx: 40
+        Gy: 61
+        Y: 24.4
+        OffsetX: 0.40898514
+        OffsetZ: 0.32149124
+      - Gx: 43
+        Gy: 64
+        Y: 23.95294
+        OffsetX: 0.37513733
+        OffsetZ: -0.4092636
+      - Gx: 47
+        Gy: 65
+        Y: 23.505882
+        OffsetX: -0.015035629
+        OffsetZ: -0.4518509
+      - Gx: 51
+        Gy: 64
+        Y: 23.058823
+        OffsetX: -0.31415558
+        OffsetZ: 0.047157288
+      - Gx: 54
+        Gy: 62
+        Y: 22.611765
+        OffsetX: -0.0887928
+        OffsetZ: 0.1644516
+      - Gx: 56
+        Gy: 59
+        Y: 22.164705
+        OffsetX: 0.16727448
+        OffsetZ: 0.18826294
+      - Gx: 57
+        Gy: 56
+        Y: 21.717648
+        OffsetX: 0.108662605
+        OffsetZ: -0.42577744
+      - Gx: 57
+        Gy: 52
+        Y: 21.270588
+        OffsetX: -0.40874386
+        OffsetZ: -0.12440109
+      - Gx: 55
+        Gy: 49
+        Y: 20.82353
+        OffsetX: -0.30573082
+        OffsetZ: -0.34137344
+      - Gx: 52
+        Gy: 46
+        Y: 20.37647
+        OffsetX: -0.29189682
+        OffsetZ: 0.4157791
+      - Gx: 48
+        Gy: 45
+        Y: 19.929413
+        OffsetX: 0.089925766
+        OffsetZ: 0.49043274
+      - Gx: 44
+        Gy: 46
+        Y: 19.482353
+        OffsetX: 0.39363098
+        OffsetZ: 0.024234772
+      - Gx: 41
+        Gy: 48
+        Y: 19.035295
+        OffsetX: 0.18510437
+        OffsetZ: -0.064525604
+      - Gx: 39
+        Gy: 51
+        Y: 18.588236
+        OffsetX: -0.044475555
+        OffsetZ: -0.0684433
+      - Gx: 38
+        Gy: 55
+        Y: 18.141176
+        OffsetX: 0.046230316
+        OffsetZ: -0.4461975
+      - Gx: 39
+        Gy: 58
+        Y: 17.694118
+        OffsetX: -0.403574
+        OffsetZ: 0.24769211
+      - Gx: 41
+        Gy: 61
+        Y: 17.247059
+        OffsetX: -0.47812653
+        OffsetZ: 0.44771194
+      - Gx: 44
+        Gy: 63
+        Y: 16.8
+        OffsetX: -0.1282177
+        OffsetZ: -0.06965637
+      - Gx: 47
+        Gy: 64
+        Y: 16.352942
+        OffsetX: 0.19019318
+        OffsetZ: -0.25226593
+      - Gx: 51
+        Gy: 63
+        Y: 15.905882
+        OffsetX: -0.43175697
+        OffsetZ: 0.22925949
+      - Gx: 53
+        Gy: 61
+        Y: 15.458824
+        OffsetX: 0.48876953
+        OffsetZ: 0.4542923
+      - Gx: 56
+        Gy: 59
+        Y: 15.0117655
+        OffsetX: -0.49531937
+        OffsetZ: -0.30544662
+      - Gx: 56
+        Gy: 55
+        Y: 14.564706
+        OffsetX: 0.3073473
+        OffsetZ: 0.37254333
+      - Gx: 56
+        Gy: 52
+        Y: 14.117646
+        OffsetX: -0.22610474
+        OffsetZ: -0.0031661987
+      - Gx: 54
+        Gy: 49
+        Y: 13.670589
+        OffsetX: -0.014003754
+        OffsetZ: 0.08421326
+      - Gx: 51
+        Gy: 47
+        Y: 13.22353
+        OffsetX: 0.2173481
+        OffsetZ: 0.08056259
+      - Gx: 48
+        Gy: 46
+        Y: 12.77647
+        OffsetX: -0.10819054
+        OffsetZ: 0.29263306
+      - Gx: 45
+        Gy: 47
+        Y: 12.3294115
+        OffsetX: -0.48151016
+        OffsetZ: -0.15894699
+      - Gx: 42
+        Gy: 49
+        Y: 11.882354
+        OffsetX: -0.38617134
+        OffsetZ: -0.35815048
+      - Gx: 40
+        Gy: 51
+        Y: 11.435295
+        OffsetX: -0.37752342
+        OffsetZ: 0.4193573
+      - Gx: 39
+        Gy: 55
+        Y: 10.988235
+        OffsetX: -0.1506958
+        OffsetZ: -0.25164032
+      - Gx: 39
+        Gy: 58
+        Y: 10.541176
+        OffsetX: 0.41267967
+        OffsetZ: 0.119213104
+      - Gx: 41
+        Gy: 61
+        Y: 10.094119
+        OffsetX: 0.22634315
+        OffsetZ: 0.015857697
+      - Gx: 44
+        Gy: 63
+        Y: 9.647059
+        OffsetX: 0.0126571655
+        OffsetZ: -0.005126953
+      - Gx: 47
+        Gy: 63
+        Y: 9.200001
+        OffsetX: 0.3668213
+        OffsetZ: -0.056705475
+      - Gx: 50
+        Gy: 62
+        Y: 8.752941
+        OffsetX: 0.4226818
+        OffsetZ: 0.41862106
+      - Gx: 53
+        Gy: 61
+        Y: 8.3058815
+        OffsetX: 0.043308258
+        OffsetZ: -0.2384491
+      - Gx: 55
+        Gy: 58
+        Y: 7.8588243
+        OffsetX: -0.17250061
+        OffsetZ: 0.2257843
+      - Gx: 56
+        Gy: 55
+        Y: 7.411765
+        OffsetX: -0.4978695
+        OffsetZ: 0.19949341
+      - Gx: 55
+        Gy: 52
+        Y: 6.964706
+        OffsetX: -0.036089897
+        OffsetZ: 0.14598846
+      - Gx: 53
+        Gy: 50
+        Y: 6.517647
+        OffsetX: 0.29523468
+        OffsetZ: -0.46726227
+      - Gx: 51
+        Gy: 48
+        Y: 6.070589
+        OffsetX: -0.24842453
+        OffsetZ: -0.2401886
+      - Gx: 48
+        Gy: 47
+        Y: 5.62353
+        OffsetX: -0.27767754
+        OffsetZ: 0.098609924
+      - Gx: 45
+        Gy: 48
+        Y: 5.1764708
+        OffsetX: -0.32876205
+        OffsetZ: -0.34963226
+      - Gx: 42
+        Gy: 49
+        Y: 4.7294116
+        OffsetX: 0.06541252
+        OffsetZ: 0.330616
+      - Gx: 40
+        Gy: 52
+        Y: 4.282354
+        OffsetX: 0.30378532
+        OffsetZ: -0.11788559
+      - Gx: 40
+        Gy: 55
+        Y: 3.8352947
+        OffsetX: -0.34397507
+        OffsetZ: -0.08573151
+      - Gx: 40
+        Gy: 58
+        Y: 3.3882356
+        OffsetX: 0.22130966
+        OffsetZ: -0.037124634
+      - Gx: 42
+        Gy: 61
+        Y: 2.9411764
+        OffsetX: -0.08690071
+        OffsetZ: -0.43877792
+      - Gx: 44
+        Gy: 62
+        Y: 2.494119
+        OffsetX: 0.4723854
+        OffsetZ: 0.31151962
+      - Gx: 48
+        Gy: 63
+        Y: 2.0470595
+        OffsetX: -0.49261665
+        OffsetZ: -0.05417633
+      - Gx: 51
+        Gy: 62
+        Y: 1.6000004
+        OffsetX: -0.44654655
+        OffsetZ: 0.36702347
+      - Gx: 55
+        Gy: 60
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 57
+        Gy: 56
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 57
+        Gy: 53
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 56
+        Gy: 50
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 54
+        Gy: 46
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 52
+        Gy: 43
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 51
+        Gy: 40
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 48
+        Gy: 34
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0.5
+      - Gx: 44
+        Gy: 29
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0
+      - Gx: 41
+        Gy: 25
+        Y: 0
+        OffsetX: -0
+        OffsetZ: 0
+      - Gx: 40
+        Gy: 24
+        Y: 0
+        OffsetX: -0.5
+        OffsetZ: -0.5
+      - Gx: 38
+        Gy: 22
+        Y: 0
+        OffsetX: 0.5
+        OffsetZ: 0.5
+      - Gx: 37
+        Gy: 22
+        Y: 0
+        OffsetX: -0
+        OffsetZ: -0.5
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 0
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 1
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 2
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 3
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 4
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 5
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 6
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 7
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 8
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 9
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 2
+    Index: 9
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 15.5
+      Y: 29
+      Width: 2
+      Height: 4
+      DirectionValue: 90
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 9
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0
+  - OpType: 1
+    Index: 10
+    Point:
+      Gx: 0
+      Gy: 0
+      Y: 0
+      OffsetX: 0
+      OffsetZ: 0
+    RemovedHolder:
+      HolderType: 0
+      X: 0
+      Y: 0
+      Width: 0
+      Height: 0
+      DirectionValue: 0
+      CarColors: 
+    SegSnapshot: []
+    HolderSnapshot: []
+    CurrentSegmentSnapshot: 0
+    SpacingSnapshot: 0

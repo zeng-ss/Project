@@ -1,0 +1,80 @@
+pluginManagement {
+    repositories {
+        **ARTIFACTORYREPOSITORY**
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+include ':launcher', ':unityLibrary'
+**INCLUDES**
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        **ARTIFACTORYREPOSITORY**
+        google()
+        mavenCentral()
+// Android Resolver Repos Start
+        def unityProjectPath = $/file:///**DIR_UNITYPROJECT**/$.replace("\\", "/")
+        mavenLocal()
+// Android Resolver Repos End
+        flatDir {
+            dirs "${project(':unityLibrary').projectDir}/libs"
+        }
+
+        maven {
+            url "https://maven.google.com"
+        }
+        //Anythink
+        maven {
+            url "https://jfrog.anythinktech.com/artifactory/overseas_sdk"
+        }
+        maven {
+            url "https://jfrog.anythinktech.com/artifactory/debugger"
+        }
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+        //Pubnative
+        maven {
+            url "https://verve.jfrog.io/artifactory/verve-gradle-release"
+        }
+        //Pangle
+        maven {
+            url "https://artifact.bytedance.com/repository/pangle"
+        }
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+        //BidMachine
+        maven {
+            url "https://artifactory.bidmachine.io/bidmachine"
+        }
+        //Chartboost
+        maven {
+            url "https://cboost.jfrog.io/artifactory/chartboost-ads"
+        }
+        maven {
+            url "https://cboost.jfrog.io/artifactory/chartboost-mediation"
+        }
+        maven {
+            url "https://cboost.jfrog.io/artifactory/chartboost-core"
+        }
+        //Taurusx
+        maven {
+            url "https://bitbucket.org/sdkcenter/sdkcenter/raw/release"
+        }
+        //Loomit
+        maven {
+            url "https://android-artifact-registry.x3mads.com/maven"
+        }
+    }
+}

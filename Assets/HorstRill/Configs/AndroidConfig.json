@@ -1,0 +1,53 @@
+{
+  "baseUrl": "https://coffee-away.digicore-ai.com",
+  "afAppKey": "hthgxvisjsow",
+  "taAppId": "d1564a43d3e54fbb8bb79975b1184ede",
+  "taServerUrl": "https://ta.digicore-ai.com",
+  "admobId": "ca-app-pub-4230413938770175~7482325188",
+  "fbId": "1258104636332524",
+  "fbClientToken": "ceaec32379935b74e5b1d17b5fdf1f27",
+  "dConfig": {
+    "adRetryCount": 3,
+    "adRetryIntervals": [
+      15,
+      30,
+      60
+    ],
+    "expLists": [],
+    "expInfos": {},
+    "platformInfoList": [
+      {
+        "platformName": "max",
+        "appId": "",
+        "appKey": "JS4zI-_eSXdXhldlmPZ5a3rC2Svy3eKhPKaX3oMibmsqTfPt1V_Ts46tWUgJ1q-BtL1_wRu4B_gnORBFPCbxrB"
+      }
+    ],
+    "platformInstancePriorityList": [
+      "max_0"
+    ],
+    "platformConfigs": {
+      "max_0": {
+        "platformName": "max",
+        "configId": "max_0",
+        "atAds": {
+          "rPidList": [
+            "04857eacc1d6da81"
+          ],
+          "iPidList": [
+            "a64d468ca526f663"
+          ],
+          "bPid": "963f0b2db039e6fa",
+          "rStrategy": "bidding",
+          "iStrategy": "bidding",
+          "rPriceGroups": [],
+          "iPriceGroups": [],
+          "exploratoryDelayMs": 3000
+        }
+      }
+    },
+    "enableSwapI2R": false,
+    "i2rThreshold": 1.8,
+    "enableSwapR2I": false,
+    "r2iThreshold": 1.8
+  }
+}

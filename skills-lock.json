@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "unity-developer": {
+      "source": "rmyndharis/antigravity-skills",
+      "sourceType": "github",
+      "computedHash": "bdd1a84f260a288a8c186e6b248f728f0d112db4fa287f5acba8ec5538fc8bbb"
+    }
+  }
+}

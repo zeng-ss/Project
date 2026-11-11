@@ -1,0 +1,23 @@
+root = true
+
+# 缩进风格
+indent_style = space
+indent_size = 4
+
+tab_width = 4
+
+# 换行符
+end_of_line = lf
+
+charset = utf-8
+
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.cs]
+# Case 标签缩进 (true=缩进，false=不缩进)
+csharp_indent_switch_labels = true
+# Case 内容缩进 (true=缩进，false=对齐case标签)
+csharp_indent_case_contents = true
+# Case 内容缩进空格数 (需配合 csharp_indent_case_contents)
+csharp_indent_case_contents_when_block = false

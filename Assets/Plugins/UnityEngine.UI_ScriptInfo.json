@@ -1,0 +1,14 @@
+﻿{
+  "scripts": [
+    {
+      "fullType": "Plawius.NonConvexCollider.NonConvexColliderAsset",
+      "fileID": 11500000,
+      "guid": "2c2b6661d17839c6db326b84f09ae844"
+    },
+    {
+      "fullType": "Plawius.NonConvexCollider.NonConvexColliderComponent",
+      "fileID": 11500000,
+      "guid": "fc5a83e815dd1e376cbb157bf5fb0282"
+    }
+  ]
+}

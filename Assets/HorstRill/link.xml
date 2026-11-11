@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<linker>
+    <!--GENERATE_TAG-->
+    <assembly fullname="Unity.TextMeshPro" preserve="all" />
+    <assembly fullname="UnityEngine.Purchasing" preserve="all" />
+    <assembly fullname="UnityEngine.Physics2DModule" preserve="all" />
+    <assembly fullname="UnityEngine.CoreModule" preserve="all" />
+    <assembly fullname="UnityEngine.AnimationModule" preserve="all" />
+
+    <assembly fullname="Facebook.Unity.Android" ignoreIfMissing="1">
+        <type fullname="Facebook.Unity.Android.*" preserve="all"/>
+    </assembly>
+    <assembly fullname="Facebook.Unity.IOS" ignoreIfMissing="1">
+        <type fullname="Facebook.Unity.IOS.*" preserve="all"/>
+    </assembly>
+    <assembly fullname="Facebook.Unity.Canvas" ignoreIfMissing="1">
+        <type fullname="Facebook.Unity.Canvas.*" preserve="all"/>
+    </assembly>
+
+    <assembly fullname="YooAsset" preserve="all" />
+
+    <assembly fullname="Assembly-CSharp" >
+
+        <type fullname="CasualGame.CsvConfigHelper"  preserve="all"/>
+        <type fullname="UnityGameFramework.Runtime.DefaultLogHelper"  preserve="all"/>
+        <type fullname="CasualGame.CsvLocalizationHelper"  preserve="all"/>
+        <type fullname="CasualGame.UGuiGroupHelper"  preserve="all"/>
+        <type fullname="CasualGame.NewtonsoftJsonHelper"  preserve="all"/>
+
+        <!-- 所有的Procedure 都是动态创建的，需要保留 -->
+        <type fullname="CasualGame.Procedure*" />
+        <type fullname="CasualGame.DR*" />
+
+        <type fullname="Custom.Activity.*" preserve="all"/>
+
+	</assembly>
+	
+</linker>

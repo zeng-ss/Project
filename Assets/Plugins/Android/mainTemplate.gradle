@@ -1,0 +1,178 @@
+apply plugin: 'com.android.library'
+apply from: '../shared/keepUnitySymbols.gradle'
+**APPLY_PLUGINS**
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api "androidx.multidex:multidex:2.0.1"
+    implementation(platform("com.google.firebase:firebase-bom:33.11.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-config")
+
+// Android Resolver Dependencies Start
+    // implementation 'androidx.annotation:annotation:1.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:98
+    implementation 'androidx.annotation:annotation:1.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:91
+    implementation 'androidx.appcompat:appcompat:1.6.1' // Packages/com.horst.rill/Editor/Dependencies.xml:89
+    // implementation 'androidx.media3:media3-exoplayer:1.0.0-alpha01' // Packages/com.horst.rill/Editor/Dependencies.xml:88
+    implementation 'androidx.media3:media3-exoplayer:1.4.1' // Packages/com.horst.rill/Editor/Dependencies.xml:137
+    implementation 'androidx.media3:media3-ui:1.4.1' // Packages/com.horst.rill/Editor/Dependencies.xml:138
+    implementation 'androidx.recyclerview:recyclerview:1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:122
+    implementation 'androidx.webkit:webkit:1.11.0' // Packages/com.horst.rill/Editor/Dependencies.xml:8
+    implementation 'cn.thinkingdata.android:TAThirdParty:2.0.2' // Packages/com.horst.rill/Editor/Dependencies.xml:12
+    implementation 'cn.thinkingdata.android:ThinkingAnalyticsSDK:3.0.3.1' // Packages/com.horst.rill/Editor/Dependencies.xml:11
+    implementation 'com.adjust.sdk:adjust-android:5.4.6' // Packages/com.horst.rill/Editor/Dependencies.xml:15
+    implementation 'com.android.installreferrer:installreferrer:2.2' // Packages/com.horst.rill/Editor/Dependencies.xml:16
+    implementation 'com.android.support:appcompat-v7:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.android.support:cardview-v7:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.android.support:customtabs:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.android.support:support-v4:25.3.1' // Facebook.Unity.Editor.AndroidSupportLibraryResolver.addSupportLibraryDependency
+    implementation 'com.anythink.sdk:adapter-tpn-admob:24.9.0.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:107
+    implementation 'com.anythink.sdk:adapter-tpn-applovin:13.5.0.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:118
+    implementation 'com.anythink.sdk:adapter-tpn-bidmachine:3.5.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:130
+    implementation 'com.anythink.sdk:adapter-tpn-bigo:5.6.2.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:67
+    implementation 'com.anythink.sdk:adapter-tpn-chartboost:9.11.0.1.1' // Packages/com.horst.rill/Editor/Dependencies.xml:148
+    implementation 'com.anythink.sdk:adapter-tpn-facebook:6.21.0.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:101
+    implementation 'com.anythink.sdk:adapter-tpn-fyber:8.3.7.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:160
+    implementation 'com.anythink.sdk:adapter-tpn-inmobi:11.1.0.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:113
+    implementation 'com.anythink.sdk:adapter-tpn-ironsource:9.2.0.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:62
+    implementation 'com.anythink.sdk:adapter-tpn-kwai:1.2.21.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:94
+    implementation 'com.anythink.sdk:adapter-tpn-mintegral:17.0.41.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:125
+    implementation 'com.anythink.sdk:adapter-tpn-moloco:4.3.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:39
+    implementation 'com.anythink.sdk:adapter-tpn-pangle:7.8.5.2.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:83
+    implementation 'com.anythink.sdk:adapter-tpn-pubnative:3.7.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:72
+    implementation 'com.anythink.sdk:adapter-tpn-sdm:6.5.56.1.1' // Packages/com.horst.rill/Editor/Dependencies.xml:24
+    implementation 'com.anythink.sdk:adapter-tpn-taurusx:1.10.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:76
+    implementation 'com.anythink.sdk:adapter-tpn-unityads:4.16.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:53
+    implementation 'com.anythink.sdk:adapter-tpn-vungle:7.6.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:47
+    implementation 'com.anythink.sdk:adapter-tpn-yandex:7.15.1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:153
+    implementation 'com.anythink.sdk:core-tpn:6.5.61' // Packages/com.horst.rill/Editor/Dependencies.xml:23
+    implementation 'com.anythink.sdk:debugger-ui-tpn:1.1.3' // Packages/com.horst.rill/Editor/Dependencies.xml:26
+    implementation 'com.applovin.mediation:bidmachine-adapter:3.5.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:129
+    implementation 'com.applovin.mediation:bigoads-adapter:5.6.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:66
+    implementation 'com.applovin.mediation:bytedance-adapter:7.8.5.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:81
+    implementation 'com.applovin.mediation:chartboost-adapter:9.11.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:146
+    implementation 'com.applovin.mediation:facebook-adapter:6.21.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:99
+    implementation 'com.applovin.mediation:fyber-adapter:8.3.7.0' // Packages/com.horst.rill/Editor/Dependencies.xml:158
+    implementation 'com.applovin.mediation:google-adapter:24.9.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:105
+    implementation 'com.applovin.mediation:google-ad-manager-adapter:24.9.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:106
+    implementation 'com.applovin.mediation:inmobi-adapter:11.1.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:111
+    implementation 'com.applovin.mediation:ironsource-adapter:9.2.0.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:60
+    implementation 'com.applovin.mediation:mintegral-adapter:17.0.41.0' // Packages/com.horst.rill/Editor/Dependencies.xml:123
+    implementation 'com.applovin.mediation:moloco-adapter:4.3.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:38
+    implementation 'com.applovin.mediation:unityads-adapter:4.16.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:51
+    implementation 'com.applovin.mediation:verve-adapter:3.7.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:71
+    implementation 'com.applovin.mediation:vungle-adapter:7.6.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:45
+    implementation 'com.applovin.mediation:yandex-adapter:7.15.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:152
+    implementation 'com.applovin:applovin-sdk:13.5.0' // Packages/com.horst.rill/Editor/Dependencies.xml:116
+    implementation 'com.bigossp:bigo-ads:5.6.2' // Packages/com.horst.rill/Editor/Dependencies.xml:65
+    implementation 'com.chartboost:chartboost-core-sdk:1.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:135
+    implementation 'com.chartboost:chartboost-mediation-adapter-chartboost:5.9.11.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:136
+    implementation 'com.chartboost:chartboost-mediation-sdk:5.3.0' // Packages/com.horst.rill/Editor/Dependencies.xml:134
+    implementation 'com.chartboost:chartboost-sdk:9.11.0' // Packages/com.horst.rill/Editor/Dependencies.xml:133
+    implementation 'com.facebook.android:audience-network-sdk:6.21.0' // Packages/com.horst.rill/Editor/Dependencies.xml:97
+    implementation 'com.facebook.android:facebook-applinks:[18.0.0,19)' // Packages/com.horst.facebook/FacebookSDK/Plugins/Editor/Dependencies.xml:6
+    implementation 'com.facebook.android:facebook-core:[18.0.0,19)' // Packages/com.horst.facebook/FacebookSDK/Plugins/Editor/Dependencies.xml:5
+    implementation 'com.facebook.android:facebook-gamingservices:[18.0.0,19)' // Packages/com.horst.facebook/FacebookSDK/Plugins/Editor/Dependencies.xml:9
+    implementation 'com.facebook.android:facebook-login:[18.0.0,19)' // Packages/com.horst.facebook/FacebookSDK/Plugins/Editor/Dependencies.xml:7
+    implementation 'com.facebook.android:facebook-share:[18.0.0,19)' // Packages/com.horst.facebook/FacebookSDK/Plugins/Editor/Dependencies.xml:8
+    implementation 'com.fyber:marketplace-sdk:8.3.7' // Packages/com.horst.rill/Editor/Dependencies.xml:156
+    implementation 'com.github.bumptech.glide:glide:4.12.0' // Packages/com.horst.rill/Editor/Dependencies.xml:7
+    implementation 'com.google.ads.mediation:applovin:13.5.0.1' // Packages/com.horst.rill/Editor/Dependencies.xml:117
+    implementation 'com.google.ads.mediation:chartboost:9.10.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:147
+    implementation 'com.google.ads.mediation:facebook:6.21.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:100
+    implementation 'com.google.ads.mediation:fyber:8.3.7.0' // Packages/com.horst.rill/Editor/Dependencies.xml:159
+    implementation 'com.google.ads.mediation:inmobi:11.1.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:112
+    implementation 'com.google.ads.mediation:ironsource:8.10.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:61
+    implementation 'com.google.ads.mediation:mintegral:17.0.41.0' // Packages/com.horst.rill/Editor/Dependencies.xml:124
+    implementation 'com.google.ads.mediation:pangle:7.8.5.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:82
+    implementation 'com.google.ads.mediation:unity:4.16.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:52
+    implementation 'com.google.ads.mediation:vungle:7.6.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:46
+    implementation 'com.google.android.gms:play-services-ads:24.9.0' // Packages/com.horst.rill/Editor/Dependencies.xml:104
+    // implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1' // Packages/com.horst.rill/Editor/Dependencies.xml:157
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:80
+    implementation 'com.google.android.gms:play-services-appset:16.0.2' // Packages/com.horst.rill/Editor/Dependencies.xml:57
+    implementation 'com.google.android.gms:play-services-basement:18.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:59
+    implementation 'com.google.android.material:material:1.2.1' // Packages/com.horst.rill/Editor/Dependencies.xml:90
+    implementation 'com.google.android.play:core-common:2.0.0' // Packages/com.horst.google/com.google.play.core/Editor/Dependencies.xml:3
+    implementation 'com.google.android.play:review:2.0.0' // Packages/com.horst.google/com.google.play.review/Editor/Dependencies.xml:3
+    implementation 'com.google.code.gson:gson:2.8.9' // Packages/com.horst.rill/Editor/Dependencies.xml:4
+    implementation 'com.hyperbid.tools:mcsdk:3.9.10' // Packages/com.horst.rill/Editor/Dependencies.xml:19
+    implementation 'com.hyperbid.tools:mcsdk-adapter-admob:24.9.0.1' // Packages/com.horst.rill/Editor/Dependencies.xml:33
+    implementation 'com.hyperbid.tools:mcsdk-adapter-max:13.5.0.1' // Packages/com.horst.rill/Editor/Dependencies.xml:29
+    implementation 'com.hyperbid.tools:mcsdk-adapter-topon:6.5.61.0' // Packages/com.horst.rill/Editor/Dependencies.xml:22
+    implementation 'com.inmobi.monetization:inmobi-ads-kotlin:11.1.0' // Packages/com.horst.rill/Editor/Dependencies.xml:110
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0' // Packages/com.horst.rill/Editor/Dependencies.xml:139
+    implementation 'com.mbridge.msdk.oversea:mbridge_android_sdk:17.0.41' // Packages/com.horst.rill/Editor/Dependencies.xml:121
+    implementation 'com.moloco.sdk:moloco-sdk:4.3.1' // Packages/com.horst.rill/Editor/Dependencies.xml:37
+    implementation 'com.pangle.global:pag-sdk:7.8.5.2' // Packages/com.horst.rill/Editor/Dependencies.xml:79
+    implementation 'com.parse.bolts:bolts-android:1.4.0' // Packages/com.horst.facebook/FacebookSDK/Plugins/Editor/Dependencies.xml:4
+    implementation 'com.smartdigimkttech.sdk:smartdigimkttech-sdk:6.5.56' // Packages/com.horst.rill/Editor/Dependencies.xml:25
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0' // Packages/com.horst.rill/Editor/Dependencies.xml:140
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0' // Packages/com.horst.rill/Editor/Dependencies.xml:141
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0' // Packages/com.horst.rill/Editor/Dependencies.xml:142
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0' // Packages/com.horst.rill/Editor/Dependencies.xml:143
+    implementation 'com.taurusx.tax:ads:1.10.1' // Packages/com.horst.rill/Editor/Dependencies.xml:75
+    implementation 'com.unity3d.ads:unity-ads:4.16.1' // Packages/com.horst.rill/Editor/Dependencies.xml:50
+    implementation 'com.unity3d.ads-mediation:mediation-sdk:9.2.0' // Packages/com.horst.rill/Editor/Dependencies.xml:56
+    implementation 'com.vungle:vungle-ads:7.6.1' // Packages/com.horst.rill/Editor/Dependencies.xml:42
+    implementation 'com.x3mads.android.xmediator:core:1.136.0' // Packages/com.horst.rill/Editor/Dependencies.xml:164
+    implementation 'com.yandex.android:mobileads:7.15.1' // Packages/com.horst.rill/Editor/Dependencies.xml:151
+    implementation 'io.bidmachine:ads:3.5.1' // Packages/com.horst.rill/Editor/Dependencies.xml:128
+    implementation 'io.github.kwainetwork:adApi:1.2.21' // Packages/com.horst.rill/Editor/Dependencies.xml:86
+    implementation 'io.github.kwainetwork:adImpl:1.2.21' // Packages/com.horst.rill/Editor/Dependencies.xml:87
+    implementation 'net.pubnative:hybid.sdk:3.7.1' // Packages/com.horst.rill/Editor/Dependencies.xml:70
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10' // Packages/com.horst.rill/Editor/Dependencies.xml:92
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3' // Packages/com.horst.rill/Editor/Dependencies.xml:144
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1' // Packages/com.horst.rill/Editor/Dependencies.xml:145
+    implementation 'org.luaj:luaj-jse:3.0.1' // Packages/com.horst.rill/Editor/Dependencies.xml:6
+// Android Resolver Dependencies End
+**DEPS**}
+
+// Android Resolver Exclusions Start
+android {
+  packagingOptions {
+      exclude ('/lib/armeabi/*' + '*')
+      exclude ('/lib/mips/*' + '*')
+      exclude ('/lib/mips64/*' + '*')
+      exclude ('/lib/x86/*' + '*')
+      exclude ('/lib/x86_64/*' + '*')
+  }
+}
+// Android Resolver Exclusions End
+android {
+    ndkVersion "**NDKVERSION**"
+    namespace "com.unity3d.player"
+    ndkPath "**NDKPATH**"
+    compileSdk **APIVERSION**
+    buildToolsVersion '**BUILDTOOLS**'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+**DEFAULT_CONFIG_SETUP**
+        minSdk **MINSDK**
+        targetSdk **TARGETSDK**
+        ndk {
+            debugSymbolLevel **DEBUGSYMBOLLEVEL**
+            abiFilters **ABIFILTERS**
+        }
+        versionCode **VERSIONCODE**
+        versionName '**VERSIONNAME**'
+        consumerProguardFiles 'proguard-unity.txt'**USER_PROGUARD**
+    }
+
+    lint {
+        abortOnError false
+    }
+
+    androidResources {
+        noCompress = **BUILTIN_NOCOMPRESS** + unityStreamingAssets.tokenize(', ')
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }**PACKAGING**
+}
+**IL_CPP_BUILD_SETUP**
+**SOURCE_BUILD_SETUP**
+**EXTERNAL_SOURCES**

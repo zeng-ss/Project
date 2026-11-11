@@ -1,0 +1,11 @@
+Finger.png
+size:238,148
+filter:Linear,Linear
+dj-tx
+bounds:155,66,80,81
+offsets:0,3,81,84
+rotate:90
+icon_finger
+bounds:2,2,144,151
+offsets:0,0,144,154
+rotate:90

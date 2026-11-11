@@ -1,0 +1,490 @@
+{
+  "updateDate": "2026-08-13T09:20:56.6316570Z",
+  "isChangeCapacity": true,
+  "capacity": 16,
+  "capacityTextPosition": {
+    "x": 7.5,
+    "y": 16.5
+  },
+  "gridSizeX": 50,
+  "gridSizeY": 70,
+  "IsCloseConveyor": true,
+  "gridData": [
+    {
+      "x": 28,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 1,
+      "isStart": true
+    },
+    {
+      "x": 31,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 2
+    },
+    {
+      "x": 35,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 3
+    },
+    {
+      "x": 37,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 4
+    },
+    {
+      "x": 39,
+      "y": 20,
+      "state": 1,
+      "pathIndex": 5
+    },
+    {
+      "x": 41,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 6,
+      "pX": 41.5,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 43,
+      "y": 28,
+      "state": 1,
+      "pathIndex": 7,
+      "pX": 43.5,
+      "pY": 0.0,
+      "pZ": 28.0
+    },
+    {
+      "x": 43,
+      "y": 29,
+      "state": 1,
+      "pathIndex": 8
+    },
+    {
+      "x": 43,
+      "y": 31,
+      "state": 1,
+      "pathIndex": 9
+    },
+    {
+      "x": 43,
+      "y": 34,
+      "state": 1,
+      "pathIndex": 10
+    },
+    {
+      "x": 43,
+      "y": 37,
+      "state": 1,
+      "pathIndex": 11
+    },
+    {
+      "x": 43,
+      "y": 40,
+      "state": 1,
+      "pathIndex": 12
+    },
+    {
+      "x": 41,
+      "y": 42,
+      "state": 1,
+      "pathIndex": 13
+    },
+    {
+      "x": 39,
+      "y": 44,
+      "state": 1,
+      "pathIndex": 14
+    },
+    {
+      "x": 37,
+      "y": 46,
+      "state": 1,
+      "pathIndex": 15
+    },
+    {
+      "x": 35,
+      "y": 48,
+      "state": 1,
+      "pathIndex": 16
+    },
+    {
+      "x": 33,
+      "y": 50,
+      "state": 1,
+      "pathIndex": 17
+    },
+    {
+      "x": 31,
+      "y": 52,
+      "state": 1,
+      "pathIndex": 18
+    },
+    {
+      "x": 28,
+      "y": 52,
+      "state": 1,
+      "pathIndex": 19
+    },
+    {
+      "x": 26,
+      "y": 52,
+      "state": 1,
+      "pathIndex": 20
+    },
+    {
+      "x": 23,
+      "y": 52,
+      "state": 1,
+      "pathIndex": 21
+    },
+    {
+      "x": 21,
+      "y": 52,
+      "state": 1,
+      "pathIndex": 22
+    },
+    {
+      "x": 18,
+      "y": 52,
+      "state": 1,
+      "pathIndex": 23
+    },
+    {
+      "x": 16,
+      "y": 50,
+      "state": 1,
+      "pathIndex": 24
+    },
+    {
+      "x": 14,
+      "y": 48,
+      "state": 1,
+      "pathIndex": 25
+    },
+    {
+      "x": 12,
+      "y": 46,
+      "state": 1,
+      "pathIndex": 26
+    },
+    {
+      "x": 10,
+      "y": 44,
+      "state": 1,
+      "pathIndex": 27
+    },
+    {
+      "x": 8,
+      "y": 42,
+      "state": 1,
+      "pathIndex": 28
+    },
+    {
+      "x": 6,
+      "y": 40,
+      "state": 1,
+      "pathIndex": 29
+    },
+    {
+      "x": 6,
+      "y": 37,
+      "state": 1,
+      "pathIndex": 30
+    },
+    {
+      "x": 6,
+      "y": 34,
+      "state": 1,
+      "pathIndex": 31
+    },
+    {
+      "x": 6,
+      "y": 31,
+      "state": 1,
+      "pathIndex": 32
+    },
+    {
+      "x": 6,
+      "y": 29,
+      "state": 1,
+      "pathIndex": 33
+    },
+    {
+      "x": 6,
+      "y": 28,
+      "state": 1,
+      "pathIndex": 34,
+      "pX": 6.5,
+      "pY": 0.0,
+      "pZ": 28.0
+    },
+    {
+      "x": 8,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 35,
+      "pX": 8.5,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 10,
+      "y": 20,
+      "state": 1,
+      "pathIndex": 36
+    },
+    {
+      "x": 12,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 37
+    },
+    {
+      "x": 14,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 38
+    },
+    {
+      "x": 18,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 39
+    },
+    {
+      "x": 21,
+      "y": 17,
+      "state": 1,
+      "pathIndex": 40,
+      "isEnd": true
+    }
+  ],
+  "holderDataList": [
+    {
+      "x": 25.0,
+      "y": 7.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [
+        {
+          "ID": {
+            "Color": 9
+          },
+          "States": [
+            {
+              "type": 1,
+              "ID": {
+                "stateType": 1,
+                "idType": 1
+              }
+            }
+          ]
+        },
+        {
+          "ID": {
+            "Color": 9
+          },
+          "States": [
+            {
+              "type": 1,
+              "ID": {
+                "stateType": 1,
+                "idType": 1
+              }
+            }
+          ]
+        },
+        {
+          "ID": {
+            "Color": 10
+          },
+          "States": [
+            {
+              "type": 1,
+              "ID": {
+                "stateType": 1,
+                "idType": 1
+              }
+            }
+          ]
+        },
+        {
+          "ID": {
+            "Color": 10
+          },
+          "States": [
+            {
+              "type": 1,
+              "ID": {
+                "stateType": 1,
+                "idType": 1
+              }
+            }
+          ]
+        },
+        {
+          "ID": {
+            "Color": 15
+          },
+          "States": [
+            {
+              "type": 1,
+              "ID": {
+                "stateType": 1,
+                "idType": 1
+              }
+            }
+          ]
+        },
+        {
+          "ID": {
+            "Color": 15
+          },
+          "States": [
+            {
+              "type": 1,
+              "ID": {
+                "stateType": 1,
+                "idType": 1
+              }
+            }
+          ]
+        },
+        {
+          "ID": {
+            "Color": 15
+          },
+          "States": []
+        },
+        {
+          "ID": {
+            "Color": 15
+          },
+          "States": []
+        }
+      ],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 20.0,
+      "y": 7.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 30.0,
+      "y": 7.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 25.0,
+      "y": 62.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 30.0,
+      "y": 62.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 20.0,
+      "y": 62.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 20.0,
+      "y": 42.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 25.0,
+      "y": 42.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 30.0,
+      "y": 42.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 12.0,
+      "y": 34.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 38.0,
+      "y": 34.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    }
+  ],
+  "VisibleSizeX": 50,
+  "VisibleSizeY": 70
+}

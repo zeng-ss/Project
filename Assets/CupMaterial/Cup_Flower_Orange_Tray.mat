@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cup_Flower_Orange_Tray
+  m_Shader: {fileID: 4800000, guid: 88e888b6439b90844a7fe4735e930228, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AmbientStrength: 0.25
+    - _AspectRatio: 0
+    - _BottomDarkStrength: 0.768
+    - _BottomHeight: 0.45
+    - _BottomRange: 1.15
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _CutoutAmount: 0
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _FresnelPower: 5.15
+    - _FresnelStrength: 0.06
+    - _GlossMapScale: 1
+    - _Glossiness: 0.413
+    - _GlossyReflections: 1
+    - _LightIntensity: 0.8
+    - _LightSmoothness: 0.418
+    - _LogoScale: 1
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _OverallAlpha: 1
+    - _Parallax: 0.02
+    - _ShadowThreshold: 0.448
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SpecularPower: 20
+    - _SpecularStrength: 0.02
+    - _SrcBlend: 1
+    - _UVSec: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 0.9058824, g: 0.43137258, b: 0.15686275, a: 1}
+    - _BottomDarkColor: {r: 0.77647066, g: 0.3254902, b: 0.098039225, a: 1}
+    - _Color: {r: 0.94509804, g: 0.7304479, b: 0, a: 1}
+    - _EmissionColor: {r: 0.18238991, g: 0.18238991, b: 0.18238991, a: 1}
+    - _FresnelColor: {r: 0.92549026, g: 0.5803922, b: 0.25882354, a: 1}
+    - _HighlightColor: {r: 0.9176471, g: 0.5019608, b: 0.19215688, a: 1}
+    - _ShadowColor: {r: 0.7843138, g: 0.34117648, b: 0.121568635, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

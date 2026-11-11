@@ -1,0 +1,468 @@
+{
+  "updateDate": "2026-08-17T06:34:12.1275950Z",
+  "isChangeCapacity": true,
+  "capacity": 16,
+  "capacityTextPosition": {
+    "x": 7.5,
+    "y": 16.5
+  },
+  "gridSizeX": 50,
+  "gridSizeY": 70,
+  "IsCloseConveyor": false,
+  "gridData": [
+    {
+      "x": 14,
+      "y": 8,
+      "state": 1,
+      "pathIndex": 1,
+      "isStart": true,
+      "pX": 15.0,
+      "pY": 0.0,
+      "pZ": 8.5
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "state": 1,
+      "pathIndex": 2,
+      "isEnd": true,
+      "pX": 15.0,
+      "pY": 0.0,
+      "pZ": 18.5
+    },
+    {
+      "x": 10,
+      "y": 23,
+      "state": 1,
+      "pathIndex": 3,
+      "isStart": true
+    },
+    {
+      "x": 10,
+      "y": 23,
+      "state": 1,
+      "pathIndex": 4,
+      "pX": 11.0,
+      "pY": 0.0,
+      "pZ": 23.5
+    },
+    {
+      "x": 12,
+      "y": 23,
+      "state": 1,
+      "pathIndex": 5,
+      "pX": 12.0,
+      "pY": 0.0,
+      "pZ": 23.5
+    },
+    {
+      "x": 14,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 6,
+      "pX": 14.0,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 14,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 7,
+      "pX": 15.0,
+      "pY": 0.0,
+      "pZ": 24.5
+    },
+    {
+      "x": 16,
+      "y": 26,
+      "state": 1,
+      "pathIndex": 8,
+      "pX": 17.0,
+      "pY": 0.0,
+      "pZ": 26.0
+    },
+    {
+      "x": 17,
+      "y": 28,
+      "state": 1,
+      "pathIndex": 9
+    },
+    {
+      "x": 16,
+      "y": 30,
+      "state": 1,
+      "pathIndex": 10,
+      "pX": 17.0,
+      "pY": 0.0,
+      "pZ": 31.0
+    },
+    {
+      "x": 14,
+      "y": 32,
+      "state": 1,
+      "pathIndex": 11,
+      "pX": 15.0,
+      "pY": 0.0,
+      "pZ": 32.5
+    },
+    {
+      "x": 14,
+      "y": 32,
+      "state": 1,
+      "pathIndex": 12,
+      "pX": 14.0,
+      "pY": 0.0,
+      "pZ": 33.0
+    },
+    {
+      "x": 12,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 13,
+      "pX": 12.0,
+      "pY": 0.0,
+      "pZ": 33.5
+    },
+    {
+      "x": 10,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 14,
+      "pX": 11.0,
+      "pY": 0.0,
+      "pZ": 33.5
+    },
+    {
+      "x": 10,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 15,
+      "isEnd": true
+    },
+    {
+      "x": 10,
+      "y": 38,
+      "state": 1,
+      "pathIndex": 16,
+      "isStart": true
+    },
+    {
+      "x": 14,
+      "y": 38,
+      "state": 1,
+      "pathIndex": 17
+    },
+    {
+      "x": 27,
+      "y": 38,
+      "state": 1,
+      "pathIndex": 18
+    },
+    {
+      "x": 37,
+      "y": 38,
+      "state": 1,
+      "pathIndex": 19
+    },
+    {
+      "x": 42,
+      "y": 38,
+      "state": 1,
+      "pathIndex": 20,
+      "isEnd": true
+    },
+    {
+      "x": 14,
+      "y": 61,
+      "state": 1,
+      "pathIndex": 21,
+      "isStart": true,
+      "pX": 15.0,
+      "pY": 0.0,
+      "pZ": 61.5
+    },
+    {
+      "x": 20,
+      "y": 65,
+      "state": 1,
+      "pathIndex": 22,
+      "isEnd": true
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "state": 1,
+      "pathIndex": 23,
+      "isStart": true
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "state": 1,
+      "pathIndex": 24,
+      "isEnd": true
+    },
+    {
+      "x": 30,
+      "y": 65,
+      "state": 1,
+      "pathIndex": 25,
+      "isStart": true
+    },
+    {
+      "x": 36,
+      "y": 61,
+      "state": 1,
+      "pathIndex": 26,
+      "isEnd": true,
+      "pX": 36.0,
+      "pY": 0.0,
+      "pZ": 61.5
+    },
+    {
+      "x": 20,
+      "y": 18,
+      "state": 1,
+      "pathIndex": 27,
+      "isStart": true,
+      "pX": 20.0,
+      "pY": 0.0,
+      "pZ": 18.0
+    },
+    {
+      "x": 42,
+      "y": 18,
+      "state": 1,
+      "pathIndex": 28,
+      "isEnd": true,
+      "pX": 42.5,
+      "pY": 0.0,
+      "pZ": 18.0
+    },
+    {
+      "x": 42,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 29,
+      "isStart": true,
+      "pX": 42.5,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 41,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 30,
+      "pX": 41.5,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 39,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 31,
+      "pX": 39.5,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 37,
+      "y": 24,
+      "state": 1,
+      "pathIndex": 32,
+      "pX": 37.5,
+      "pY": 0.0,
+      "pZ": 24.0
+    },
+    {
+      "x": 35,
+      "y": 25,
+      "state": 1,
+      "pathIndex": 33
+    },
+    {
+      "x": 34,
+      "y": 27,
+      "state": 1,
+      "pathIndex": 34
+    },
+    {
+      "x": 34,
+      "y": 29,
+      "state": 1,
+      "pathIndex": 35
+    },
+    {
+      "x": 35,
+      "y": 31,
+      "state": 1,
+      "pathIndex": 36
+    },
+    {
+      "x": 37,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 37
+    },
+    {
+      "x": 39,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 38
+    },
+    {
+      "x": 41,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 39
+    },
+    {
+      "x": 42,
+      "y": 33,
+      "state": 1,
+      "pathIndex": 40,
+      "isEnd": true
+    },
+    {
+      "x": 16,
+      "y": 57,
+      "state": 1,
+      "pathIndex": 41,
+      "isStart": true
+    },
+    {
+      "x": 18,
+      "y": 58,
+      "state": 1,
+      "pathIndex": 42
+    },
+    {
+      "x": 20,
+      "y": 59,
+      "state": 1,
+      "pathIndex": 43
+    },
+    {
+      "x": 22,
+      "y": 60,
+      "state": 1,
+      "pathIndex": 44
+    },
+    {
+      "x": 24,
+      "y": 60,
+      "state": 1,
+      "pathIndex": 45,
+      "pX": 24.5,
+      "pY": 0.0,
+      "pZ": 61.0
+    },
+    {
+      "x": 26,
+      "y": 60,
+      "state": 1,
+      "pathIndex": 46,
+      "pX": 26.5,
+      "pY": 0.0,
+      "pZ": 61.0
+    },
+    {
+      "x": 28,
+      "y": 60,
+      "state": 1,
+      "pathIndex": 47
+    },
+    {
+      "x": 30,
+      "y": 59,
+      "state": 1,
+      "pathIndex": 48
+    },
+    {
+      "x": 32,
+      "y": 58,
+      "state": 1,
+      "pathIndex": 49
+    },
+    {
+      "x": 34,
+      "y": 57,
+      "state": 1,
+      "pathIndex": 50,
+      "isEnd": true
+    }
+  ],
+  "holderDataList": [
+    {
+      "x": 23.0,
+      "y": 29.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 28.0,
+      "y": 29.5,
+      "width": 2,
+      "height": 4,
+      "direction": 2,
+      "directionValue": 0.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 23.0,
+      "y": 47.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 28.0,
+      "y": 47.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 33.0,
+      "y": 47.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    },
+    {
+      "x": 18.0,
+      "y": 47.5,
+      "width": 2,
+      "height": 4,
+      "direction": 3,
+      "directionValue": 180.0,
+      "gameUnits": [],
+      "states": [],
+      "HolderType": 0
+    }
+  ],
+  "VisibleSizeX": 50,
+  "VisibleSizeY": 70
+}

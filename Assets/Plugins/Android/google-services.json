@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27850227435",
+    "project_id": "coffeeaway-21cac",
+    "storage_bucket": "coffeeaway-21cac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27850227435:android:5be3af66fe9c11a4b6c8ae",
+        "android_client_info": {
+          "package_name": "com.digicore.game.coffee.away"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8nw6D8oHTnJJ1o0uDfv1f0Zf6m0WVMbY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

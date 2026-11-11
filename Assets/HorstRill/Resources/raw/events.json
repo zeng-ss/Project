@@ -1,0 +1,227 @@
+[
+  {
+    "token": "31oyv2",
+    "name": "ai_puzzle_level",
+    "unique": false
+  },
+  {
+    "token": "k3z2y0",
+    "name": "appLovin_sdk_ad_revenue",
+    "unique": false
+  },
+  {
+    "token": "atp1o0",
+    "name": "ap_ua_ads_10",
+    "unique": false
+  },
+  {
+    "token": "5tfc5g",
+    "name": "ap_ua_ads_100",
+    "unique": false
+  },
+  {
+    "token": "2cppad",
+    "name": "ap_ua_ads_150",
+    "unique": false
+  },
+  {
+    "token": "vv8ui1",
+    "name": "ap_ua_ads_20",
+    "unique": false
+  },
+  {
+    "token": "d3x4mr",
+    "name": "ap_ua_ads_200",
+    "unique": false
+  },
+  {
+    "token": "uhw66u",
+    "name": "ap_ua_ads_30",
+    "unique": false
+  },
+  {
+    "token": "gg1ax1",
+    "name": "ap_ua_ads_40",
+    "unique": false
+  },
+  {
+    "token": "cjwq9i",
+    "name": "ap_ua_ads_50",
+    "unique": false
+  },
+  {
+    "token": "kc9k7f",
+    "name": "gs_base_coin1_purchase",
+    "unique": false
+  },
+  {
+    "token": "k8mj1w",
+    "name": "gs_base_coin2_purchase",
+    "unique": false
+  },
+  {
+    "token": "pjyvy4",
+    "name": "gs_login_pack_purchase",
+    "unique": false
+  },
+  {
+    "token": "xrxvnh",
+    "name": "gs_niewbie_bundle_purchase",
+    "unique": false
+  },
+  {
+    "token": "3lbsz7",
+    "name": "gs_popular_bundle_purchase",
+    "unique": false
+  },
+  {
+    "token": "l059eo",
+    "name": "gs_remove_ads_pack_purchase",
+    "unique": false
+  },
+  {
+    "token": "nvep99",
+    "name": "gs_remove_ads_purchase",
+    "unique": false
+  },
+  {
+    "token": "jp6x5p",
+    "name": "payment_fail",
+    "unique": false
+  },
+  {
+    "token": "a02vcn",
+    "name": "payment_init",
+    "unique": false
+  },
+  {
+    "token": "pjsyf0",
+    "name": "payment_success",
+    "unique": false
+  },
+  {
+    "token": "bembdk",
+    "name": "s_level_10",
+    "unique": false
+  },
+  {
+    "token": "xgnkge",
+    "name": "s_level_100",
+    "unique": false
+  },
+  {
+    "token": "60tfek",
+    "name": "s_level_1000",
+    "unique": false
+  },
+  {
+    "token": "rq0ebp",
+    "name": "s_level_150",
+    "unique": false
+  },
+  {
+    "token": "mjg58v",
+    "name": "s_level_1500",
+    "unique": false
+  },
+  {
+    "token": "14s6gz",
+    "name": "s_level_20",
+    "unique": false
+  },
+  {
+    "token": "skhwc1",
+    "name": "s_level_200",
+    "unique": false
+  },
+  {
+    "token": "91gajx",
+    "name": "s_level_2000",
+    "unique": false
+  },
+  {
+    "token": "hxzsln",
+    "name": "s_level_30",
+    "unique": false
+  },
+  {
+    "token": "n9ndxu",
+    "name": "s_level_300",
+    "unique": false
+  },
+  {
+    "token": "46cqni",
+    "name": "s_level_3000",
+    "unique": false
+  },
+  {
+    "token": "3w59oa",
+    "name": "s_level_40",
+    "unique": false
+  },
+  {
+    "token": "2czycl",
+    "name": "s_level_400",
+    "unique": false
+  },
+  {
+    "token": "juxi96",
+    "name": "s_level_4000",
+    "unique": false
+  },
+  {
+    "token": "c3dtx2",
+    "name": "s_level_50",
+    "unique": false
+  },
+  {
+    "token": "3rdy3h",
+    "name": "s_level_500",
+    "unique": false
+  },
+  {
+    "token": "gmopzh",
+    "name": "s_level_5000",
+    "unique": false
+  },
+  {
+    "token": "8rvams",
+    "name": "s_level_60",
+    "unique": false
+  },
+  {
+    "token": "qp81ec",
+    "name": "s_level_600",
+    "unique": false
+  },
+  {
+    "token": "b6hhrp",
+    "name": "s_level_70",
+    "unique": false
+  },
+  {
+    "token": "val1sj",
+    "name": "s_level_700",
+    "unique": false
+  },
+  {
+    "token": "km279q",
+    "name": "s_level_80",
+    "unique": false
+  },
+  {
+    "token": "xqnfei",
+    "name": "s_level_800",
+    "unique": false
+  },
+  {
+    "token": "xvv7z3",
+    "name": "s_level_90",
+    "unique": false
+  },
+  {
+    "token": "ye6zq2",
+    "name": "s_level_900",
+    "unique": false
+  }
+]
